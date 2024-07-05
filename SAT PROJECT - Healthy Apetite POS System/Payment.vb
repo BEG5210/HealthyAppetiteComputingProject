@@ -28,7 +28,7 @@
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles chkManual.CheckedChanged
         'h
         'Check if Manual input is checked
-        If chkManual.Checked = False Then
+        If chkManual.Checked = False Then '
             'User cannot edit Text Boxes
             txtAmountOwed.ReadOnly = True
             txtAmountPaid.ReadOnly = True
