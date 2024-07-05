@@ -15,6 +15,7 @@
     End Sub
 
     Private Sub CalculateDifference()
+        'How to implement a way to check for letters and spit out an error?
         Dim AmtOwed As Decimal = Val(txtAmountOwed.Text)
         Dim AmtPaid As Decimal = Val(txtAmountPaid.Text)
         Dim Difference As Decimal
