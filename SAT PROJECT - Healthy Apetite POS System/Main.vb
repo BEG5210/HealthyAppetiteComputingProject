@@ -11,7 +11,13 @@
     End Sub
 
     Private Sub cmdCash_Click(sender As Object, e As EventArgs) Handles cmdCash.Click
+        'Show the payment window
         Payment.Show()
+    End Sub
+
+    Private Sub cmdDiscount_Click(sender As Object, e As EventArgs) Handles cmdDiscount.Click
+        'Show the discount window
+        Discount.Show()
     End Sub
 
 #Region "------ IMPORTANT INFO -----------------------------------------"
