@@ -20,6 +20,11 @@
         Discount.Show()
     End Sub
 
+    Private Sub cmdBeginEndShift_Click(sender As Object, e As EventArgs) Handles cmdBeginEndShift.Click
+        'Show the Shift Maneger
+        ShiftManager.Show()
+    End Sub
+
 #Region "------ IMPORTANT INFO -----------------------------------------"
     '
     '******************* ITEM BUTTON NAME FORMATTING ***************
