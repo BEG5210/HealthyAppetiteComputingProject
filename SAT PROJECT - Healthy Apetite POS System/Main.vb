@@ -1,13 +1,20 @@
 ﻿Public Class Main
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'When this loads, do the button things
+    Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'When this loads, make the buttons read the files and using that:
+        'Establish the name
+        'Establish the colour
+        'Establish the item
+        'Establish the items stock count
+        'Establish the items price
+
+        'I'll probably use an object for this, and update my Design Solution.
     End Sub
 
     Private Sub cmdCash_Click(sender As Object, e As EventArgs) Handles cmdCash.Click
         Payment.Show()
     End Sub
 
-    '------ IMPORTANT INFO -----------------------------------------
+#Region "------ IMPORTANT INFO -----------------------------------------"
     '
     '******************* ITEM BUTTON NAME FORMATTING ***************
     '
@@ -19,16 +26,14 @@
     '
     '***************************************************************
     '
-    '--------------------------------------------------------------
+#End Region
 
-#Region "Notes To Self"
+#Region "------ NOTES TO SELF ------------------------------------------"
 
     'MAXIMUM LINES IN CART TEXTBOX BEFORE SCROLLING IS NEEDED IS 17! AS OF RIGHT NOW
 
     'INCASE OF ANY ERRORS - there is an important annotation in the bottom of
     'application designer that may be usefull
-
-
 
 #End Region
 End Class

@@ -1,7 +1,8 @@
 ﻿Public Class Payment
 
     Private Sub btnGoBack_Click(sender As Object, e As EventArgs) Handles btnGoBack.Click
-        'close this window
+        Me.Hide() 'Hides the payment window.
+        'Also make it clear the values
     End Sub
 
     Private Sub txtAmountOwed_TextChanged(sender As Object, e As EventArgs) Handles txtAmountOwed.TextChanged
