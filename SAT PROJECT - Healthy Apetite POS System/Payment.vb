@@ -1,5 +1,8 @@
 ﻿Public Class Payment
 
+    Private Sub Payment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        CheckForCheckBoxes()
+    End Sub
 
     Private Sub btnGoBack_Click(sender As Object, e As EventArgs) Handles btnGoBack.Click
         Me.Hide() 'Hides the payment window.
@@ -26,6 +29,10 @@
     End Sub
 
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles chkManual.CheckedChanged
+        CheckForCheckBoxes()
+    End Sub
+
+    Sub CheckForCheckBoxes()
 
         'Check if Manual input is checked
         If chkManual.Checked = False Then
@@ -39,6 +46,8 @@
         End If
 
     End Sub
+
+
 
 #Region "Notes To Self"
 
