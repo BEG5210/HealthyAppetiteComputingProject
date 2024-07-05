@@ -107,6 +107,12 @@
     <Compile Include="Payment.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ShiftManager.Designer.vb">
+      <DependentUpon>ShiftManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ShiftManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Discount.resx">
@@ -123,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Payment.resx">
       <DependentUpon>Payment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShiftManager.resx">
+      <DependentUpon>ShiftManager.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
