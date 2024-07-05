@@ -1,8 +1,9 @@
 ﻿Public Class Payment
 
+
     Private Sub btnGoBack_Click(sender As Object, e As EventArgs) Handles btnGoBack.Click
         Me.Hide() 'Hides the payment window.
-        'Also make it clear the values
+        'Also make the values be cleared
     End Sub
 
     Private Sub txtAmountOwed_TextChanged(sender As Object, e As EventArgs) Handles txtAmountOwed.TextChanged
@@ -14,13 +15,13 @@
     End Sub
 
     Private Sub CalculateDifference()
-        Dim AmtOwed As Object = Val(txtAmountOwed.Text)
-        Dim AmtPaid As Object = Val(txtAmountPaid.Text)
-        Dim Difference As Object
+        Dim AmtOwed As Decimal = Val(txtAmountOwed.Text)
+        Dim AmtPaid As Decimal = Val(txtAmountPaid.Text)
+        Dim Difference As Decimal
 
         Difference = AmtOwed - AmtPaid
 
-        txtDifference.Text = CStr(Difference)
+        txtDifference.Text = Difference.ToString("F2")
     End Sub
 
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles chkManual.CheckedChanged
