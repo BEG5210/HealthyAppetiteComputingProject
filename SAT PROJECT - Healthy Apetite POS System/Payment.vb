@@ -1,5 +1,24 @@
 ﻿Public Class Payment
 
+    Sub CheckForCheckBoxes()
+
+        'Check if Manual input is checked
+        If chkManual.Checked = False Then
+            'User cannot edit Text Boxes
+            txtAmountOwed.ReadOnly = True
+            txtAmountPaid.ReadOnly = True
+        ElseIf chkManual.Checked = True Then
+            'User can edit Text Boxes
+            txtAmountOwed.ReadOnly = False
+            txtAmountPaid.ReadOnly = False
+        End If
+
+    End Sub
+
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles chkManual.CheckedChanged
+        CheckForCheckBoxes()
+    End Sub
+
     Private Sub Payment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CheckForCheckBoxes()
     End Sub
@@ -19,6 +38,7 @@
 
     Private Sub CalculateDifference()
         'How to implement a way to check for letters and spit out an error?
+
         Dim AmtOwed As Decimal = Val(txtAmountOwed.Text)
         Dim AmtPaid As Decimal = Val(txtAmountPaid.Text)
         Dim Difference As Decimal
@@ -28,32 +48,7 @@
         txtDifference.Text = Difference.ToString("F2")
     End Sub
 
-    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles chkManual.CheckedChanged
-        CheckForCheckBoxes()
-    End Sub
-
-    Sub CheckForCheckBoxes()
-
-        'Check if Manual input is checked
-        If chkManual.Checked = False Then
-            'User cannot edit Text Boxes
-            txtAmountOwed.ReadOnly = True
-            txtAmountPaid.ReadOnly = True
-        ElseIf chkManual.Checked = True Then
-            'User can edit Text Boxes
-            txtAmountOwed.ReadOnly = False
-            txtAmountPaid.ReadOnly = False
-        End If
-
-    End Sub
-
-
-
-#Region "Notes To Self"
-
-#End Region
-
-#Region "What Dis Do?"
+#Region "------ IMPORTANT INFO -----------------------------------------"
 
     'txtAmountOwed:
     'This text box shows the amount owed by the customer based on what they have in their cart
@@ -70,6 +65,9 @@
     'When the customer has payed what they have owed, then this button will
     'complete the payment
 
+#End Region
+
+#Region "------ NOTES TO SELF ------------------------------------------"
 #End Region
 
 End Class
