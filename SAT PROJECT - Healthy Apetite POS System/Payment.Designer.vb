@@ -25,7 +25,7 @@ Partial Class Payment
         Me.cmdCompletePayment = New System.Windows.Forms.Button()
         Me.cmd5d = New System.Windows.Forms.PictureBox()
         Me.cmd20c = New System.Windows.Forms.PictureBox()
-        Me.cd10c = New System.Windows.Forms.PictureBox()
+        Me.cmd10c = New System.Windows.Forms.PictureBox()
         Me.cmd5c = New System.Windows.Forms.PictureBox()
         Me.cmd50c = New System.Windows.Forms.PictureBox()
         Me.cmd2d = New System.Windows.Forms.PictureBox()
@@ -57,7 +57,7 @@ Partial Class Payment
         Me.txt20c = New System.Windows.Forms.TextBox()
         Me.txt50c = New System.Windows.Forms.TextBox()
         Me.txt1d = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txt2d = New System.Windows.Forms.TextBox()
         Me.txt5d = New System.Windows.Forms.TextBox()
         Me.txt10d = New System.Windows.Forms.TextBox()
         Me.txt20d = New System.Windows.Forms.TextBox()
@@ -65,9 +65,10 @@ Partial Class Payment
         Me.txt100d = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.chkManual = New System.Windows.Forms.CheckBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.cmd5d, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmd20c, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.cd10c, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cmd10c, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmd5c, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmd50c, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmd2d, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -122,22 +123,22 @@ Partial Class Payment
         Me.cmd20c.TabIndex = 9
         Me.cmd20c.TabStop = False
         '
-        'cd10c
+        'cmd10c
         '
-        Me.cd10c.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._10c
-        Me.cd10c.InitialImage = Nothing
-        Me.cd10c.Location = New System.Drawing.Point(887, 12)
-        Me.cd10c.Name = "cd10c"
-        Me.cd10c.Size = New System.Drawing.Size(102, 92)
-        Me.cd10c.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.cd10c.TabIndex = 8
-        Me.cd10c.TabStop = False
+        Me.cmd10c.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._10c
+        Me.cmd10c.InitialImage = Nothing
+        Me.cmd10c.Location = New System.Drawing.Point(887, 12)
+        Me.cmd10c.Name = "cmd10c"
+        Me.cmd10c.Size = New System.Drawing.Size(102, 92)
+        Me.cmd10c.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.cmd10c.TabIndex = 8
+        Me.cmd10c.TabStop = False
         '
         'cmd5c
         '
         Me.cmd5c.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._5c
         Me.cmd5c.InitialImage = Nothing
-        Me.cmd5c.Location = New System.Drawing.Point(778, 12)
+        Me.cmd5c.Location = New System.Drawing.Point(777, 12)
         Me.cmd5c.Name = "cmd5c"
         Me.cmd5c.Size = New System.Drawing.Size(103, 92)
         Me.cmd5c.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -216,7 +217,7 @@ Partial Class Payment
         Me.cmd100d.InitialImage = Nothing
         Me.cmd100d.Location = New System.Drawing.Point(779, 610)
         Me.cmd100d.Name = "cmd100d"
-        Me.cmd100d.Size = New System.Drawing.Size(235, 103)
+        Me.cmd100d.Size = New System.Drawing.Size(210, 84)
         Me.cmd100d.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.cmd100d.TabIndex = 22
         Me.cmd100d.TabStop = False
@@ -400,7 +401,7 @@ Partial Class Payment
         Me.btnGoBack.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGoBack.Location = New System.Drawing.Point(13, 12)
         Me.btnGoBack.Name = "btnGoBack"
-        Me.btnGoBack.Size = New System.Drawing.Size(282, 100)
+        Me.btnGoBack.Size = New System.Drawing.Size(366, 92)
         Me.btnGoBack.TabIndex = 40
         Me.btnGoBack.Text = "Go Back to main screen" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(amount payed will be reset)"
         Me.btnGoBack.UseVisualStyleBackColor = False
@@ -410,7 +411,6 @@ Partial Class Payment
         Me.txt5c.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt5c.Location = New System.Drawing.Point(779, 105)
         Me.txt5c.Name = "txt5c"
-        Me.txt5c.ReadOnly = True
         Me.txt5c.Size = New System.Drawing.Size(102, 44)
         Me.txt5c.TabIndex = 41
         '
@@ -419,7 +419,6 @@ Partial Class Payment
         Me.txt10c.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt10c.Location = New System.Drawing.Point(887, 105)
         Me.txt10c.Name = "txt10c"
-        Me.txt10c.ReadOnly = True
         Me.txt10c.Size = New System.Drawing.Size(102, 44)
         Me.txt10c.TabIndex = 42
         '
@@ -428,7 +427,6 @@ Partial Class Payment
         Me.txt20c.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt20c.Location = New System.Drawing.Point(995, 105)
         Me.txt20c.Name = "txt20c"
-        Me.txt20c.ReadOnly = True
         Me.txt20c.Size = New System.Drawing.Size(102, 44)
         Me.txt20c.TabIndex = 43
         '
@@ -437,7 +435,6 @@ Partial Class Payment
         Me.txt50c.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt50c.Location = New System.Drawing.Point(777, 248)
         Me.txt50c.Name = "txt50c"
-        Me.txt50c.ReadOnly = True
         Me.txt50c.Size = New System.Drawing.Size(102, 44)
         Me.txt50c.TabIndex = 44
         '
@@ -446,25 +443,22 @@ Partial Class Payment
         Me.txt1d.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt1d.Location = New System.Drawing.Point(887, 248)
         Me.txt1d.Name = "txt1d"
-        Me.txt1d.ReadOnly = True
         Me.txt1d.Size = New System.Drawing.Size(102, 44)
         Me.txt1d.TabIndex = 45
         '
-        'TextBox1
+        'txt2d
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(1000, 248)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(102, 44)
-        Me.TextBox1.TabIndex = 46
+        Me.txt2d.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt2d.Location = New System.Drawing.Point(1000, 248)
+        Me.txt2d.Name = "txt2d"
+        Me.txt2d.Size = New System.Drawing.Size(102, 44)
+        Me.txt2d.TabIndex = 46
         '
         'txt5d
         '
         Me.txt5d.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt5d.Location = New System.Drawing.Point(774, 402)
         Me.txt5d.Name = "txt5d"
-        Me.txt5d.ReadOnly = True
         Me.txt5d.Size = New System.Drawing.Size(184, 44)
         Me.txt5d.TabIndex = 47
         '
@@ -473,7 +467,6 @@ Partial Class Payment
         Me.txt10d.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt10d.Location = New System.Drawing.Point(967, 403)
         Me.txt10d.Name = "txt10d"
-        Me.txt10d.ReadOnly = True
         Me.txt10d.Size = New System.Drawing.Size(179, 44)
         Me.txt10d.TabIndex = 48
         '
@@ -482,7 +475,6 @@ Partial Class Payment
         Me.txt20d.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt20d.Location = New System.Drawing.Point(779, 560)
         Me.txt20d.Name = "txt20d"
-        Me.txt20d.ReadOnly = True
         Me.txt20d.Size = New System.Drawing.Size(179, 44)
         Me.txt20d.TabIndex = 49
         '
@@ -491,7 +483,6 @@ Partial Class Payment
         Me.txt50d.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt50d.Location = New System.Drawing.Point(967, 562)
         Me.txt50d.Name = "txt50d"
-        Me.txt50d.ReadOnly = True
         Me.txt50d.Size = New System.Drawing.Size(179, 44)
         Me.txt50d.TabIndex = 50
         '
@@ -500,7 +491,6 @@ Partial Class Payment
         Me.txt100d.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt100d.Location = New System.Drawing.Point(1020, 638)
         Me.txt100d.Name = "txt100d"
-        Me.txt100d.ReadOnly = True
         Me.txt100d.Size = New System.Drawing.Size(128, 44)
         Me.txt100d.TabIndex = 51
         '
@@ -523,18 +513,28 @@ Partial Class Payment
         Me.chkManual.Text = "Manually Input Numbers" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(Checked Means YES)"
         Me.chkManual.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(12, 121)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(235, 20)
+        Me.Label1.TabIndex = 53
+        Me.Label1.Text = "Currency to be given as change:"
+        '
         'Payment
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1175, 725)
+        Me.ClientSize = New System.Drawing.Size(1175, 700)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.txt100d)
         Me.Controls.Add(Me.txt50d)
         Me.Controls.Add(Me.txt20d)
         Me.Controls.Add(Me.txt10d)
         Me.Controls.Add(Me.txt5d)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txt2d)
         Me.Controls.Add(Me.txt1d)
         Me.Controls.Add(Me.txt50c)
         Me.Controls.Add(Me.txt20c)
@@ -564,7 +564,7 @@ Partial Class Payment
         Me.Controls.Add(Me.cmd10d)
         Me.Controls.Add(Me.cmd5d)
         Me.Controls.Add(Me.cmd20c)
-        Me.Controls.Add(Me.cd10c)
+        Me.Controls.Add(Me.cmd10c)
         Me.Controls.Add(Me.cmd5c)
         Me.Controls.Add(Me.cmd50c)
         Me.Controls.Add(Me.cmd2d)
@@ -574,7 +574,7 @@ Partial Class Payment
         Me.Text = "Payment Menu"
         CType(Me.cmd5d, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.cmd20c, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.cd10c, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.cmd10c, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.cmd5c, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.cmd50c, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.cmd2d, System.ComponentModel.ISupportInitialize).EndInit()
@@ -605,7 +605,7 @@ Partial Class Payment
     Friend WithEvents cmd2d As PictureBox
     Friend WithEvents cmd50c As PictureBox
     Friend WithEvents cmd20c As PictureBox
-    Friend WithEvents cd10c As PictureBox
+    Friend WithEvents cmd10c As PictureBox
     Friend WithEvents cmd5c As PictureBox
     Friend WithEvents cmd5d As PictureBox
     Friend WithEvents cmd10d As PictureBox
@@ -635,7 +635,7 @@ Partial Class Payment
     Friend WithEvents txt20c As TextBox
     Friend WithEvents txt50c As TextBox
     Friend WithEvents txt1d As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txt2d As TextBox
     Friend WithEvents txt5d As TextBox
     Friend WithEvents txt10d As TextBox
     Friend WithEvents txt20d As TextBox
@@ -643,4 +643,5 @@ Partial Class Payment
     Friend WithEvents txt100d As TextBox
     Friend WithEvents Panel1 As Panel
     Friend WithEvents chkManual As CheckBox
+    Friend WithEvents Label1 As Label
 End Class

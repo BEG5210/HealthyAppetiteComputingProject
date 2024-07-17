@@ -1,5 +1,8 @@
 ﻿Public Class Payment
 
+    Dim Cash(10) As String
+
+#Region "Manual Checks"
     Sub CheckForCheckBoxes()
 
         'Check if Manual input is checked
@@ -15,9 +18,10 @@
 
     End Sub
 
-    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles chkManual.CheckedChanged
+    Private Sub chkManual_CheckedChanged(sender As Object, e As EventArgs) Handles chkManual.CheckedChanged
         CheckForCheckBoxes()
     End Sub
+#End Region
 
     Private Sub Payment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CheckForCheckBoxes()
@@ -39,6 +43,7 @@
     Private Sub CalculateDifference()
         'How to implement a way to check for letters and spit out an error?
 
+        'Declaring Values:
         Dim AmtOwed As Decimal = Val(txtAmountOwed.Text)
         Dim AmtPaid As Decimal = Val(txtAmountPaid.Text)
         Dim Difference As Decimal
@@ -48,8 +53,29 @@
         txtDifference.Text = Difference.ToString("F2")
     End Sub
 
+#Region "Cash Buttons Pressed"
+
+#End Region
+
+
 #Region "------ IMPORTANT INFO -----------------------------------------"
 
+    '********* CASH STRING INDEXES AND WHAT THEY ARE *******
+    'FORMAT: [INDEX] - [CURRENCY THAT IS SAVED TO THAT INDEX]
+    '0 - 5c
+    '1 - 10c
+    '2 - 20c
+    '3 - 50c
+    '4 - 1d
+    '5 - 2d
+    '6 - 5d
+    '7 - 10d
+    '8 - 20d
+    '9 - 50d
+    '10 - 100d
+    '********************************************************
+
+    '******* WHAT EACH TEXTBOX DOES *************************
     'txtAmountOwed:
     'This text box shows the amount owed by the customer based on what they have in their cart
 
@@ -64,6 +90,7 @@
     'cmdCompletePayment:
     'When the customer has payed what they have owed, then this button will
     'complete the payment
+    '*******************************************************
 
 #End Region
 
