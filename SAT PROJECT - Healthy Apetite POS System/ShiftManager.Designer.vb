@@ -49,7 +49,7 @@ Partial Class ShiftManager
         Me.TabControl1.Controls.Add(Me.tabEndShift)
         Me.TabControl1.Font = New System.Drawing.Font("Arial", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabControl1.Location = New System.Drawing.Point(8, 71)
-        Me.TabControl1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabControl1.Margin = New System.Windows.Forms.Padding(2)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.Size = New System.Drawing.Size(678, 323)
@@ -61,9 +61,9 @@ Partial Class ShiftManager
         Me.tabBeginShift.Controls.Add(Me.txtNameEndShift)
         Me.tabBeginShift.Controls.Add(Me.lblNameBeginShift)
         Me.tabBeginShift.Location = New System.Drawing.Point(4, 33)
-        Me.tabBeginShift.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.tabBeginShift.Margin = New System.Windows.Forms.Padding(2)
         Me.tabBeginShift.Name = "tabBeginShift"
-        Me.tabBeginShift.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.tabBeginShift.Padding = New System.Windows.Forms.Padding(2)
         Me.tabBeginShift.Size = New System.Drawing.Size(670, 286)
         Me.tabBeginShift.TabIndex = 2
         Me.tabBeginShift.Text = "Begin Shift"
@@ -72,7 +72,7 @@ Partial Class ShiftManager
         'cmdBeginShift
         '
         Me.cmdBeginShift.Location = New System.Drawing.Point(236, 143)
-        Me.cmdBeginShift.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmdBeginShift.Margin = New System.Windows.Forms.Padding(2)
         Me.cmdBeginShift.Name = "cmdBeginShift"
         Me.cmdBeginShift.Size = New System.Drawing.Size(249, 83)
         Me.cmdBeginShift.TabIndex = 4
@@ -82,7 +82,7 @@ Partial Class ShiftManager
         'txtNameEndShift
         '
         Me.txtNameEndShift.Location = New System.Drawing.Point(141, 72)
-        Me.txtNameEndShift.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtNameEndShift.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNameEndShift.Name = "txtNameEndShift"
         Me.txtNameEndShift.Size = New System.Drawing.Size(427, 32)
         Me.txtNameEndShift.TabIndex = 3
@@ -103,10 +103,10 @@ Partial Class ShiftManager
         Me.tabEndShift.Controls.Add(Me.cmbNameEndShift)
         Me.tabEndShift.Controls.Add(Me.lblNameEndShift)
         Me.tabEndShift.Location = New System.Drawing.Point(4, 33)
-        Me.tabEndShift.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.tabEndShift.Margin = New System.Windows.Forms.Padding(2)
         Me.tabEndShift.Name = "tabEndShift"
-        Me.tabEndShift.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.tabEndShift.Size = New System.Drawing.Size(670, 296)
+        Me.tabEndShift.Padding = New System.Windows.Forms.Padding(2)
+        Me.tabEndShift.Size = New System.Drawing.Size(670, 286)
         Me.tabEndShift.TabIndex = 3
         Me.tabEndShift.Text = "End Shift"
         Me.tabEndShift.UseVisualStyleBackColor = True
@@ -114,7 +114,7 @@ Partial Class ShiftManager
         'cmdEndShift
         '
         Me.cmdEndShift.Location = New System.Drawing.Point(236, 143)
-        Me.cmdEndShift.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmdEndShift.Margin = New System.Windows.Forms.Padding(2)
         Me.cmdEndShift.Name = "cmdEndShift"
         Me.cmdEndShift.Size = New System.Drawing.Size(249, 83)
         Me.cmdEndShift.TabIndex = 5
@@ -125,7 +125,7 @@ Partial Class ShiftManager
         '
         Me.cmbNameEndShift.FormattingEnabled = True
         Me.cmbNameEndShift.Location = New System.Drawing.Point(141, 72)
-        Me.cmbNameEndShift.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmbNameEndShift.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbNameEndShift.Name = "cmbNameEndShift"
         Me.cmbNameEndShift.Size = New System.Drawing.Size(427, 32)
         Me.cmbNameEndShift.TabIndex = 4
@@ -213,9 +213,9 @@ Partial Class ShiftManager
         Me.Controls.Add(Me.lblLiveDate)
         Me.Controls.Add(Me.lblLiveTime)
         Me.Controls.Add(Me.TabControl1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "ShiftManager"
-        Me.Text = "ShiftManager"
+        Me.Text = "Shift Manager"
         Me.TabControl1.ResumeLayout(False)
         Me.tabBeginShift.ResumeLayout(False)
         Me.tabBeginShift.PerformLayout()
