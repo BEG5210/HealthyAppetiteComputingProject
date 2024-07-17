@@ -13,15 +13,15 @@ Option Explicit On
 
 
 Namespace My
-
+    
     'NOTE: This file is auto-generated; do not modify it directly.  To make changes,
     ' or if you encounter build errors in this file, go to the Project Designer
     ' (go to Project Properties or double-click the My Project node in
     ' Solution Explorer), and make changes on the Application tab.
     '
     Partial Friend Class MyApplication
-
-        <Global.System.Diagnostics.DebuggerStepThroughAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Public Sub New()
             MyBase.New(Global.Microsoft.VisualBasic.ApplicationServices.AuthenticationMode.Windows)
             Me.IsSingleInstance = false
@@ -29,16 +29,20 @@ Namespace My
             Me.SaveMySettingsOnExit = true
             Me.ShutDownStyle = Global.Microsoft.VisualBasic.ApplicationServices.ShutdownMode.AfterMainFormCloses
         End Sub
-
-        <Global.System.Diagnostics.DebuggerStepThroughAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
             Me.MainForm = Global.SAT_PROJECT___Healthy_Apetite_POS_System.Main
-            'it should be noted, that i encountered an error, because i changed the name of the main
-            'form from "form1" to "Main", and tus, changed the line of code above from
-            'Me.MainForm = Global.SAT_PROJECT___Healthy_Apetite_POS_System.Form1
-            '    to
-            'Me.MainForm = Global.SAT_PROJECT___Healthy_Apetite_POS_System.Main
-            'This message is here incase any errors come of this.
         End Sub
+        'it should be noted, that i encountered an error, because i changed the name of the main
+        'form from "form1" to "Main", and tus, changed the line of code above from
+        'Me.MainForm = Global.SAT_PROJECT___Healthy_Apetite_POS_System.Form1
+        '    to
+        'Me.MainForm = Global.SAT_PROJECT___Healthy_Apetite_POS_System.Main
+        'This message is here incase any errors come of this.
+
+        'also i got this issue again, wrote up issue #4, and then instantly realised i had the
+        'exact same problem, that i solved with the exact smame issue. lol.
+
     End Class
 End Namespace
