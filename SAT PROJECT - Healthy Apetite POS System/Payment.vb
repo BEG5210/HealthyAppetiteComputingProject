@@ -27,9 +27,9 @@
         CheckForCheckBoxes()
     End Sub
 
-    Private Sub btnGoBack_Click(sender As Object, e As EventArgs) Handles btnGoBack.Click
+    Private Sub btnGoBack_Click(sender As Object, e As EventArgs) Handles btnGoBack.Click 'TODO: change to cmd
         Me.Hide() 'Hides the payment window.
-        'Also make the values be cleared
+        'TODO: make the values be cleared
     End Sub
 
     Private Sub txtAmountOwed_TextChanged(sender As Object, e As EventArgs) Handles txtAmountOwed.TextChanged
