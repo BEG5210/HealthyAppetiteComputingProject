@@ -1,6 +1,6 @@
 ﻿Public Class ShiftManager
 
-    Private Sub cmdExit_Click(sender As Object, e As EventArgs) Handles cmdExit.Click
+    Private Sub cmdExit_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Close()
     End Sub
 
