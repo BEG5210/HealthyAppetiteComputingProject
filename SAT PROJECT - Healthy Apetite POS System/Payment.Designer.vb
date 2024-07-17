@@ -66,6 +66,8 @@ Partial Class Payment
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.chkManual = New System.Windows.Forms.CheckBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.lbl5cCh = New System.Windows.Forms.Label()
+        Me.lbl10cCH = New System.Windows.Forms.Label()
         CType(Me.cmd5d, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmd20c, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmd10c, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -94,9 +96,10 @@ Partial Class Payment
         'cmdCompletePayment
         '
         Me.cmdCompletePayment.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdCompletePayment.Location = New System.Drawing.Point(435, 451)
+        Me.cmdCompletePayment.Location = New System.Drawing.Point(290, 293)
+        Me.cmdCompletePayment.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cmdCompletePayment.Name = "cmdCompletePayment"
-        Me.cmdCompletePayment.Size = New System.Drawing.Size(283, 100)
+        Me.cmdCompletePayment.Size = New System.Drawing.Size(189, 65)
         Me.cmdCompletePayment.TabIndex = 3
         Me.cmdCompletePayment.Text = "Give Change" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "and" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Complete Payemt"
         Me.cmdCompletePayment.UseVisualStyleBackColor = True
@@ -105,9 +108,10 @@ Partial Class Payment
         '
         Me.cmd5d.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._5d
         Me.cmd5d.InitialImage = Nothing
-        Me.cmd5d.Location = New System.Drawing.Point(774, 298)
+        Me.cmd5d.Location = New System.Drawing.Point(516, 194)
+        Me.cmd5d.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cmd5d.Name = "cmd5d"
-        Me.cmd5d.Size = New System.Drawing.Size(184, 103)
+        Me.cmd5d.Size = New System.Drawing.Size(123, 67)
         Me.cmd5d.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.cmd5d.TabIndex = 16
         Me.cmd5d.TabStop = False
@@ -116,9 +120,10 @@ Partial Class Payment
         '
         Me.cmd20c.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._20c
         Me.cmd20c.InitialImage = Nothing
-        Me.cmd20c.Location = New System.Drawing.Point(995, 12)
+        Me.cmd20c.Location = New System.Drawing.Point(663, 8)
+        Me.cmd20c.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cmd20c.Name = "cmd20c"
-        Me.cmd20c.Size = New System.Drawing.Size(104, 92)
+        Me.cmd20c.Size = New System.Drawing.Size(69, 60)
         Me.cmd20c.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.cmd20c.TabIndex = 9
         Me.cmd20c.TabStop = False
@@ -127,9 +132,10 @@ Partial Class Payment
         '
         Me.cmd10c.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._10c
         Me.cmd10c.InitialImage = Nothing
-        Me.cmd10c.Location = New System.Drawing.Point(887, 12)
+        Me.cmd10c.Location = New System.Drawing.Point(591, 8)
+        Me.cmd10c.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cmd10c.Name = "cmd10c"
-        Me.cmd10c.Size = New System.Drawing.Size(102, 92)
+        Me.cmd10c.Size = New System.Drawing.Size(68, 60)
         Me.cmd10c.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.cmd10c.TabIndex = 8
         Me.cmd10c.TabStop = False
@@ -138,9 +144,10 @@ Partial Class Payment
         '
         Me.cmd5c.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._5c
         Me.cmd5c.InitialImage = Nothing
-        Me.cmd5c.Location = New System.Drawing.Point(777, 12)
+        Me.cmd5c.Location = New System.Drawing.Point(518, 8)
+        Me.cmd5c.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cmd5c.Name = "cmd5c"
-        Me.cmd5c.Size = New System.Drawing.Size(103, 92)
+        Me.cmd5c.Size = New System.Drawing.Size(69, 60)
         Me.cmd5c.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.cmd5c.TabIndex = 7
         Me.cmd5c.TabStop = False
@@ -149,9 +156,10 @@ Partial Class Payment
         '
         Me.cmd50c.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._50c
         Me.cmd50c.InitialImage = Nothing
-        Me.cmd50c.Location = New System.Drawing.Point(777, 155)
+        Me.cmd50c.Location = New System.Drawing.Point(518, 101)
+        Me.cmd50c.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cmd50c.Name = "cmd50c"
-        Me.cmd50c.Size = New System.Drawing.Size(104, 92)
+        Me.cmd50c.Size = New System.Drawing.Size(69, 60)
         Me.cmd50c.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.cmd50c.TabIndex = 6
         Me.cmd50c.TabStop = False
@@ -160,9 +168,10 @@ Partial Class Payment
         '
         Me.cmd2d.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._2d
         Me.cmd2d.InitialImage = Nothing
-        Me.cmd2d.Location = New System.Drawing.Point(1000, 155)
+        Me.cmd2d.Location = New System.Drawing.Point(667, 101)
+        Me.cmd2d.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cmd2d.Name = "cmd2d"
-        Me.cmd2d.Size = New System.Drawing.Size(99, 92)
+        Me.cmd2d.Size = New System.Drawing.Size(66, 60)
         Me.cmd2d.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.cmd2d.TabIndex = 5
         Me.cmd2d.TabStop = False
@@ -171,9 +180,10 @@ Partial Class Payment
         '
         Me.cmd1d.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._1d
         Me.cmd1d.InitialImage = Nothing
-        Me.cmd1d.Location = New System.Drawing.Point(887, 155)
+        Me.cmd1d.Location = New System.Drawing.Point(591, 101)
+        Me.cmd1d.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cmd1d.Name = "cmd1d"
-        Me.cmd1d.Size = New System.Drawing.Size(107, 92)
+        Me.cmd1d.Size = New System.Drawing.Size(71, 60)
         Me.cmd1d.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.cmd1d.TabIndex = 4
         Me.cmd1d.TabStop = False
@@ -182,9 +192,10 @@ Partial Class Payment
         '
         Me.cmd10d.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._10d
         Me.cmd10d.InitialImage = Nothing
-        Me.cmd10d.Location = New System.Drawing.Point(967, 299)
+        Me.cmd10d.Location = New System.Drawing.Point(645, 194)
+        Me.cmd10d.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cmd10d.Name = "cmd10d"
-        Me.cmd10d.Size = New System.Drawing.Size(179, 103)
+        Me.cmd10d.Size = New System.Drawing.Size(119, 67)
         Me.cmd10d.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.cmd10d.TabIndex = 17
         Me.cmd10d.TabStop = False
@@ -193,9 +204,10 @@ Partial Class Payment
         '
         Me.cmd20d.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._20d
         Me.cmd20d.InitialImage = Nothing
-        Me.cmd20d.Location = New System.Drawing.Point(779, 451)
+        Me.cmd20d.Location = New System.Drawing.Point(519, 293)
+        Me.cmd20d.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cmd20d.Name = "cmd20d"
-        Me.cmd20d.Size = New System.Drawing.Size(179, 103)
+        Me.cmd20d.Size = New System.Drawing.Size(119, 67)
         Me.cmd20d.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.cmd20d.TabIndex = 18
         Me.cmd20d.TabStop = False
@@ -204,9 +216,10 @@ Partial Class Payment
         '
         Me.cmd50d.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._50d
         Me.cmd50d.InitialImage = Nothing
-        Me.cmd50d.Location = New System.Drawing.Point(967, 453)
+        Me.cmd50d.Location = New System.Drawing.Point(645, 294)
+        Me.cmd50d.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cmd50d.Name = "cmd50d"
-        Me.cmd50d.Size = New System.Drawing.Size(179, 103)
+        Me.cmd50d.Size = New System.Drawing.Size(119, 67)
         Me.cmd50d.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.cmd50d.TabIndex = 21
         Me.cmd50d.TabStop = False
@@ -215,9 +228,10 @@ Partial Class Payment
         '
         Me.cmd100d.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._100d
         Me.cmd100d.InitialImage = Nothing
-        Me.cmd100d.Location = New System.Drawing.Point(779, 610)
+        Me.cmd100d.Location = New System.Drawing.Point(519, 396)
+        Me.cmd100d.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cmd100d.Name = "cmd100d"
-        Me.cmd100d.Size = New System.Drawing.Size(210, 84)
+        Me.cmd100d.Size = New System.Drawing.Size(140, 55)
         Me.cmd100d.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.cmd100d.TabIndex = 22
         Me.cmd100d.TabStop = False
@@ -226,9 +240,10 @@ Partial Class Payment
         '
         Me.PictureBox6.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._100d
         Me.PictureBox6.InitialImage = Nothing
-        Me.PictureBox6.Location = New System.Drawing.Point(12, 560)
+        Me.PictureBox6.Location = New System.Drawing.Point(8, 364)
+        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(179, 103)
+        Me.PictureBox6.Size = New System.Drawing.Size(119, 67)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox6.TabIndex = 33
         Me.PictureBox6.TabStop = False
@@ -237,9 +252,10 @@ Partial Class Payment
         '
         Me.PictureBox7.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._50d
         Me.PictureBox7.InitialImage = Nothing
-        Me.PictureBox7.Location = New System.Drawing.Point(200, 453)
+        Me.PictureBox7.Location = New System.Drawing.Point(133, 294)
+        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(179, 103)
+        Me.PictureBox7.Size = New System.Drawing.Size(119, 67)
         Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox7.TabIndex = 32
         Me.PictureBox7.TabStop = False
@@ -248,9 +264,10 @@ Partial Class Payment
         '
         Me.PictureBox8.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._20d
         Me.PictureBox8.InitialImage = Nothing
-        Me.PictureBox8.Location = New System.Drawing.Point(12, 451)
+        Me.PictureBox8.Location = New System.Drawing.Point(8, 293)
+        Me.PictureBox8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(179, 103)
+        Me.PictureBox8.Size = New System.Drawing.Size(119, 67)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox8.TabIndex = 31
         Me.PictureBox8.TabStop = False
@@ -259,9 +276,10 @@ Partial Class Payment
         '
         Me.PictureBox9.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._10d
         Me.PictureBox9.InitialImage = Nothing
-        Me.PictureBox9.Location = New System.Drawing.Point(206, 343)
+        Me.PictureBox9.Location = New System.Drawing.Point(137, 223)
+        Me.PictureBox9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(179, 103)
+        Me.PictureBox9.Size = New System.Drawing.Size(119, 67)
         Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox9.TabIndex = 30
         Me.PictureBox9.TabStop = False
@@ -270,9 +288,10 @@ Partial Class Payment
         '
         Me.PictureBox10.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._5d
         Me.PictureBox10.InitialImage = Nothing
-        Me.PictureBox10.Location = New System.Drawing.Point(13, 342)
+        Me.PictureBox10.Location = New System.Drawing.Point(9, 222)
+        Me.PictureBox10.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(184, 103)
+        Me.PictureBox10.Size = New System.Drawing.Size(123, 67)
         Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox10.TabIndex = 29
         Me.PictureBox10.TabStop = False
@@ -281,9 +300,10 @@ Partial Class Payment
         '
         Me.PictureBox11.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._20c
         Me.PictureBox11.InitialImage = Nothing
-        Me.PictureBox11.Location = New System.Drawing.Point(229, 146)
+        Me.PictureBox11.Location = New System.Drawing.Point(153, 95)
+        Me.PictureBox11.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(104, 92)
+        Me.PictureBox11.Size = New System.Drawing.Size(69, 60)
         Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox11.TabIndex = 28
         Me.PictureBox11.TabStop = False
@@ -292,9 +312,10 @@ Partial Class Payment
         '
         Me.PictureBox12.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._10c
         Me.PictureBox12.InitialImage = Nothing
-        Me.PictureBox12.Location = New System.Drawing.Point(121, 146)
+        Me.PictureBox12.Location = New System.Drawing.Point(81, 95)
+        Me.PictureBox12.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(102, 92)
+        Me.PictureBox12.Size = New System.Drawing.Size(68, 60)
         Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox12.TabIndex = 27
         Me.PictureBox12.TabStop = False
@@ -303,9 +324,10 @@ Partial Class Payment
         '
         Me.PictureBox13.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._5c
         Me.PictureBox13.InitialImage = Nothing
-        Me.PictureBox13.Location = New System.Drawing.Point(12, 146)
+        Me.PictureBox13.Location = New System.Drawing.Point(8, 95)
+        Me.PictureBox13.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox13.Name = "PictureBox13"
-        Me.PictureBox13.Size = New System.Drawing.Size(103, 92)
+        Me.PictureBox13.Size = New System.Drawing.Size(69, 60)
         Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox13.TabIndex = 26
         Me.PictureBox13.TabStop = False
@@ -314,9 +336,10 @@ Partial Class Payment
         '
         Me.PictureBox14.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._50c
         Me.PictureBox14.InitialImage = Nothing
-        Me.PictureBox14.Location = New System.Drawing.Point(13, 244)
+        Me.PictureBox14.Location = New System.Drawing.Point(9, 159)
+        Me.PictureBox14.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox14.Name = "PictureBox14"
-        Me.PictureBox14.Size = New System.Drawing.Size(104, 92)
+        Me.PictureBox14.Size = New System.Drawing.Size(69, 60)
         Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox14.TabIndex = 25
         Me.PictureBox14.TabStop = False
@@ -325,9 +348,10 @@ Partial Class Payment
         '
         Me.PictureBox15.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._2d
         Me.PictureBox15.InitialImage = Nothing
-        Me.PictureBox15.Location = New System.Drawing.Point(236, 244)
+        Me.PictureBox15.Location = New System.Drawing.Point(157, 159)
+        Me.PictureBox15.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox15.Name = "PictureBox15"
-        Me.PictureBox15.Size = New System.Drawing.Size(99, 92)
+        Me.PictureBox15.Size = New System.Drawing.Size(66, 60)
         Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox15.TabIndex = 24
         Me.PictureBox15.TabStop = False
@@ -336,9 +360,10 @@ Partial Class Payment
         '
         Me.PictureBox16.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._1d
         Me.PictureBox16.InitialImage = Nothing
-        Me.PictureBox16.Location = New System.Drawing.Point(123, 244)
+        Me.PictureBox16.Location = New System.Drawing.Point(82, 159)
+        Me.PictureBox16.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox16.Name = "PictureBox16"
-        Me.PictureBox16.Size = New System.Drawing.Size(107, 92)
+        Me.PictureBox16.Size = New System.Drawing.Size(71, 60)
         Me.PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox16.TabIndex = 23
         Me.PictureBox16.TabStop = False
@@ -346,52 +371,58 @@ Partial Class Payment
         'txtAmountOwed
         '
         Me.txtAmountOwed.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAmountOwed.Location = New System.Drawing.Point(435, 110)
+        Me.txtAmountOwed.Location = New System.Drawing.Point(290, 72)
+        Me.txtAmountOwed.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtAmountOwed.Name = "txtAmountOwed"
-        Me.txtAmountOwed.Size = New System.Drawing.Size(309, 44)
+        Me.txtAmountOwed.Size = New System.Drawing.Size(207, 32)
         Me.txtAmountOwed.TabIndex = 34
         '
         'txtAmountPaid
         '
         Me.txtAmountPaid.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAmountPaid.Location = New System.Drawing.Point(435, 226)
+        Me.txtAmountPaid.Location = New System.Drawing.Point(290, 147)
+        Me.txtAmountPaid.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtAmountPaid.Name = "txtAmountPaid"
-        Me.txtAmountPaid.Size = New System.Drawing.Size(309, 44)
+        Me.txtAmountPaid.Size = New System.Drawing.Size(207, 32)
         Me.txtAmountPaid.TabIndex = 35
         '
         'txtDifference
         '
         Me.txtDifference.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDifference.Location = New System.Drawing.Point(435, 341)
+        Me.txtDifference.Location = New System.Drawing.Point(290, 222)
+        Me.txtDifference.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtDifference.Name = "txtDifference"
         Me.txtDifference.ReadOnly = True
-        Me.txtDifference.Size = New System.Drawing.Size(309, 44)
+        Me.txtDifference.Size = New System.Drawing.Size(207, 32)
         Me.txtDifference.TabIndex = 36
         '
         'lblAmountOwed
         '
         Me.lblAmountOwed.AutoSize = True
-        Me.lblAmountOwed.Location = New System.Drawing.Point(431, 87)
+        Me.lblAmountOwed.Location = New System.Drawing.Point(287, 57)
+        Me.lblAmountOwed.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblAmountOwed.Name = "lblAmountOwed"
-        Me.lblAmountOwed.Size = New System.Drawing.Size(234, 20)
+        Me.lblAmountOwed.Size = New System.Drawing.Size(153, 13)
         Me.lblAmountOwed.TabIndex = 37
         Me.lblAmountOwed.Text = "Amount Owed (From Customer)"
         '
         'lblAmountPaid
         '
         Me.lblAmountPaid.AutoSize = True
-        Me.lblAmountPaid.Location = New System.Drawing.Point(431, 203)
+        Me.lblAmountPaid.Location = New System.Drawing.Point(287, 132)
+        Me.lblAmountPaid.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblAmountPaid.Name = "lblAmountPaid"
-        Me.lblAmountPaid.Size = New System.Drawing.Size(205, 20)
+        Me.lblAmountPaid.Size = New System.Drawing.Size(135, 13)
         Me.lblAmountPaid.TabIndex = 38
         Me.lblAmountPaid.Text = "Amount Paid (By Customer)"
         '
         'lblDifference
         '
         Me.lblDifference.AutoSize = True
-        Me.lblDifference.Location = New System.Drawing.Point(431, 318)
+        Me.lblDifference.Location = New System.Drawing.Point(287, 207)
+        Me.lblDifference.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblDifference.Name = "lblDifference"
-        Me.lblDifference.Size = New System.Drawing.Size(83, 20)
+        Me.lblDifference.Size = New System.Drawing.Size(56, 13)
         Me.lblDifference.TabIndex = 39
         Me.lblDifference.Text = "Difference"
         '
@@ -399,9 +430,10 @@ Partial Class Payment
         '
         Me.btnGoBack.BackColor = System.Drawing.Color.IndianRed
         Me.btnGoBack.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnGoBack.Location = New System.Drawing.Point(13, 12)
+        Me.btnGoBack.Location = New System.Drawing.Point(9, 8)
+        Me.btnGoBack.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnGoBack.Name = "btnGoBack"
-        Me.btnGoBack.Size = New System.Drawing.Size(366, 92)
+        Me.btnGoBack.Size = New System.Drawing.Size(244, 60)
         Me.btnGoBack.TabIndex = 40
         Me.btnGoBack.Text = "Go Back to main screen" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(amount payed will be reset)"
         Me.btnGoBack.UseVisualStyleBackColor = False
@@ -409,106 +441,119 @@ Partial Class Payment
         'txt5c
         '
         Me.txt5c.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt5c.Location = New System.Drawing.Point(779, 105)
+        Me.txt5c.Location = New System.Drawing.Point(519, 68)
+        Me.txt5c.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txt5c.Name = "txt5c"
-        Me.txt5c.Size = New System.Drawing.Size(102, 44)
+        Me.txt5c.Size = New System.Drawing.Size(69, 32)
         Me.txt5c.TabIndex = 41
         '
         'txt10c
         '
         Me.txt10c.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt10c.Location = New System.Drawing.Point(887, 105)
+        Me.txt10c.Location = New System.Drawing.Point(591, 68)
+        Me.txt10c.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txt10c.Name = "txt10c"
-        Me.txt10c.Size = New System.Drawing.Size(102, 44)
+        Me.txt10c.Size = New System.Drawing.Size(69, 32)
         Me.txt10c.TabIndex = 42
         '
         'txt20c
         '
         Me.txt20c.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt20c.Location = New System.Drawing.Point(995, 105)
+        Me.txt20c.Location = New System.Drawing.Point(663, 68)
+        Me.txt20c.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txt20c.Name = "txt20c"
-        Me.txt20c.Size = New System.Drawing.Size(102, 44)
+        Me.txt20c.Size = New System.Drawing.Size(69, 32)
         Me.txt20c.TabIndex = 43
         '
         'txt50c
         '
         Me.txt50c.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt50c.Location = New System.Drawing.Point(777, 248)
+        Me.txt50c.Location = New System.Drawing.Point(518, 161)
+        Me.txt50c.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txt50c.Name = "txt50c"
-        Me.txt50c.Size = New System.Drawing.Size(102, 44)
+        Me.txt50c.Size = New System.Drawing.Size(69, 32)
         Me.txt50c.TabIndex = 44
         '
         'txt1d
         '
         Me.txt1d.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt1d.Location = New System.Drawing.Point(887, 248)
+        Me.txt1d.Location = New System.Drawing.Point(591, 161)
+        Me.txt1d.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txt1d.Name = "txt1d"
-        Me.txt1d.Size = New System.Drawing.Size(102, 44)
+        Me.txt1d.Size = New System.Drawing.Size(69, 32)
         Me.txt1d.TabIndex = 45
         '
         'txt2d
         '
         Me.txt2d.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt2d.Location = New System.Drawing.Point(1000, 248)
+        Me.txt2d.Location = New System.Drawing.Point(667, 161)
+        Me.txt2d.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txt2d.Name = "txt2d"
-        Me.txt2d.Size = New System.Drawing.Size(102, 44)
+        Me.txt2d.Size = New System.Drawing.Size(69, 32)
         Me.txt2d.TabIndex = 46
         '
         'txt5d
         '
         Me.txt5d.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt5d.Location = New System.Drawing.Point(774, 402)
+        Me.txt5d.Location = New System.Drawing.Point(516, 261)
+        Me.txt5d.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txt5d.Name = "txt5d"
-        Me.txt5d.Size = New System.Drawing.Size(184, 44)
+        Me.txt5d.Size = New System.Drawing.Size(124, 32)
         Me.txt5d.TabIndex = 47
         '
         'txt10d
         '
         Me.txt10d.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt10d.Location = New System.Drawing.Point(967, 403)
+        Me.txt10d.Location = New System.Drawing.Point(645, 262)
+        Me.txt10d.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txt10d.Name = "txt10d"
-        Me.txt10d.Size = New System.Drawing.Size(179, 44)
+        Me.txt10d.Size = New System.Drawing.Size(121, 32)
         Me.txt10d.TabIndex = 48
         '
         'txt20d
         '
         Me.txt20d.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt20d.Location = New System.Drawing.Point(779, 560)
+        Me.txt20d.Location = New System.Drawing.Point(519, 364)
+        Me.txt20d.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txt20d.Name = "txt20d"
-        Me.txt20d.Size = New System.Drawing.Size(179, 44)
+        Me.txt20d.Size = New System.Drawing.Size(121, 32)
         Me.txt20d.TabIndex = 49
         '
         'txt50d
         '
         Me.txt50d.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt50d.Location = New System.Drawing.Point(967, 562)
+        Me.txt50d.Location = New System.Drawing.Point(645, 365)
+        Me.txt50d.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txt50d.Name = "txt50d"
-        Me.txt50d.Size = New System.Drawing.Size(179, 44)
+        Me.txt50d.Size = New System.Drawing.Size(121, 32)
         Me.txt50d.TabIndex = 50
         '
         'txt100d
         '
         Me.txt100d.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt100d.Location = New System.Drawing.Point(1020, 638)
+        Me.txt100d.Location = New System.Drawing.Point(680, 415)
+        Me.txt100d.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txt100d.Name = "txt100d"
-        Me.txt100d.Size = New System.Drawing.Size(128, 44)
+        Me.txt100d.Size = New System.Drawing.Size(87, 32)
         Me.txt100d.TabIndex = 51
         '
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.chkManual)
-        Me.Panel1.Location = New System.Drawing.Point(436, 7)
+        Me.Panel1.Location = New System.Drawing.Point(291, 5)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(320, 77)
+        Me.Panel1.Size = New System.Drawing.Size(213, 50)
         Me.Panel1.TabIndex = 52
         '
         'chkManual
         '
         Me.chkManual.AutoSize = True
         Me.chkManual.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chkManual.Location = New System.Drawing.Point(23, 16)
+        Me.chkManual.Location = New System.Drawing.Point(15, 10)
+        Me.chkManual.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.chkManual.Name = "chkManual"
-        Me.chkManual.Size = New System.Drawing.Size(228, 48)
+        Me.chkManual.Size = New System.Drawing.Size(160, 34)
         Me.chkManual.TabIndex = 0
         Me.chkManual.Text = "Manually Input Numbers" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(Checked Means YES)"
         Me.chkManual.UseVisualStyleBackColor = True
@@ -516,17 +561,44 @@ Partial Class Payment
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 121)
+        Me.Label1.Location = New System.Drawing.Point(8, 79)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(235, 20)
+        Me.Label1.Size = New System.Drawing.Size(161, 13)
         Me.Label1.TabIndex = 53
         Me.Label1.Text = "Currency to be given as change:"
         '
+        'lbl5cCh
+        '
+        Me.lbl5cCh.AutoSize = True
+        Me.lbl5cCh.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lbl5cCh.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl5cCh.Location = New System.Drawing.Point(22, 118)
+        Me.lbl5cCh.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl5cCh.Name = "lbl5cCh"
+        Me.lbl5cCh.Size = New System.Drawing.Size(42, 27)
+        Me.lbl5cCh.TabIndex = 54
+        Me.lbl5cCh.Text = "XX"
+        '
+        'lbl10cCH
+        '
+        Me.lbl10cCH.AutoSize = True
+        Me.lbl10cCH.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lbl10cCH.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl10cCH.Location = New System.Drawing.Point(90, 118)
+        Me.lbl10cCH.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl10cCH.Name = "lbl10cCH"
+        Me.lbl10cCH.Size = New System.Drawing.Size(42, 27)
+        Me.lbl10cCH.TabIndex = 55
+        Me.lbl10cCH.Text = "XX"
+        '
         'Payment
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1175, 700)
+        Me.ClientSize = New System.Drawing.Size(783, 455)
+        Me.Controls.Add(Me.lbl10cCH)
+        Me.Controls.Add(Me.lbl5cCh)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.txt100d)
@@ -570,6 +642,7 @@ Partial Class Payment
         Me.Controls.Add(Me.cmd2d)
         Me.Controls.Add(Me.cmd1d)
         Me.Controls.Add(Me.cmdCompletePayment)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Payment"
         Me.Text = "Payment Menu"
         CType(Me.cmd5d, System.ComponentModel.ISupportInitialize).EndInit()
@@ -644,4 +717,6 @@ Partial Class Payment
     Friend WithEvents Panel1 As Panel
     Friend WithEvents chkManual As CheckBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents lbl5cCh As Label
+    Friend WithEvents lbl10cCH As Label
 End Class
