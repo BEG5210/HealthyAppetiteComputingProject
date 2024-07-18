@@ -750,6 +750,7 @@ Partial Class Payment
         Me.lblTitleCashPayment.Size = New System.Drawing.Size(204, 62)
         Me.lblTitleCashPayment.TabIndex = 67
         Me.lblTitleCashPayment.Text = "Cash Payment" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Window"
+        Me.lblTitleCashPayment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'plnExit
         '
