@@ -109,7 +109,7 @@ Partial Class Payment
         Me.cmdCompletePayment.Location = New System.Drawing.Point(290, 293)
         Me.cmdCompletePayment.Margin = New System.Windows.Forms.Padding(2)
         Me.cmdCompletePayment.Name = "cmdCompletePayment"
-        Me.cmdCompletePayment.Size = New System.Drawing.Size(189, 65)
+        Me.cmdCompletePayment.Size = New System.Drawing.Size(189, 68)
         Me.cmdCompletePayment.TabIndex = 3
         Me.cmdCompletePayment.Text = "Give Change" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "and" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Complete Payemt"
         Me.cmdCompletePayment.UseVisualStyleBackColor = True
