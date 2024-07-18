@@ -2,6 +2,8 @@
 
     Dim Cash(10) As String
 
+
+
 #Region "Manual Checks"
     Sub CheckForCheckBoxes()
 
@@ -34,10 +36,12 @@
 
     Private Sub txtAmountOwed_TextChanged(sender As Object, e As EventArgs) Handles txtAmountOwed.TextChanged
         CalculateDifference()
+        CompletePaymentVisCheck()
     End Sub
 
     Private Sub txtAmountPaid_TextChanged(sender As Object, e As EventArgs) Handles txtAmountPaid.TextChanged
         CalculateDifference()
+        CompletePaymentVisCheck()
     End Sub
 
     Private Sub CalculateDifference()
@@ -49,6 +53,19 @@
         Dim Difference As Decimal
 
         Difference = AmtOwed - AmtPaid
+
+        'Check weather cmdCompletePayment should be visible
+        'essentially, let the transaction complete if the transaction is in
+        'the favor of both parties or the company
+
+        'TODO: Make it Work
+        Dim i As Integer = Val(Difference)
+
+        If i = 0 Or i >= 0 Then
+            cmdCompletePayment.Visible = True
+        ElseIf i <= 0 Then
+            cmdCompletePayment.Visible = False
+        End If
 
         txtDifference.Text = Difference.ToString("F2")
     End Sub

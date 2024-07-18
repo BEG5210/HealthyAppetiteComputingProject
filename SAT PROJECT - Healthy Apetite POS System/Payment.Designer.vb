@@ -83,6 +83,7 @@ Partial Class Payment
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.pnlMain = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.cmdCompletePmt = New System.Windows.Forms.Button()
         CType(Me.cmd5d, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmd20c, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmd10c, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -115,11 +116,7 @@ Partial Class Payment
         'cmdCompletePayment
         '
         Me.cmdCompletePayment.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-<<<<<<< HEAD
         Me.cmdCompletePayment.Location = New System.Drawing.Point(299, 347)
-=======
-        Me.cmdCompletePayment.Location = New System.Drawing.Point(13, 357)
->>>>>>> Layout
         Me.cmdCompletePayment.Margin = New System.Windows.Forms.Padding(2)
         Me.cmdCompletePayment.Name = "cmdCompletePayment"
         Me.cmdCompletePayment.Size = New System.Drawing.Size(189, 68)
@@ -799,6 +796,7 @@ Partial Class Payment
         '
         'pnlMain
         '
+        Me.pnlMain.Controls.Add(Me.cmdCompletePmt)
         Me.pnlMain.Controls.Add(Me.lblTitleCashPayment)
         Me.pnlMain.Controls.Add(Me.Panel1)
         Me.pnlMain.Controls.Add(Me.lblDifference)
@@ -842,6 +840,18 @@ Partial Class Payment
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(263, 445)
         Me.Panel3.TabIndex = 71
+        '
+        'cmdCompletePmt
+        '
+        Me.cmdCompletePmt.BackColor = System.Drawing.Color.Transparent
+        Me.cmdCompletePmt.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdCompletePmt.Location = New System.Drawing.Point(13, 347)
+        Me.cmdCompletePmt.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmdCompletePmt.Name = "cmdCompletePmt"
+        Me.cmdCompletePmt.Size = New System.Drawing.Size(207, 81)
+        Me.cmdCompletePmt.TabIndex = 58
+        Me.cmdCompletePmt.Text = "Give change" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "and" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Complete Payment"
+        Me.cmdCompletePmt.UseVisualStyleBackColor = False
         '
         'Payment
         '
@@ -951,4 +961,5 @@ Partial Class Payment
     Friend WithEvents Panel2 As Panel
     Friend WithEvents pnlMain As Panel
     Friend WithEvents Panel3 As Panel
+    Friend WithEvents cmdCompletePmt As Button
 End Class
