@@ -1,8 +1,16 @@
 ﻿Public Class Payment
 
-    Dim Cash(10) As String
+    Dim CashNum As Integer() = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0} '11 values
+    'denominations:         {5,10,20,50, 1, 2, 5,10,20,50,100}
+    '                       [   CENTS   ][      DOLLARS      ]
+    'CashNum - Number of each denomination of currency pressed
 
-#Region "Manual Checks"
+    Dim CashChange As Integer() = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0} '11 values
+    'denominations:               {5,10,20,50, 1, 2, 5,10,20,50,100}
+    '                             [   CENTS   ][      DOLLARS      ]
+    'CashChange - Number of each denomination of currency to be given as change
+
+#Region "Manual input Checkbox Check Code"
     Sub CheckForCheckBoxes()
 
         'Check if Manual input is checked
@@ -68,7 +76,7 @@
         txtDifference.Text = Difference.ToString("F2")
     End Sub
 
-#Region "Cash Buttons Pressed"
+#Region "Code for when Cash Buttons Pressed"
 
 #End Region
 
