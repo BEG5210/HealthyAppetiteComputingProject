@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Payment
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,9 +20,8 @@ Partial Class Payment
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.cmdCompletePayment = New System.Windows.Forms.Button()
         Me.cmd5d = New System.Windows.Forms.PictureBox()
         Me.cmd20c = New System.Windows.Forms.PictureBox()
         Me.cmd10c = New System.Windows.Forms.PictureBox()
@@ -45,12 +44,6 @@ Partial Class Payment
         Me.PictureBox14 = New System.Windows.Forms.PictureBox()
         Me.PictureBox15 = New System.Windows.Forms.PictureBox()
         Me.PictureBox16 = New System.Windows.Forms.PictureBox()
-        Me.txtAmountOwed = New System.Windows.Forms.TextBox()
-        Me.txtAmountPaid = New System.Windows.Forms.TextBox()
-        Me.txtDifference = New System.Windows.Forms.TextBox()
-        Me.lblAmountOwed = New System.Windows.Forms.Label()
-        Me.lblAmountPaid = New System.Windows.Forms.Label()
-        Me.lblDifference = New System.Windows.Forms.Label()
         Me.txt5c = New System.Windows.Forms.TextBox()
         Me.txt10c = New System.Windows.Forms.TextBox()
         Me.txt20c = New System.Windows.Forms.TextBox()
@@ -62,8 +55,6 @@ Partial Class Payment
         Me.txt20d = New System.Windows.Forms.TextBox()
         Me.txt50d = New System.Windows.Forms.TextBox()
         Me.txt100d = New System.Windows.Forms.TextBox()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.chkManual = New System.Windows.Forms.CheckBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lbl5cCh = New System.Windows.Forms.Label()
         Me.lbl10cCH = New System.Windows.Forms.Label()
@@ -78,12 +69,21 @@ Partial Class Payment
         Me.lbl20dCh = New System.Windows.Forms.Label()
         Me.lbl50dCh = New System.Windows.Forms.Label()
         Me.lbl100dCh = New System.Windows.Forms.Label()
-        Me.lblTitleCashPayment = New System.Windows.Forms.Label()
         Me.plnExit = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.pnlMain = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.cmdCompletePayment = New System.Windows.Forms.Button()
+        Me.pnlMain = New System.Windows.Forms.Panel()
         Me.cmdCompletePmt = New System.Windows.Forms.Button()
+        Me.lblTitleCashPayment = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.chkManual = New System.Windows.Forms.CheckBox()
+        Me.lblDifference = New System.Windows.Forms.Label()
+        Me.lblAmountPaid = New System.Windows.Forms.Label()
+        Me.lblAmountOwed = New System.Windows.Forms.Label()
+        Me.txtDifference = New System.Windows.Forms.TextBox()
+        Me.txtAmountPaid = New System.Windows.Forms.TextBox()
+        Me.txtAmountOwed = New System.Windows.Forms.TextBox()
         CType(Me.cmd5d, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmd20c, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmd10c, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -106,23 +106,12 @@ Partial Class Payment
         CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
         Me.plnExit.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        Me.pnlMain.SuspendLayout()
         Me.Panel3.SuspendLayout()
+        Me.pnlMain.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'cmdCompletePayment
-        '
-        Me.cmdCompletePayment.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdCompletePayment.Location = New System.Drawing.Point(299, 347)
-        Me.cmdCompletePayment.Margin = New System.Windows.Forms.Padding(2)
-        Me.cmdCompletePayment.Name = "cmdCompletePayment"
-        Me.cmdCompletePayment.Size = New System.Drawing.Size(189, 68)
-        Me.cmdCompletePayment.TabIndex = 3
-        Me.cmdCompletePayment.Text = "Give Change" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "and" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Complete Payemt"
-        Me.cmdCompletePayment.UseVisualStyleBackColor = True
         '
         'cmd5d
         '
@@ -388,64 +377,6 @@ Partial Class Payment
         Me.PictureBox16.TabIndex = 23
         Me.PictureBox16.TabStop = False
         '
-        'txtAmountOwed
-        '
-        Me.txtAmountOwed.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAmountOwed.Location = New System.Drawing.Point(13, 136)
-        Me.txtAmountOwed.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtAmountOwed.Name = "txtAmountOwed"
-        Me.txtAmountOwed.Size = New System.Drawing.Size(207, 32)
-        Me.txtAmountOwed.TabIndex = 34
-        '
-        'txtAmountPaid
-        '
-        Me.txtAmountPaid.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAmountPaid.Location = New System.Drawing.Point(13, 211)
-        Me.txtAmountPaid.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtAmountPaid.Name = "txtAmountPaid"
-        Me.txtAmountPaid.Size = New System.Drawing.Size(207, 32)
-        Me.txtAmountPaid.TabIndex = 35
-        '
-        'txtDifference
-        '
-        Me.txtDifference.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDifference.Location = New System.Drawing.Point(13, 286)
-        Me.txtDifference.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtDifference.Name = "txtDifference"
-        Me.txtDifference.ReadOnly = True
-        Me.txtDifference.Size = New System.Drawing.Size(207, 32)
-        Me.txtDifference.TabIndex = 36
-        '
-        'lblAmountOwed
-        '
-        Me.lblAmountOwed.AutoSize = True
-        Me.lblAmountOwed.Location = New System.Drawing.Point(10, 121)
-        Me.lblAmountOwed.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblAmountOwed.Name = "lblAmountOwed"
-        Me.lblAmountOwed.Size = New System.Drawing.Size(153, 13)
-        Me.lblAmountOwed.TabIndex = 37
-        Me.lblAmountOwed.Text = "Amount Owed (From Customer)"
-        '
-        'lblAmountPaid
-        '
-        Me.lblAmountPaid.AutoSize = True
-        Me.lblAmountPaid.Location = New System.Drawing.Point(10, 196)
-        Me.lblAmountPaid.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblAmountPaid.Name = "lblAmountPaid"
-        Me.lblAmountPaid.Size = New System.Drawing.Size(135, 13)
-        Me.lblAmountPaid.TabIndex = 38
-        Me.lblAmountPaid.Text = "Amount Paid (By Customer)"
-        '
-        'lblDifference
-        '
-        Me.lblDifference.AutoSize = True
-        Me.lblDifference.Location = New System.Drawing.Point(10, 271)
-        Me.lblDifference.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblDifference.Name = "lblDifference"
-        Me.lblDifference.Size = New System.Drawing.Size(56, 13)
-        Me.lblDifference.TabIndex = 39
-        Me.lblDifference.Text = "Difference"
-        '
         'txt5c
         '
         Me.txt5c.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -544,27 +475,6 @@ Partial Class Payment
         Me.txt100d.Name = "txt100d"
         Me.txt100d.Size = New System.Drawing.Size(87, 32)
         Me.txt100d.TabIndex = 51
-        '
-        'Panel1
-        '
-        Me.Panel1.Controls.Add(Me.chkManual)
-        Me.Panel1.Location = New System.Drawing.Point(14, 69)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(213, 50)
-        Me.Panel1.TabIndex = 52
-        '
-        'chkManual
-        '
-        Me.chkManual.AutoSize = True
-        Me.chkManual.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chkManual.Location = New System.Drawing.Point(11, 6)
-        Me.chkManual.Margin = New System.Windows.Forms.Padding(2)
-        Me.chkManual.Name = "chkManual"
-        Me.chkManual.Size = New System.Drawing.Size(160, 34)
-        Me.chkManual.TabIndex = 0
-        Me.chkManual.Text = "Manually Input Numbers" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(Checked Means YES)"
-        Me.chkManual.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -741,18 +651,6 @@ Partial Class Payment
         Me.lbl100dCh.TabIndex = 66
         Me.lbl100dCh.Text = "XX"
         '
-        'lblTitleCashPayment
-        '
-        Me.lblTitleCashPayment.AutoSize = True
-        Me.lblTitleCashPayment.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitleCashPayment.Location = New System.Drawing.Point(16, 1)
-        Me.lblTitleCashPayment.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblTitleCashPayment.Name = "lblTitleCashPayment"
-        Me.lblTitleCashPayment.Size = New System.Drawing.Size(204, 62)
-        Me.lblTitleCashPayment.TabIndex = 67
-        Me.lblTitleCashPayment.Text = "Cash Payment" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Window"
-        Me.lblTitleCashPayment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'plnExit
         '
         Me.plnExit.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
@@ -760,7 +658,7 @@ Partial Class Payment
         Me.plnExit.Controls.Add(Me.cmdExit)
         Me.plnExit.Location = New System.Drawing.Point(4, 6)
         Me.plnExit.Name = "plnExit"
-        Me.plnExit.Size = New System.Drawing.Size(272, 93)
+        Me.plnExit.Size = New System.Drawing.Size(272, 91)
         Me.plnExit.TabIndex = 68
         '
         'Panel2
@@ -794,23 +692,6 @@ Partial Class Payment
         Me.Panel2.Size = New System.Drawing.Size(272, 353)
         Me.Panel2.TabIndex = 69
         '
-        'pnlMain
-        '
-        Me.pnlMain.Controls.Add(Me.cmdCompletePmt)
-        Me.pnlMain.Controls.Add(Me.lblTitleCashPayment)
-        Me.pnlMain.Controls.Add(Me.Panel1)
-        Me.pnlMain.Controls.Add(Me.lblDifference)
-        Me.pnlMain.Controls.Add(Me.lblAmountPaid)
-        Me.pnlMain.Controls.Add(Me.lblAmountOwed)
-        Me.pnlMain.Controls.Add(Me.txtDifference)
-        Me.pnlMain.Controls.Add(Me.txtAmountPaid)
-        Me.pnlMain.Controls.Add(Me.txtAmountOwed)
-        Me.pnlMain.Controls.Add(Me.cmdCompletePayment)
-        Me.pnlMain.Location = New System.Drawing.Point(277, 6)
-        Me.pnlMain.Name = "pnlMain"
-        Me.pnlMain.Size = New System.Drawing.Size(236, 445)
-        Me.pnlMain.TabIndex = 70
-        '
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(236, Byte), Integer))
@@ -836,10 +717,38 @@ Partial Class Payment
         Me.Panel3.Controls.Add(Me.cmd50c)
         Me.Panel3.Controls.Add(Me.cmd2d)
         Me.Panel3.Controls.Add(Me.cmd1d)
-        Me.Panel3.Location = New System.Drawing.Point(516, 6)
+        Me.Panel3.Location = New System.Drawing.Point(509, 6)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(263, 445)
+        Me.Panel3.Size = New System.Drawing.Size(270, 445)
         Me.Panel3.TabIndex = 71
+        '
+        'cmdCompletePayment
+        '
+        Me.cmdCompletePayment.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdCompletePayment.Location = New System.Drawing.Point(299, 347)
+        Me.cmdCompletePayment.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmdCompletePayment.Name = "cmdCompletePayment"
+        Me.cmdCompletePayment.Size = New System.Drawing.Size(189, 68)
+        Me.cmdCompletePayment.TabIndex = 3
+        Me.cmdCompletePayment.Text = "Give Change" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "and" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Complete Payemt"
+        Me.cmdCompletePayment.UseVisualStyleBackColor = True
+        '
+        'pnlMain
+        '
+        Me.pnlMain.Controls.Add(Me.cmdCompletePmt)
+        Me.pnlMain.Controls.Add(Me.lblTitleCashPayment)
+        Me.pnlMain.Controls.Add(Me.Panel1)
+        Me.pnlMain.Controls.Add(Me.lblDifference)
+        Me.pnlMain.Controls.Add(Me.lblAmountPaid)
+        Me.pnlMain.Controls.Add(Me.lblAmountOwed)
+        Me.pnlMain.Controls.Add(Me.txtDifference)
+        Me.pnlMain.Controls.Add(Me.txtAmountPaid)
+        Me.pnlMain.Controls.Add(Me.txtAmountOwed)
+        Me.pnlMain.Controls.Add(Me.cmdCompletePayment)
+        Me.pnlMain.Location = New System.Drawing.Point(277, 6)
+        Me.pnlMain.Name = "pnlMain"
+        Me.pnlMain.Size = New System.Drawing.Size(236, 445)
+        Me.pnlMain.TabIndex = 70
         '
         'cmdCompletePmt
         '
@@ -852,6 +761,97 @@ Partial Class Payment
         Me.cmdCompletePmt.TabIndex = 58
         Me.cmdCompletePmt.Text = "Give change" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "and" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Complete Payment"
         Me.cmdCompletePmt.UseVisualStyleBackColor = False
+        '
+        'lblTitleCashPayment
+        '
+        Me.lblTitleCashPayment.AutoSize = True
+        Me.lblTitleCashPayment.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitleCashPayment.Location = New System.Drawing.Point(16, 1)
+        Me.lblTitleCashPayment.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblTitleCashPayment.Name = "lblTitleCashPayment"
+        Me.lblTitleCashPayment.Size = New System.Drawing.Size(204, 62)
+        Me.lblTitleCashPayment.TabIndex = 67
+        Me.lblTitleCashPayment.Text = "Cash Payment" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Window"
+        Me.lblTitleCashPayment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.chkManual)
+        Me.Panel1.Location = New System.Drawing.Point(14, 69)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(213, 50)
+        Me.Panel1.TabIndex = 52
+        '
+        'chkManual
+        '
+        Me.chkManual.AutoSize = True
+        Me.chkManual.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkManual.Location = New System.Drawing.Point(8, 4)
+        Me.chkManual.Margin = New System.Windows.Forms.Padding(2)
+        Me.chkManual.Name = "chkManual"
+        Me.chkManual.Size = New System.Drawing.Size(160, 34)
+        Me.chkManual.TabIndex = 0
+        Me.chkManual.Text = "Manually Input Numbers" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(Checked Means YES)"
+        Me.chkManual.UseVisualStyleBackColor = True
+        '
+        'lblDifference
+        '
+        Me.lblDifference.AutoSize = True
+        Me.lblDifference.Location = New System.Drawing.Point(10, 271)
+        Me.lblDifference.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblDifference.Name = "lblDifference"
+        Me.lblDifference.Size = New System.Drawing.Size(56, 13)
+        Me.lblDifference.TabIndex = 39
+        Me.lblDifference.Text = "Difference"
+        '
+        'lblAmountPaid
+        '
+        Me.lblAmountPaid.AutoSize = True
+        Me.lblAmountPaid.Location = New System.Drawing.Point(10, 196)
+        Me.lblAmountPaid.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblAmountPaid.Name = "lblAmountPaid"
+        Me.lblAmountPaid.Size = New System.Drawing.Size(135, 13)
+        Me.lblAmountPaid.TabIndex = 38
+        Me.lblAmountPaid.Text = "Amount Paid (By Customer)"
+        '
+        'lblAmountOwed
+        '
+        Me.lblAmountOwed.AutoSize = True
+        Me.lblAmountOwed.Location = New System.Drawing.Point(10, 121)
+        Me.lblAmountOwed.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblAmountOwed.Name = "lblAmountOwed"
+        Me.lblAmountOwed.Size = New System.Drawing.Size(153, 13)
+        Me.lblAmountOwed.TabIndex = 37
+        Me.lblAmountOwed.Text = "Amount Owed (From Customer)"
+        '
+        'txtDifference
+        '
+        Me.txtDifference.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDifference.Location = New System.Drawing.Point(13, 286)
+        Me.txtDifference.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtDifference.Name = "txtDifference"
+        Me.txtDifference.ReadOnly = True
+        Me.txtDifference.Size = New System.Drawing.Size(207, 32)
+        Me.txtDifference.TabIndex = 36
+        '
+        'txtAmountPaid
+        '
+        Me.txtAmountPaid.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAmountPaid.Location = New System.Drawing.Point(13, 211)
+        Me.txtAmountPaid.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtAmountPaid.Name = "txtAmountPaid"
+        Me.txtAmountPaid.Size = New System.Drawing.Size(207, 32)
+        Me.txtAmountPaid.TabIndex = 35
+        '
+        'txtAmountOwed
+        '
+        Me.txtAmountOwed.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAmountOwed.Location = New System.Drawing.Point(13, 136)
+        Me.txtAmountOwed.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtAmountOwed.Name = "txtAmountOwed"
+        Me.txtAmountOwed.Size = New System.Drawing.Size(207, 32)
+        Me.txtAmountOwed.TabIndex = 34
         '
         'Payment
         '
@@ -887,20 +887,19 @@ Partial Class Payment
         CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
         Me.plnExit.ResumeLayout(False)
         Me.plnExit.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        Me.pnlMain.ResumeLayout(False)
-        Me.pnlMain.PerformLayout()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
+        Me.pnlMain.ResumeLayout(False)
+        Me.pnlMain.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents cmdCompletePayment As Button
     Friend WithEvents cmd1d As PictureBox
     Friend WithEvents cmd2d As PictureBox
     Friend WithEvents cmd50c As PictureBox
@@ -923,12 +922,6 @@ Partial Class Payment
     Friend WithEvents PictureBox14 As PictureBox
     Friend WithEvents PictureBox15 As PictureBox
     Friend WithEvents PictureBox16 As PictureBox
-    Friend WithEvents txtAmountOwed As TextBox
-    Friend WithEvents txtAmountPaid As TextBox
-    Friend WithEvents txtDifference As TextBox
-    Friend WithEvents lblAmountOwed As Label
-    Friend WithEvents lblAmountPaid As Label
-    Friend WithEvents lblDifference As Label
     Friend WithEvents txt5c As TextBox
     Friend WithEvents txt10c As TextBox
     Friend WithEvents txt20c As TextBox
@@ -940,8 +933,6 @@ Partial Class Payment
     Friend WithEvents txt20d As TextBox
     Friend WithEvents txt50d As TextBox
     Friend WithEvents txt100d As TextBox
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents chkManual As CheckBox
     Friend WithEvents Label1 As Label
     Friend WithEvents lbl5cCh As Label
     Friend WithEvents lbl10cCH As Label
@@ -956,10 +947,19 @@ Partial Class Payment
     Friend WithEvents lbl20dCh As Label
     Friend WithEvents lbl50dCh As Label
     Friend WithEvents lbl100dCh As Label
-    Friend WithEvents lblTitleCashPayment As Label
     Friend WithEvents plnExit As Panel
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents pnlMain As Panel
     Friend WithEvents Panel3 As Panel
+    Friend WithEvents cmdCompletePayment As Button
+    Friend WithEvents pnlMain As Panel
     Friend WithEvents cmdCompletePmt As Button
+    Friend WithEvents lblTitleCashPayment As Label
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents chkManual As CheckBox
+    Friend WithEvents lblDifference As Label
+    Friend WithEvents lblAmountPaid As Label
+    Friend WithEvents lblAmountOwed As Label
+    Friend WithEvents txtDifference As TextBox
+    Friend WithEvents txtAmountPaid As TextBox
+    Friend WithEvents txtAmountOwed As TextBox
 End Class
