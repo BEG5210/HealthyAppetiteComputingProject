@@ -107,7 +107,7 @@ Partial Class Payment
         'cmdCompletePayment
         '
         Me.cmdCompletePayment.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdCompletePayment.Location = New System.Drawing.Point(290, 364)
+        Me.cmdCompletePayment.Location = New System.Drawing.Point(299, 347)
         Me.cmdCompletePayment.Margin = New System.Windows.Forms.Padding(2)
         Me.cmdCompletePayment.Name = "cmdCompletePayment"
         Me.cmdCompletePayment.Size = New System.Drawing.Size(189, 68)
