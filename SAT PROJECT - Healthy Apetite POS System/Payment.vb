@@ -74,6 +74,8 @@
         txtDifference.Text = Difference.ToString("F2")
     End Sub
 
+
+
 #Region "Code for when Cash Buttons Pressed"
 
     Private Sub cmd5c_Click(sender As Object, e As EventArgs) Handles cmd5c.Click
@@ -172,6 +174,20 @@
 #End Region
 
 #Region "------ NOTES TO SELF ------------------------------------------"
+#End Region
+
+#Region "thing from SRS to refer to"
+    'Once the customer is ready to pay, and tells the cashier how they
+    'will be paying,the cashier selects either card or Cash.
+    'If either one is selected, first calculate the total cost
+    'if cash was selected, cashier inputs what the customer presents
+    'if what the cashier inputed is less than the total cost, display the difference,
+    'and close the cash window to the home screen. //allow for customer to get more cash,
+    'or change payment method
+    'if it is the exact cost, then {complete payment}
+    'if the customer gives more than the total amount, the cashier gives the
+    'customer the difference, the system reduces the amount in the register pool,
+    'and then {complete payment}
 #End Region
 
 End Class
