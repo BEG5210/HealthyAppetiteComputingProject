@@ -69,15 +69,15 @@ Partial Class Payment
         Me.lbl10cCH = New System.Windows.Forms.Label()
         Me.cmdExit = New System.Windows.Forms.Button()
         Me.lblExitNotice = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
+        Me.lbl20cCh = New System.Windows.Forms.Label()
+        Me.lbl50cCh = New System.Windows.Forms.Label()
+        Me.lbl1dCh = New System.Windows.Forms.Label()
+        Me.lbl2dCh = New System.Windows.Forms.Label()
+        Me.lbl5dCh = New System.Windows.Forms.Label()
+        Me.lbl10dCh = New System.Windows.Forms.Label()
+        Me.lbl20dCh = New System.Windows.Forms.Label()
+        Me.lbl50dCh = New System.Windows.Forms.Label()
+        Me.lbl100dCh = New System.Windows.Forms.Label()
         Me.lblTitleCashPayment = New System.Windows.Forms.Label()
         CType(Me.cmd5d, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmd20c, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -215,7 +215,7 @@ Partial Class Payment
         '
         Me.cmd20d.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._20d
         Me.cmd20d.InitialImage = Nothing
-        Me.cmd20d.Location = New System.Drawing.Point(519, 293)
+        Me.cmd20d.Location = New System.Drawing.Point(518, 297)
         Me.cmd20d.Margin = New System.Windows.Forms.Padding(2)
         Me.cmd20d.Name = "cmd20d"
         Me.cmd20d.Size = New System.Drawing.Size(119, 67)
@@ -227,7 +227,7 @@ Partial Class Payment
         '
         Me.cmd50d.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._50d
         Me.cmd50d.InitialImage = Nothing
-        Me.cmd50d.Location = New System.Drawing.Point(645, 294)
+        Me.cmd50d.Location = New System.Drawing.Point(647, 298)
         Me.cmd50d.Margin = New System.Windows.Forms.Padding(2)
         Me.cmd50d.Name = "cmd50d"
         Me.cmd50d.Size = New System.Drawing.Size(119, 67)
@@ -521,7 +521,7 @@ Partial Class Payment
         'txt50d
         '
         Me.txt50d.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt50d.Location = New System.Drawing.Point(645, 365)
+        Me.txt50d.Location = New System.Drawing.Point(648, 364)
         Me.txt50d.Margin = New System.Windows.Forms.Padding(2)
         Me.txt50d.Name = "txt50d"
         Me.txt50d.Size = New System.Drawing.Size(121, 32)
@@ -613,113 +613,113 @@ Partial Class Payment
         Me.lblExitNotice.Text = "Exit Notice:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Upon Exiting," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Payment history" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "will be reset." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "to finalise payment" &
     ", click" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & """gven change"" instead"
         '
-        'Label2
+        'lbl20cCh
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(166, 138)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(42, 27)
-        Me.Label2.TabIndex = 58
-        Me.Label2.Text = "XX"
+        Me.lbl20cCh.AutoSize = True
+        Me.lbl20cCh.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lbl20cCh.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl20cCh.Location = New System.Drawing.Point(166, 138)
+        Me.lbl20cCh.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl20cCh.Name = "lbl20cCh"
+        Me.lbl20cCh.Size = New System.Drawing.Size(42, 27)
+        Me.lbl20cCh.TabIndex = 58
+        Me.lbl20cCh.Text = "XX"
         '
-        'Label3
+        'lbl50cCh
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(22, 198)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(42, 27)
-        Me.Label3.TabIndex = 59
-        Me.Label3.Text = "XX"
+        Me.lbl50cCh.AutoSize = True
+        Me.lbl50cCh.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lbl50cCh.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl50cCh.Location = New System.Drawing.Point(22, 198)
+        Me.lbl50cCh.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl50cCh.Name = "lbl50cCh"
+        Me.lbl50cCh.Size = New System.Drawing.Size(42, 27)
+        Me.lbl50cCh.TabIndex = 59
+        Me.lbl50cCh.Text = "XX"
         '
-        'Label4
+        'lbl1dCh
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(93, 198)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(42, 27)
-        Me.Label4.TabIndex = 60
-        Me.Label4.Text = "XX"
+        Me.lbl1dCh.AutoSize = True
+        Me.lbl1dCh.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lbl1dCh.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl1dCh.Location = New System.Drawing.Point(93, 198)
+        Me.lbl1dCh.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl1dCh.Name = "lbl1dCh"
+        Me.lbl1dCh.Size = New System.Drawing.Size(42, 27)
+        Me.lbl1dCh.TabIndex = 60
+        Me.lbl1dCh.Text = "XX"
         '
-        'Label5
+        'lbl2dCh
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(166, 198)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(42, 27)
-        Me.Label5.TabIndex = 61
-        Me.Label5.Text = "XX"
+        Me.lbl2dCh.AutoSize = True
+        Me.lbl2dCh.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lbl2dCh.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl2dCh.Location = New System.Drawing.Point(166, 198)
+        Me.lbl2dCh.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl2dCh.Name = "lbl2dCh"
+        Me.lbl2dCh.Size = New System.Drawing.Size(42, 27)
+        Me.lbl2dCh.TabIndex = 61
+        Me.lbl2dCh.Text = "XX"
         '
-        'Label6
+        'lbl5dCh
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(36, 264)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(42, 27)
-        Me.Label6.TabIndex = 62
-        Me.Label6.Text = "XX"
+        Me.lbl5dCh.AutoSize = True
+        Me.lbl5dCh.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lbl5dCh.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl5dCh.Location = New System.Drawing.Point(36, 264)
+        Me.lbl5dCh.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl5dCh.Name = "lbl5dCh"
+        Me.lbl5dCh.Size = New System.Drawing.Size(42, 27)
+        Me.lbl5dCh.TabIndex = 62
+        Me.lbl5dCh.Text = "XX"
         '
-        'Label7
+        'lbl10dCh
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(166, 264)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(42, 27)
-        Me.Label7.TabIndex = 63
-        Me.Label7.Text = "XX"
+        Me.lbl10dCh.AutoSize = True
+        Me.lbl10dCh.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lbl10dCh.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl10dCh.Location = New System.Drawing.Point(166, 264)
+        Me.lbl10dCh.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl10dCh.Name = "lbl10dCh"
+        Me.lbl10dCh.Size = New System.Drawing.Size(42, 27)
+        Me.lbl10dCh.TabIndex = 63
+        Me.lbl10dCh.Text = "XX"
         '
-        'Label8
+        'lbl20dCh
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(36, 331)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(42, 27)
-        Me.Label8.TabIndex = 64
-        Me.Label8.Text = "XX"
+        Me.lbl20dCh.AutoSize = True
+        Me.lbl20dCh.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lbl20dCh.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl20dCh.Location = New System.Drawing.Point(36, 331)
+        Me.lbl20dCh.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl20dCh.Name = "lbl20dCh"
+        Me.lbl20dCh.Size = New System.Drawing.Size(42, 27)
+        Me.lbl20dCh.TabIndex = 64
+        Me.lbl20dCh.Text = "XX"
         '
-        'Label9
+        'lbl50dCh
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(166, 331)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(42, 27)
-        Me.Label9.TabIndex = 65
-        Me.Label9.Text = "XX"
+        Me.lbl50dCh.AutoSize = True
+        Me.lbl50dCh.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lbl50dCh.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl50dCh.Location = New System.Drawing.Point(166, 331)
+        Me.lbl50dCh.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl50dCh.Name = "lbl50dCh"
+        Me.lbl50dCh.Size = New System.Drawing.Size(42, 27)
+        Me.lbl50dCh.TabIndex = 65
+        Me.lbl50dCh.Text = "XX"
         '
-        'Label10
+        'lbl100dCh
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(35, 415)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(42, 27)
-        Me.Label10.TabIndex = 66
-        Me.Label10.Text = "XX"
+        Me.lbl100dCh.AutoSize = True
+        Me.lbl100dCh.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lbl100dCh.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl100dCh.Location = New System.Drawing.Point(35, 415)
+        Me.lbl100dCh.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl100dCh.Name = "lbl100dCh"
+        Me.lbl100dCh.Size = New System.Drawing.Size(42, 27)
+        Me.lbl100dCh.TabIndex = 66
+        Me.lbl100dCh.Text = "XX"
         '
         'lblTitleCashPayment
         '
@@ -738,15 +738,15 @@ Partial Class Payment
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(783, 455)
         Me.Controls.Add(Me.lblTitleCashPayment)
-        Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lbl100dCh)
+        Me.Controls.Add(Me.lbl50dCh)
+        Me.Controls.Add(Me.lbl20dCh)
+        Me.Controls.Add(Me.lbl10dCh)
+        Me.Controls.Add(Me.lbl5dCh)
+        Me.Controls.Add(Me.lbl2dCh)
+        Me.Controls.Add(Me.lbl1dCh)
+        Me.Controls.Add(Me.lbl50cCh)
+        Me.Controls.Add(Me.lbl20cCh)
         Me.Controls.Add(Me.lblExitNotice)
         Me.Controls.Add(Me.cmdExit)
         Me.Controls.Add(Me.lbl10cCH)
@@ -871,14 +871,14 @@ Partial Class Payment
     Friend WithEvents lbl10cCH As Label
     Friend WithEvents cmdExit As Button
     Friend WithEvents lblExitNotice As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label10 As Label
+    Friend WithEvents lbl20cCh As Label
+    Friend WithEvents lbl50cCh As Label
+    Friend WithEvents lbl1dCh As Label
+    Friend WithEvents lbl2dCh As Label
+    Friend WithEvents lbl5dCh As Label
+    Friend WithEvents lbl10dCh As Label
+    Friend WithEvents lbl20dCh As Label
+    Friend WithEvents lbl50dCh As Label
+    Friend WithEvents lbl100dCh As Label
     Friend WithEvents lblTitleCashPayment As Label
 End Class
