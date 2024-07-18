@@ -25,6 +25,8 @@
 
     Private Sub Payment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CheckForCheckBoxes()
+
+        ToolTip1.SetToolTip(chkManual, "when enabled, user must input values into the below textboxes manually.")
     End Sub
 
     Private Sub cmdExit_Click(sender As Object, e As EventArgs) Handles cmdExit.Click
