@@ -2,8 +2,6 @@
 
     Dim Cash(10) As String
 
-
-
 #Region "Manual Checks"
     Sub CheckForCheckBoxes()
 
