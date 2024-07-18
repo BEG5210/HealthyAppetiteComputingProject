@@ -81,6 +81,8 @@ Partial Class Payment
         Me.lblTitleCashPayment = New System.Windows.Forms.Label()
         Me.plnExit = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.pnlMain = New System.Windows.Forms.Panel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
         CType(Me.cmd5d, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmd20c, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmd10c, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -106,12 +108,14 @@ Partial Class Payment
         Me.Panel1.SuspendLayout()
         Me.plnExit.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.pnlMain.SuspendLayout()
+        Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
         '
         'cmdCompletePayment
         '
         Me.cmdCompletePayment.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdCompletePayment.Location = New System.Drawing.Point(290, 364)
+        Me.cmdCompletePayment.Location = New System.Drawing.Point(13, 357)
         Me.cmdCompletePayment.Margin = New System.Windows.Forms.Padding(2)
         Me.cmdCompletePayment.Name = "cmdCompletePayment"
         Me.cmdCompletePayment.Size = New System.Drawing.Size(189, 68)
@@ -123,7 +127,7 @@ Partial Class Payment
         '
         Me.cmd5d.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._5d
         Me.cmd5d.InitialImage = Nothing
-        Me.cmd5d.Location = New System.Drawing.Point(516, 194)
+        Me.cmd5d.Location = New System.Drawing.Point(0, 187)
         Me.cmd5d.Margin = New System.Windows.Forms.Padding(2)
         Me.cmd5d.Name = "cmd5d"
         Me.cmd5d.Size = New System.Drawing.Size(123, 67)
@@ -135,7 +139,7 @@ Partial Class Payment
         '
         Me.cmd20c.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._20c
         Me.cmd20c.InitialImage = Nothing
-        Me.cmd20c.Location = New System.Drawing.Point(663, 8)
+        Me.cmd20c.Location = New System.Drawing.Point(147, 1)
         Me.cmd20c.Margin = New System.Windows.Forms.Padding(2)
         Me.cmd20c.Name = "cmd20c"
         Me.cmd20c.Size = New System.Drawing.Size(69, 60)
@@ -147,7 +151,7 @@ Partial Class Payment
         '
         Me.cmd10c.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._10c
         Me.cmd10c.InitialImage = Nothing
-        Me.cmd10c.Location = New System.Drawing.Point(591, 8)
+        Me.cmd10c.Location = New System.Drawing.Point(75, 1)
         Me.cmd10c.Margin = New System.Windows.Forms.Padding(2)
         Me.cmd10c.Name = "cmd10c"
         Me.cmd10c.Size = New System.Drawing.Size(68, 60)
@@ -159,7 +163,7 @@ Partial Class Payment
         '
         Me.cmd5c.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._5c
         Me.cmd5c.InitialImage = Nothing
-        Me.cmd5c.Location = New System.Drawing.Point(518, 8)
+        Me.cmd5c.Location = New System.Drawing.Point(2, 1)
         Me.cmd5c.Margin = New System.Windows.Forms.Padding(2)
         Me.cmd5c.Name = "cmd5c"
         Me.cmd5c.Size = New System.Drawing.Size(69, 60)
@@ -171,7 +175,7 @@ Partial Class Payment
         '
         Me.cmd50c.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._50c
         Me.cmd50c.InitialImage = Nothing
-        Me.cmd50c.Location = New System.Drawing.Point(518, 101)
+        Me.cmd50c.Location = New System.Drawing.Point(2, 94)
         Me.cmd50c.Margin = New System.Windows.Forms.Padding(2)
         Me.cmd50c.Name = "cmd50c"
         Me.cmd50c.Size = New System.Drawing.Size(69, 60)
@@ -183,7 +187,7 @@ Partial Class Payment
         '
         Me.cmd2d.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._2d
         Me.cmd2d.InitialImage = Nothing
-        Me.cmd2d.Location = New System.Drawing.Point(667, 101)
+        Me.cmd2d.Location = New System.Drawing.Point(151, 94)
         Me.cmd2d.Margin = New System.Windows.Forms.Padding(2)
         Me.cmd2d.Name = "cmd2d"
         Me.cmd2d.Size = New System.Drawing.Size(66, 60)
@@ -195,7 +199,7 @@ Partial Class Payment
         '
         Me.cmd1d.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._1d
         Me.cmd1d.InitialImage = Nothing
-        Me.cmd1d.Location = New System.Drawing.Point(591, 101)
+        Me.cmd1d.Location = New System.Drawing.Point(75, 94)
         Me.cmd1d.Margin = New System.Windows.Forms.Padding(2)
         Me.cmd1d.Name = "cmd1d"
         Me.cmd1d.Size = New System.Drawing.Size(71, 60)
@@ -207,7 +211,7 @@ Partial Class Payment
         '
         Me.cmd10d.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._10d
         Me.cmd10d.InitialImage = Nothing
-        Me.cmd10d.Location = New System.Drawing.Point(645, 194)
+        Me.cmd10d.Location = New System.Drawing.Point(129, 187)
         Me.cmd10d.Margin = New System.Windows.Forms.Padding(2)
         Me.cmd10d.Name = "cmd10d"
         Me.cmd10d.Size = New System.Drawing.Size(119, 67)
@@ -219,7 +223,7 @@ Partial Class Payment
         '
         Me.cmd20d.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._20d
         Me.cmd20d.InitialImage = Nothing
-        Me.cmd20d.Location = New System.Drawing.Point(518, 297)
+        Me.cmd20d.Location = New System.Drawing.Point(2, 290)
         Me.cmd20d.Margin = New System.Windows.Forms.Padding(2)
         Me.cmd20d.Name = "cmd20d"
         Me.cmd20d.Size = New System.Drawing.Size(119, 67)
@@ -231,7 +235,7 @@ Partial Class Payment
         '
         Me.cmd50d.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._50d
         Me.cmd50d.InitialImage = Nothing
-        Me.cmd50d.Location = New System.Drawing.Point(647, 298)
+        Me.cmd50d.Location = New System.Drawing.Point(131, 291)
         Me.cmd50d.Margin = New System.Windows.Forms.Padding(2)
         Me.cmd50d.Name = "cmd50d"
         Me.cmd50d.Size = New System.Drawing.Size(119, 67)
@@ -243,7 +247,7 @@ Partial Class Payment
         '
         Me.cmd100d.Image = Global.SAT_PROJECT___Healthy_Apetite_POS_System.My.Resources.Resources._100d
         Me.cmd100d.InitialImage = Nothing
-        Me.cmd100d.Location = New System.Drawing.Point(519, 396)
+        Me.cmd100d.Location = New System.Drawing.Point(3, 389)
         Me.cmd100d.Margin = New System.Windows.Forms.Padding(2)
         Me.cmd100d.Name = "cmd100d"
         Me.cmd100d.Size = New System.Drawing.Size(140, 55)
@@ -386,7 +390,7 @@ Partial Class Payment
         'txtAmountOwed
         '
         Me.txtAmountOwed.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAmountOwed.Location = New System.Drawing.Point(290, 143)
+        Me.txtAmountOwed.Location = New System.Drawing.Point(13, 136)
         Me.txtAmountOwed.Margin = New System.Windows.Forms.Padding(2)
         Me.txtAmountOwed.Name = "txtAmountOwed"
         Me.txtAmountOwed.Size = New System.Drawing.Size(207, 32)
@@ -395,7 +399,7 @@ Partial Class Payment
         'txtAmountPaid
         '
         Me.txtAmountPaid.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAmountPaid.Location = New System.Drawing.Point(290, 218)
+        Me.txtAmountPaid.Location = New System.Drawing.Point(13, 211)
         Me.txtAmountPaid.Margin = New System.Windows.Forms.Padding(2)
         Me.txtAmountPaid.Name = "txtAmountPaid"
         Me.txtAmountPaid.Size = New System.Drawing.Size(207, 32)
@@ -404,7 +408,7 @@ Partial Class Payment
         'txtDifference
         '
         Me.txtDifference.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDifference.Location = New System.Drawing.Point(290, 293)
+        Me.txtDifference.Location = New System.Drawing.Point(13, 286)
         Me.txtDifference.Margin = New System.Windows.Forms.Padding(2)
         Me.txtDifference.Name = "txtDifference"
         Me.txtDifference.ReadOnly = True
@@ -414,7 +418,7 @@ Partial Class Payment
         'lblAmountOwed
         '
         Me.lblAmountOwed.AutoSize = True
-        Me.lblAmountOwed.Location = New System.Drawing.Point(287, 128)
+        Me.lblAmountOwed.Location = New System.Drawing.Point(10, 121)
         Me.lblAmountOwed.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblAmountOwed.Name = "lblAmountOwed"
         Me.lblAmountOwed.Size = New System.Drawing.Size(153, 13)
@@ -424,7 +428,7 @@ Partial Class Payment
         'lblAmountPaid
         '
         Me.lblAmountPaid.AutoSize = True
-        Me.lblAmountPaid.Location = New System.Drawing.Point(287, 203)
+        Me.lblAmountPaid.Location = New System.Drawing.Point(10, 196)
         Me.lblAmountPaid.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblAmountPaid.Name = "lblAmountPaid"
         Me.lblAmountPaid.Size = New System.Drawing.Size(135, 13)
@@ -434,7 +438,7 @@ Partial Class Payment
         'lblDifference
         '
         Me.lblDifference.AutoSize = True
-        Me.lblDifference.Location = New System.Drawing.Point(287, 278)
+        Me.lblDifference.Location = New System.Drawing.Point(10, 271)
         Me.lblDifference.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblDifference.Name = "lblDifference"
         Me.lblDifference.Size = New System.Drawing.Size(56, 13)
@@ -444,7 +448,7 @@ Partial Class Payment
         'txt5c
         '
         Me.txt5c.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt5c.Location = New System.Drawing.Point(519, 68)
+        Me.txt5c.Location = New System.Drawing.Point(3, 61)
         Me.txt5c.Margin = New System.Windows.Forms.Padding(2)
         Me.txt5c.Name = "txt5c"
         Me.txt5c.Size = New System.Drawing.Size(69, 32)
@@ -453,7 +457,7 @@ Partial Class Payment
         'txt10c
         '
         Me.txt10c.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt10c.Location = New System.Drawing.Point(591, 68)
+        Me.txt10c.Location = New System.Drawing.Point(75, 61)
         Me.txt10c.Margin = New System.Windows.Forms.Padding(2)
         Me.txt10c.Name = "txt10c"
         Me.txt10c.Size = New System.Drawing.Size(69, 32)
@@ -462,7 +466,7 @@ Partial Class Payment
         'txt20c
         '
         Me.txt20c.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt20c.Location = New System.Drawing.Point(663, 68)
+        Me.txt20c.Location = New System.Drawing.Point(147, 61)
         Me.txt20c.Margin = New System.Windows.Forms.Padding(2)
         Me.txt20c.Name = "txt20c"
         Me.txt20c.Size = New System.Drawing.Size(69, 32)
@@ -471,7 +475,7 @@ Partial Class Payment
         'txt50c
         '
         Me.txt50c.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt50c.Location = New System.Drawing.Point(518, 161)
+        Me.txt50c.Location = New System.Drawing.Point(2, 154)
         Me.txt50c.Margin = New System.Windows.Forms.Padding(2)
         Me.txt50c.Name = "txt50c"
         Me.txt50c.Size = New System.Drawing.Size(69, 32)
@@ -480,7 +484,7 @@ Partial Class Payment
         'txt1d
         '
         Me.txt1d.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt1d.Location = New System.Drawing.Point(591, 161)
+        Me.txt1d.Location = New System.Drawing.Point(75, 154)
         Me.txt1d.Margin = New System.Windows.Forms.Padding(2)
         Me.txt1d.Name = "txt1d"
         Me.txt1d.Size = New System.Drawing.Size(69, 32)
@@ -489,7 +493,7 @@ Partial Class Payment
         'txt2d
         '
         Me.txt2d.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt2d.Location = New System.Drawing.Point(667, 161)
+        Me.txt2d.Location = New System.Drawing.Point(151, 154)
         Me.txt2d.Margin = New System.Windows.Forms.Padding(2)
         Me.txt2d.Name = "txt2d"
         Me.txt2d.Size = New System.Drawing.Size(69, 32)
@@ -498,7 +502,7 @@ Partial Class Payment
         'txt5d
         '
         Me.txt5d.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt5d.Location = New System.Drawing.Point(516, 261)
+        Me.txt5d.Location = New System.Drawing.Point(0, 254)
         Me.txt5d.Margin = New System.Windows.Forms.Padding(2)
         Me.txt5d.Name = "txt5d"
         Me.txt5d.Size = New System.Drawing.Size(124, 32)
@@ -507,7 +511,7 @@ Partial Class Payment
         'txt10d
         '
         Me.txt10d.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt10d.Location = New System.Drawing.Point(645, 262)
+        Me.txt10d.Location = New System.Drawing.Point(129, 255)
         Me.txt10d.Margin = New System.Windows.Forms.Padding(2)
         Me.txt10d.Name = "txt10d"
         Me.txt10d.Size = New System.Drawing.Size(121, 32)
@@ -516,7 +520,7 @@ Partial Class Payment
         'txt20d
         '
         Me.txt20d.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt20d.Location = New System.Drawing.Point(519, 364)
+        Me.txt20d.Location = New System.Drawing.Point(3, 357)
         Me.txt20d.Margin = New System.Windows.Forms.Padding(2)
         Me.txt20d.Name = "txt20d"
         Me.txt20d.Size = New System.Drawing.Size(121, 32)
@@ -525,7 +529,7 @@ Partial Class Payment
         'txt50d
         '
         Me.txt50d.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt50d.Location = New System.Drawing.Point(648, 364)
+        Me.txt50d.Location = New System.Drawing.Point(132, 357)
         Me.txt50d.Margin = New System.Windows.Forms.Padding(2)
         Me.txt50d.Name = "txt50d"
         Me.txt50d.Size = New System.Drawing.Size(121, 32)
@@ -534,7 +538,7 @@ Partial Class Payment
         'txt100d
         '
         Me.txt100d.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt100d.Location = New System.Drawing.Point(680, 415)
+        Me.txt100d.Location = New System.Drawing.Point(164, 408)
         Me.txt100d.Margin = New System.Windows.Forms.Padding(2)
         Me.txt100d.Name = "txt100d"
         Me.txt100d.Size = New System.Drawing.Size(87, 32)
@@ -543,7 +547,7 @@ Partial Class Payment
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.chkManual)
-        Me.Panel1.Location = New System.Drawing.Point(291, 76)
+        Me.Panel1.Location = New System.Drawing.Point(14, 69)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(213, 50)
@@ -740,7 +744,7 @@ Partial Class Payment
         '
         Me.lblTitleCashPayment.AutoSize = True
         Me.lblTitleCashPayment.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitleCashPayment.Location = New System.Drawing.Point(293, 8)
+        Me.lblTitleCashPayment.Location = New System.Drawing.Point(16, 1)
         Me.lblTitleCashPayment.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblTitleCashPayment.Name = "lblTitleCashPayment"
         Me.lblTitleCashPayment.Size = New System.Drawing.Size(204, 62)
@@ -788,44 +792,61 @@ Partial Class Payment
         Me.Panel2.Size = New System.Drawing.Size(272, 353)
         Me.Panel2.TabIndex = 69
         '
+        'pnlMain
+        '
+        Me.pnlMain.Controls.Add(Me.lblTitleCashPayment)
+        Me.pnlMain.Controls.Add(Me.Panel1)
+        Me.pnlMain.Controls.Add(Me.lblDifference)
+        Me.pnlMain.Controls.Add(Me.lblAmountPaid)
+        Me.pnlMain.Controls.Add(Me.lblAmountOwed)
+        Me.pnlMain.Controls.Add(Me.txtDifference)
+        Me.pnlMain.Controls.Add(Me.txtAmountPaid)
+        Me.pnlMain.Controls.Add(Me.txtAmountOwed)
+        Me.pnlMain.Controls.Add(Me.cmdCompletePayment)
+        Me.pnlMain.Location = New System.Drawing.Point(277, 6)
+        Me.pnlMain.Name = "pnlMain"
+        Me.pnlMain.Size = New System.Drawing.Size(236, 445)
+        Me.pnlMain.TabIndex = 70
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(236, Byte), Integer))
+        Me.Panel3.Controls.Add(Me.txt100d)
+        Me.Panel3.Controls.Add(Me.txt50d)
+        Me.Panel3.Controls.Add(Me.txt20d)
+        Me.Panel3.Controls.Add(Me.txt10d)
+        Me.Panel3.Controls.Add(Me.txt5d)
+        Me.Panel3.Controls.Add(Me.txt2d)
+        Me.Panel3.Controls.Add(Me.txt1d)
+        Me.Panel3.Controls.Add(Me.txt50c)
+        Me.Panel3.Controls.Add(Me.txt20c)
+        Me.Panel3.Controls.Add(Me.txt10c)
+        Me.Panel3.Controls.Add(Me.txt5c)
+        Me.Panel3.Controls.Add(Me.cmd100d)
+        Me.Panel3.Controls.Add(Me.cmd50d)
+        Me.Panel3.Controls.Add(Me.cmd20d)
+        Me.Panel3.Controls.Add(Me.cmd10d)
+        Me.Panel3.Controls.Add(Me.cmd5d)
+        Me.Panel3.Controls.Add(Me.cmd20c)
+        Me.Panel3.Controls.Add(Me.cmd10c)
+        Me.Panel3.Controls.Add(Me.cmd5c)
+        Me.Panel3.Controls.Add(Me.cmd50c)
+        Me.Panel3.Controls.Add(Me.cmd2d)
+        Me.Panel3.Controls.Add(Me.cmd1d)
+        Me.Panel3.Location = New System.Drawing.Point(516, 6)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(263, 445)
+        Me.Panel3.TabIndex = 71
+        '
         'Payment
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(783, 455)
+        Me.Controls.Add(Me.Panel3)
+        Me.Controls.Add(Me.pnlMain)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.plnExit)
-        Me.Controls.Add(Me.lblTitleCashPayment)
-        Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.txt100d)
-        Me.Controls.Add(Me.txt50d)
-        Me.Controls.Add(Me.txt20d)
-        Me.Controls.Add(Me.txt10d)
-        Me.Controls.Add(Me.txt5d)
-        Me.Controls.Add(Me.txt2d)
-        Me.Controls.Add(Me.txt1d)
-        Me.Controls.Add(Me.txt50c)
-        Me.Controls.Add(Me.txt20c)
-        Me.Controls.Add(Me.txt10c)
-        Me.Controls.Add(Me.txt5c)
-        Me.Controls.Add(Me.lblDifference)
-        Me.Controls.Add(Me.lblAmountPaid)
-        Me.Controls.Add(Me.lblAmountOwed)
-        Me.Controls.Add(Me.txtDifference)
-        Me.Controls.Add(Me.txtAmountPaid)
-        Me.Controls.Add(Me.txtAmountOwed)
-        Me.Controls.Add(Me.cmd100d)
-        Me.Controls.Add(Me.cmd50d)
-        Me.Controls.Add(Me.cmd20d)
-        Me.Controls.Add(Me.cmd10d)
-        Me.Controls.Add(Me.cmd5d)
-        Me.Controls.Add(Me.cmd20c)
-        Me.Controls.Add(Me.cmd10c)
-        Me.Controls.Add(Me.cmd5c)
-        Me.Controls.Add(Me.cmd50c)
-        Me.Controls.Add(Me.cmd2d)
-        Me.Controls.Add(Me.cmd1d)
-        Me.Controls.Add(Me.cmdCompletePayment)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Payment"
         Me.Text = "Payment Menu"
@@ -857,8 +878,11 @@ Partial Class Payment
         Me.plnExit.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        Me.pnlMain.ResumeLayout(False)
+        Me.pnlMain.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents cmdCompletePayment As Button
@@ -920,4 +944,6 @@ Partial Class Payment
     Friend WithEvents lblTitleCashPayment As Label
     Friend WithEvents plnExit As Panel
     Friend WithEvents Panel2 As Panel
+    Friend WithEvents pnlMain As Panel
+    Friend WithEvents Panel3 As Panel
 End Class
