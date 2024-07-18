@@ -36,12 +36,10 @@
 
     Private Sub txtAmountOwed_TextChanged(sender As Object, e As EventArgs) Handles txtAmountOwed.TextChanged
         CalculateDifference()
-        CompletePaymentVisCheck()
     End Sub
 
     Private Sub txtAmountPaid_TextChanged(sender As Object, e As EventArgs) Handles txtAmountPaid.TextChanged
         CalculateDifference()
-        CompletePaymentVisCheck()
     End Sub
 
     Private Sub CalculateDifference()
