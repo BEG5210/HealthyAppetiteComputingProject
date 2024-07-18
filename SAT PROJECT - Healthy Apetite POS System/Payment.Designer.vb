@@ -78,6 +78,7 @@ Partial Class Payment
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.lblTitleCashPayment = New System.Windows.Forms.Label()
         CType(Me.cmd5d, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmd20c, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmd10c, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -106,7 +107,7 @@ Partial Class Payment
         'cmdCompletePayment
         '
         Me.cmdCompletePayment.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdCompletePayment.Location = New System.Drawing.Point(290, 293)
+        Me.cmdCompletePayment.Location = New System.Drawing.Point(290, 364)
         Me.cmdCompletePayment.Margin = New System.Windows.Forms.Padding(2)
         Me.cmdCompletePayment.Name = "cmdCompletePayment"
         Me.cmdCompletePayment.Size = New System.Drawing.Size(189, 68)
@@ -381,7 +382,7 @@ Partial Class Payment
         'txtAmountOwed
         '
         Me.txtAmountOwed.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAmountOwed.Location = New System.Drawing.Point(290, 72)
+        Me.txtAmountOwed.Location = New System.Drawing.Point(290, 143)
         Me.txtAmountOwed.Margin = New System.Windows.Forms.Padding(2)
         Me.txtAmountOwed.Name = "txtAmountOwed"
         Me.txtAmountOwed.Size = New System.Drawing.Size(207, 32)
@@ -390,7 +391,7 @@ Partial Class Payment
         'txtAmountPaid
         '
         Me.txtAmountPaid.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAmountPaid.Location = New System.Drawing.Point(290, 147)
+        Me.txtAmountPaid.Location = New System.Drawing.Point(290, 218)
         Me.txtAmountPaid.Margin = New System.Windows.Forms.Padding(2)
         Me.txtAmountPaid.Name = "txtAmountPaid"
         Me.txtAmountPaid.Size = New System.Drawing.Size(207, 32)
@@ -399,7 +400,7 @@ Partial Class Payment
         'txtDifference
         '
         Me.txtDifference.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDifference.Location = New System.Drawing.Point(290, 222)
+        Me.txtDifference.Location = New System.Drawing.Point(290, 293)
         Me.txtDifference.Margin = New System.Windows.Forms.Padding(2)
         Me.txtDifference.Name = "txtDifference"
         Me.txtDifference.ReadOnly = True
@@ -409,7 +410,7 @@ Partial Class Payment
         'lblAmountOwed
         '
         Me.lblAmountOwed.AutoSize = True
-        Me.lblAmountOwed.Location = New System.Drawing.Point(287, 57)
+        Me.lblAmountOwed.Location = New System.Drawing.Point(287, 128)
         Me.lblAmountOwed.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblAmountOwed.Name = "lblAmountOwed"
         Me.lblAmountOwed.Size = New System.Drawing.Size(153, 13)
@@ -419,7 +420,7 @@ Partial Class Payment
         'lblAmountPaid
         '
         Me.lblAmountPaid.AutoSize = True
-        Me.lblAmountPaid.Location = New System.Drawing.Point(287, 132)
+        Me.lblAmountPaid.Location = New System.Drawing.Point(287, 203)
         Me.lblAmountPaid.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblAmountPaid.Name = "lblAmountPaid"
         Me.lblAmountPaid.Size = New System.Drawing.Size(135, 13)
@@ -429,7 +430,7 @@ Partial Class Payment
         'lblDifference
         '
         Me.lblDifference.AutoSize = True
-        Me.lblDifference.Location = New System.Drawing.Point(287, 207)
+        Me.lblDifference.Location = New System.Drawing.Point(287, 278)
         Me.lblDifference.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblDifference.Name = "lblDifference"
         Me.lblDifference.Size = New System.Drawing.Size(56, 13)
@@ -538,7 +539,7 @@ Partial Class Payment
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.chkManual)
-        Me.Panel1.Location = New System.Drawing.Point(291, 5)
+        Me.Panel1.Location = New System.Drawing.Point(291, 76)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(213, 50)
@@ -720,11 +721,23 @@ Partial Class Payment
         Me.Label10.TabIndex = 66
         Me.Label10.Text = "XX"
         '
+        'lblTitleCashPayment
+        '
+        Me.lblTitleCashPayment.AutoSize = True
+        Me.lblTitleCashPayment.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitleCashPayment.Location = New System.Drawing.Point(293, 8)
+        Me.lblTitleCashPayment.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblTitleCashPayment.Name = "lblTitleCashPayment"
+        Me.lblTitleCashPayment.Size = New System.Drawing.Size(204, 62)
+        Me.lblTitleCashPayment.TabIndex = 67
+        Me.lblTitleCashPayment.Text = "Cash Payment" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Window"
+        '
         'Payment
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(783, 455)
+        Me.Controls.Add(Me.lblTitleCashPayment)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
@@ -867,4 +880,5 @@ Partial Class Payment
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
+    Friend WithEvents lblTitleCashPayment As Label
 End Class
