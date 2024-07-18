@@ -22,7 +22,6 @@ Partial Class Payment
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Me.cmd5d = New System.Windows.Forms.PictureBox()
         Me.cmd20c = New System.Windows.Forms.PictureBox()
         Me.cmd10c = New System.Windows.Forms.PictureBox()
@@ -85,7 +84,6 @@ Partial Class Payment
         Me.txtDifference = New System.Windows.Forms.TextBox()
         Me.txtAmountPaid = New System.Windows.Forms.TextBox()
         Me.txtAmountOwed = New System.Windows.Forms.TextBox()
-        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.cmd5d, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmd20c, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmd10c, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -855,9 +853,6 @@ Partial Class Payment
         Me.txtAmountOwed.Size = New System.Drawing.Size(207, 32)
         Me.txtAmountOwed.TabIndex = 34
         '
-        'ToolTip1
-        '
-        '
         'Payment
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -967,5 +962,4 @@ Partial Class Payment
     Friend WithEvents txtDifference As TextBox
     Friend WithEvents txtAmountPaid As TextBox
     Friend WithEvents txtAmountOwed As TextBox
-    Friend WithEvents ToolTip1 As ToolTip
 End Class

@@ -33,8 +33,6 @@
 
     Private Sub Payment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CheckForCheckBoxes()
-
-        ToolTip1.SetToolTip(chkManual, "when enabled, user must input values into the below textboxes manually.")
     End Sub
 
     Private Sub cmdExit_Click(sender As Object, e As EventArgs) Handles cmdExit.Click
@@ -77,6 +75,50 @@
     End Sub
 
 #Region "Code for when Cash Buttons Pressed"
+
+    Private Sub cmd5c_Click(sender As Object, e As EventArgs) Handles cmd5c.Click
+
+    End Sub
+
+    Private Sub cmd10c_Click(sender As Object, e As EventArgs) Handles cmd10c.Click
+
+    End Sub
+
+    Private Sub cmd20c_Click(sender As Object, e As EventArgs) Handles cmd20c.Click
+
+    End Sub
+
+    Private Sub cmd50c_Click(sender As Object, e As EventArgs) Handles cmd50c.Click
+
+    End Sub
+
+    Private Sub cmd1d_Click(sender As Object, e As EventArgs) Handles cmd1d.Click
+
+    End Sub
+
+    Private Sub cmd2d_Click(sender As Object, e As EventArgs) Handles cmd2d.Click
+
+    End Sub
+
+    Private Sub cmd5d_Click(sender As Object, e As EventArgs) Handles cmd5d.Click
+
+    End Sub
+
+    Private Sub cmd10d_Click(sender As Object, e As EventArgs) Handles cmd10d.Click
+
+    End Sub
+
+    Private Sub cmd20d_Click(sender As Object, e As EventArgs) Handles cmd20d.Click
+
+    End Sub
+
+    Private Sub cmd50d_Click(sender As Object, e As EventArgs) Handles cmd50d.Click
+
+    End Sub
+
+    Private Sub cmd100d_Click(sender As Object, e As EventArgs) Handles cmd100d.Click
+
+    End Sub
 
 #End Region
 
