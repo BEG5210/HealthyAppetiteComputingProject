@@ -38,11 +38,12 @@
         CheckForCheckBoxes()
     End Sub
 
+    'Hiding Payment Window - Values reset
     Private Sub cmdExit_Click(sender As Object, e As EventArgs) Handles cmdExit.Click
-        Me.Hide() 'Hides the payment window.
-        'TODO: make the values be cleared
+        Me.Hide()
     End Sub
 
+    'When the textboxes for ammount paid / changed, well... change, then calculate difference
     Private Sub txtAmountOwed_TextChanged(sender As Object, e As EventArgs) Handles txtAmountOwed.TextChanged
         CalculateDifference()
     End Sub
@@ -50,6 +51,8 @@
     Private Sub txtAmountPaid_TextChanged(sender As Object, e As EventArgs) Handles txtAmountPaid.TextChanged
         CalculateDifference()
     End Sub
+
+    '---------------------------------------------------------------------------------------
 
     Private Sub CalculateDifference()
         'How to implement a way to check for letters and spit out an error?
@@ -76,6 +79,8 @@
 
         txtDifference.Text = Difference.ToString("F2")
     End Sub
+
+    '-------------------------------------------------------------------------------------
 
 
 
