@@ -1,5 +1,6 @@
 ﻿Public Class Payment
 
+#Region "Defining Variables"
     'DEFINING SOME VARIABLES:
     '--------------------------------------------------------------------------------
     'denominations:         {5,10,20,50, 1, 2, 5,10,20,50,100}
@@ -12,6 +13,7 @@
     '--------------------------------------------------------------------------------
     'CashChange - Number of each denomination of currency to be given as change
     'CashNum - Number of each denomination of currency pressed
+#End Region
 
 #Region "Manual input Checkbox Check Code"
     Sub CheckForCheckBoxes()
@@ -34,6 +36,7 @@
     End Sub
 #End Region
 
+#Region "Misc Code"
     Private Sub Payment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CheckForCheckBoxes()
     End Sub
@@ -42,6 +45,9 @@
     Private Sub cmdExit_Click(sender As Object, e As EventArgs) Handles cmdExit.Click
         Me.Hide()
     End Sub
+#End Region
+
+#Region "Calculate Difference wwhen textboxes change"
 
     'When the textboxes for ammount paid / changed, well... change, then calculate difference
     Private Sub txtAmountOwed_TextChanged(sender As Object, e As EventArgs) Handles txtAmountOwed.TextChanged
@@ -52,8 +58,9 @@
         CalculateDifference()
     End Sub
 
-    '---------------------------------------------------------------------------------------
+#End Region
 
+#Region "Calculate Difference Function"
     Private Sub CalculateDifference()
         'How to implement a way to check for letters and spit out an error?
 
@@ -79,10 +86,7 @@
 
         txtDifference.Text = Difference.ToString("F2")
     End Sub
-
-    '-------------------------------------------------------------------------------------
-
-
+#End Region
 
 #Region "Code for when Cash Buttons Pressed"
 
