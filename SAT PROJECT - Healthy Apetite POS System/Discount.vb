@@ -8,6 +8,8 @@
         Me.Close()
     End Sub
 
+    '--- CODE ENDS HERE ------------------------------------------
+
 #Region "------ IMPORTANT INFO -----------------------------------------"
 #End Region
 

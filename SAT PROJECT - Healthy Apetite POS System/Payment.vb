@@ -2,15 +2,15 @@
 
 #Region "Defining Variables"
     'DEFINING SOME VARIABLES:
-    '--------------------------------------------------------------------------------
+
     'denominations:         {5,10,20,50, 1, 2, 5,10,20,50,100}
     Dim CashNum As Integer() = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}    '11 values (11-1)
-    '                       [   CENTS   ][      DOLLARS      ]
-    '--------------------------------------------------------------------------------
+    '                          [   CENTS   ][      DOLLARS      ]
+
     'denominations:               {5,10,20,50, 1, 2, 5,10,20,50,100}
     Dim CashChange As Integer() = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0} '11 values (11-1)
     '                             [   CENTS   ][      DOLLARS      ]
-    '--------------------------------------------------------------------------------
+
     'CashChange - Number of each denomination of currency to be given as change
     'CashNum - Number of each denomination of currency pressed
 #End Region
