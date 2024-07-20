@@ -8,6 +8,19 @@
         Me.Close()
     End Sub
 
+    Private Sub chkSpecificItemToggle_CheckedChanged(sender As Object, e As EventArgs) Handles chkSpecificItemToggle.CheckedChanged
+
+        'Show dropdown box, and allow user to select an item in the cart do be discounted
+        If chkSpecificItemToggle.Checked = True Then
+            lblDiscountInstruction.Visible = True
+            cmbxItemSelect.Visible = True
+        ElseIf chkSpecificItemToggle.Checked = False Then
+            lblDiscountInstruction.Visible = False
+            cmbxItemSelect.Visible = False
+        End If
+
+    End Sub
+
     '--- CODE ENDS HERE ------------------------------------------
 
 #Region "------ IMPORTANT INFO -----------------------------------------"

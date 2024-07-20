@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Discount
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Discount
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.radExactDiscount = New System.Windows.Forms.RadioButton()
         Me.radPercentageDiscount = New System.Windows.Forms.RadioButton()
@@ -31,17 +31,19 @@ Partial Class Discount
         Me.cmdApplyDiscount = New System.Windows.Forms.Button()
         Me.lblTitleDiscount = New System.Windows.Forms.Label()
         Me.cmdExit = New System.Windows.Forms.Button()
+        Me.cmbxItemSelect = New System.Windows.Forms.ComboBox()
+        Me.chkSpecificItemToggle = New System.Windows.Forms.CheckBox()
+        Me.lblDiscountInstruction = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'radExactDiscount
         '
         Me.radExactDiscount.AutoSize = True
         Me.radExactDiscount.Location = New System.Drawing.Point(22, 94)
-        Me.radExactDiscount.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.radExactDiscount.Margin = New System.Windows.Forms.Padding(2)
         Me.radExactDiscount.Name = "radExactDiscount"
         Me.radExactDiscount.Size = New System.Drawing.Size(97, 17)
         Me.radExactDiscount.TabIndex = 0
-        Me.radExactDiscount.TabStop = True
         Me.radExactDiscount.Text = "Exact Discount"
         Me.radExactDiscount.UseVisualStyleBackColor = True
         '
@@ -49,11 +51,10 @@ Partial Class Discount
         '
         Me.radPercentageDiscount.AutoSize = True
         Me.radPercentageDiscount.Location = New System.Drawing.Point(22, 135)
-        Me.radPercentageDiscount.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.radPercentageDiscount.Margin = New System.Windows.Forms.Padding(2)
         Me.radPercentageDiscount.Name = "radPercentageDiscount"
         Me.radPercentageDiscount.Size = New System.Drawing.Size(125, 17)
         Me.radPercentageDiscount.TabIndex = 1
-        Me.radPercentageDiscount.TabStop = True
         Me.radPercentageDiscount.Text = "Percentage Discount"
         Me.radPercentageDiscount.UseVisualStyleBackColor = True
         '
@@ -61,7 +62,7 @@ Partial Class Discount
         '
         Me.txtOffFinalPrice.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtOffFinalPrice.Location = New System.Drawing.Point(148, 133)
-        Me.txtOffFinalPrice.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtOffFinalPrice.Margin = New System.Windows.Forms.Padding(2)
         Me.txtOffFinalPrice.Name = "txtOffFinalPrice"
         Me.txtOffFinalPrice.Size = New System.Drawing.Size(194, 23)
         Me.txtOffFinalPrice.TabIndex = 2
@@ -70,7 +71,7 @@ Partial Class Discount
         '
         Me.txtPercentOff.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPercentOff.Location = New System.Drawing.Point(148, 93)
-        Me.txtPercentOff.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtPercentOff.Margin = New System.Windows.Forms.Padding(2)
         Me.txtPercentOff.Name = "txtPercentOff"
         Me.txtPercentOff.Size = New System.Drawing.Size(194, 23)
         Me.txtPercentOff.TabIndex = 3
@@ -97,8 +98,8 @@ Partial Class Discount
         '
         'cmdApplyDiscount
         '
-        Me.cmdApplyDiscount.Location = New System.Drawing.Point(148, 194)
-        Me.cmdApplyDiscount.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmdApplyDiscount.Location = New System.Drawing.Point(149, 239)
+        Me.cmdApplyDiscount.Margin = New System.Windows.Forms.Padding(2)
         Me.cmdApplyDiscount.Name = "cmdApplyDiscount"
         Me.cmdApplyDiscount.Size = New System.Drawing.Size(193, 42)
         Me.cmdApplyDiscount.TabIndex = 7
@@ -121,18 +122,51 @@ Partial Class Discount
         Me.cmdExit.BackColor = System.Drawing.Color.IndianRed
         Me.cmdExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdExit.Location = New System.Drawing.Point(11, 11)
-        Me.cmdExit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmdExit.Margin = New System.Windows.Forms.Padding(2)
         Me.cmdExit.Name = "cmdExit"
         Me.cmdExit.Size = New System.Drawing.Size(127, 60)
         Me.cmdExit.TabIndex = 41
         Me.cmdExit.Text = "EXIT" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.cmdExit.UseVisualStyleBackColor = False
         '
+        'cmbxItemSelect
+        '
+        Me.cmbxItemSelect.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.cmbxItemSelect.FormattingEnabled = True
+        Me.cmbxItemSelect.Location = New System.Drawing.Point(149, 174)
+        Me.cmbxItemSelect.Name = "cmbxItemSelect"
+        Me.cmbxItemSelect.Size = New System.Drawing.Size(193, 24)
+        Me.cmbxItemSelect.TabIndex = 42
+        '
+        'chkSpecificItemToggle
+        '
+        Me.chkSpecificItemToggle.AutoSize = True
+        Me.chkSpecificItemToggle.Checked = True
+        Me.chkSpecificItemToggle.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chkSpecificItemToggle.Location = New System.Drawing.Point(22, 171)
+        Me.chkSpecificItemToggle.Name = "chkSpecificItemToggle"
+        Me.chkSpecificItemToggle.Size = New System.Drawing.Size(109, 30)
+        Me.chkSpecificItemToggle.TabIndex = 44
+        Me.chkSpecificItemToggle.Text = "Apply Discount to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "specific item" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.chkSpecificItemToggle.UseVisualStyleBackColor = True
+        '
+        'lblDiscountInstruction
+        '
+        Me.lblDiscountInstruction.AutoSize = True
+        Me.lblDiscountInstruction.Location = New System.Drawing.Point(348, 171)
+        Me.lblDiscountInstruction.Name = "lblDiscountInstruction"
+        Me.lblDiscountInstruction.Size = New System.Drawing.Size(86, 39)
+        Me.lblDiscountInstruction.TabIndex = 46
+        Me.lblDiscountInstruction.Text = "Select item from" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Drop Down box" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "to be discounted" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
         'Discount
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(533, 292)
+        Me.Controls.Add(Me.lblDiscountInstruction)
+        Me.Controls.Add(Me.chkSpecificItemToggle)
+        Me.Controls.Add(Me.cmbxItemSelect)
         Me.Controls.Add(Me.cmdExit)
         Me.Controls.Add(Me.lblTitleDiscount)
         Me.Controls.Add(Me.cmdApplyDiscount)
@@ -142,7 +176,7 @@ Partial Class Discount
         Me.Controls.Add(Me.txtOffFinalPrice)
         Me.Controls.Add(Me.radPercentageDiscount)
         Me.Controls.Add(Me.radExactDiscount)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Discount"
         Me.Text = "Discount"
         Me.ResumeLayout(False)
@@ -159,4 +193,7 @@ Partial Class Discount
     Friend WithEvents cmdApplyDiscount As Button
     Friend WithEvents lblTitleDiscount As Label
     Friend WithEvents cmdExit As Button
+    Friend WithEvents cmbxItemSelect As ComboBox
+    Friend WithEvents chkSpecificItemToggle As CheckBox
+    Friend WithEvents lblDiscountInstruction As Label
 End Class
