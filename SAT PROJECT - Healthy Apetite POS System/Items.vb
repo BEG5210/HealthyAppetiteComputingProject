@@ -13,4 +13,41 @@
     'witch is stored here.
 #End Region
 
+    'Assigning Public Properties
+    Public Property Colour() As Color
+        Get
+
+        End Get
+        Set(value As Color)
+
+        End Set
+    End Property
+
+    Public Property Name() As String
+        Get
+
+        End Get
+        Set(value As String)
+
+        End Set
+    End Property
+
+    Public Property Price() As String
+        Get
+
+        End Get
+        Set(value As String)
+
+        End Set
+    End Property
+
+    Public Property Stock() As Integer
+        Get
+
+        End Get
+        Set(value As Integer)
+
+        End Set
+    End Property
+
 End Class
