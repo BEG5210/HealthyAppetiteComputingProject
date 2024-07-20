@@ -756,7 +756,7 @@ Partial Class Payment
         Me.txtAmountPaid.Location = New System.Drawing.Point(13, 212)
         Me.txtAmountPaid.Mask = "999.00"
         Me.txtAmountPaid.Name = "txtAmountPaid"
-        Me.txtAmountPaid.PromptChar = Global.Microsoft.VisualBasic.ChrW(48)
+        Me.txtAmountPaid.PromptChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtAmountPaid.Size = New System.Drawing.Size(207, 32)
         Me.txtAmountPaid.TabIndex = 68
         Me.txtAmountPaid.ValidatingType = GetType(Integer)
@@ -859,7 +859,6 @@ Partial Class Payment
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(777, 455)
         Me.ClientSize = New System.Drawing.Size(776, 455)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.pnlMain)

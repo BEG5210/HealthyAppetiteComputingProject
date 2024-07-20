@@ -66,7 +66,7 @@
 
         'Declaring Values:
         Dim AmtOwed As Decimal = Val(txtAmountOwed.Text)
-        Dim AmtPaid As Decimal = Val(txtAmountPaid.Text)
+        Dim AmtPaid As Decimal = Val(txtAmountPaid.TextMaskFormat)
         Dim Difference As Decimal
 
         Difference = AmtOwed - AmtPaid
@@ -75,13 +75,14 @@
         'essentially, let the transaction complete if the transaction is in
         'the favor of both parties or the company
 
-        'TODO: Make it Work
-        Dim i As Integer = Val(Difference)
 
-        If i = 0 Or i >= 0 Then
-            cmdCompletePayment.Visible = True
-        ElseIf i <= 0 Then
-            cmdCompletePayment.Visible = False
+        ' Check if Difference is less than or equal to zero
+        If Difference <= 0 Then
+            ' Difference is zero or negative, show the cmdCompletePayment button
+            cmdCompletePmt.Visible = True
+        Else
+            ' Difference is positive, hide the cmdCompletePayment button
+            cmdCompletePmt.Visible = False
         End If
 
         txtDifference.Text = Difference.ToString("F2")
@@ -143,6 +144,14 @@
     Private Sub cmd100d_Click(sender As Object, e As EventArgs) Handles cmd100d.Click
         CashNum(10) += 1
         txt100d.Text = CashNum(10)
+    End Sub
+
+    Private Sub cmdCompletePmt_Click(sender As Object, e As EventArgs) Handles cmdCompletePmt.Click
+
+    End Sub
+
+    Private Sub txtAmountPaid_MaskInputRejected(sender As Object, e As MaskInputRejectedEventArgs) Handles txtAmountPaid.MaskInputRejected
+
     End Sub
 
 #End Region
