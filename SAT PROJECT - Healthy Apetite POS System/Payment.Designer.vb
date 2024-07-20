@@ -859,7 +859,11 @@ Partial Class Payment
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+<<<<<<< HEAD
+        Me.ClientSize = New System.Drawing.Size(777, 455)
+=======
         Me.ClientSize = New System.Drawing.Size(776, 455)
+>>>>>>> 19c1231b046dcf1bb02288c956edc788e099ae4c
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.pnlMain)
         Me.Controls.Add(Me.Panel2)
