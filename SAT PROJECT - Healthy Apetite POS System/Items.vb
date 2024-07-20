@@ -13,6 +13,12 @@
     'witch is stored here.
 #End Region
 
+    'Assigning Private Properties
+    Private Property pColour As Color
+    Private Property pName As String
+    Private Property pPrice As Decimal
+    Private Property pStock As Integer
+
     'Assigning Public Properties
     Public Property Colour() As Color
         Get
@@ -32,11 +38,11 @@
         End Set
     End Property
 
-    Public Property Price() As String
+    Public Property Price() As Decimal
         Get
 
         End Get
-        Set(value As String)
+        Set(value As Decimal)
 
         End Set
     End Property
