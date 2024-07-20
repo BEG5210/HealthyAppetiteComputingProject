@@ -36,7 +36,7 @@ Partial Class Discount
         'radExactDiscount
         '
         Me.radExactDiscount.AutoSize = True
-        Me.radExactDiscount.Location = New System.Drawing.Point(109, 85)
+        Me.radExactDiscount.Location = New System.Drawing.Point(22, 94)
         Me.radExactDiscount.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.radExactDiscount.Name = "radExactDiscount"
         Me.radExactDiscount.Size = New System.Drawing.Size(97, 17)
@@ -48,7 +48,7 @@ Partial Class Discount
         'radPercentageDiscount
         '
         Me.radPercentageDiscount.AutoSize = True
-        Me.radPercentageDiscount.Location = New System.Drawing.Point(109, 126)
+        Me.radPercentageDiscount.Location = New System.Drawing.Point(22, 135)
         Me.radPercentageDiscount.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.radPercentageDiscount.Name = "radPercentageDiscount"
         Me.radPercentageDiscount.Size = New System.Drawing.Size(125, 17)
@@ -60,7 +60,7 @@ Partial Class Discount
         'txtOffFinalPrice
         '
         Me.txtOffFinalPrice.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtOffFinalPrice.Location = New System.Drawing.Point(235, 124)
+        Me.txtOffFinalPrice.Location = New System.Drawing.Point(148, 133)
         Me.txtOffFinalPrice.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtOffFinalPrice.Name = "txtOffFinalPrice"
         Me.txtOffFinalPrice.Size = New System.Drawing.Size(194, 23)
@@ -69,7 +69,7 @@ Partial Class Discount
         'txtPercentOff
         '
         Me.txtPercentOff.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPercentOff.Location = New System.Drawing.Point(235, 84)
+        Me.txtPercentOff.Location = New System.Drawing.Point(148, 93)
         Me.txtPercentOff.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtPercentOff.Name = "txtPercentOff"
         Me.txtPercentOff.Size = New System.Drawing.Size(194, 23)
@@ -78,7 +78,7 @@ Partial Class Discount
         'lblPercentOff
         '
         Me.lblPercentOff.AutoSize = True
-        Me.lblPercentOff.Location = New System.Drawing.Point(432, 88)
+        Me.lblPercentOff.Location = New System.Drawing.Point(345, 97)
         Me.lblPercentOff.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblPercentOff.Name = "lblPercentOff"
         Me.lblPercentOff.Size = New System.Drawing.Size(32, 13)
@@ -88,7 +88,7 @@ Partial Class Discount
         'lblOffFinalPrice
         '
         Me.lblOffFinalPrice.AutoSize = True
-        Me.lblOffFinalPrice.Location = New System.Drawing.Point(432, 129)
+        Me.lblOffFinalPrice.Location = New System.Drawing.Point(345, 138)
         Me.lblOffFinalPrice.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblOffFinalPrice.Name = "lblOffFinalPrice"
         Me.lblOffFinalPrice.Size = New System.Drawing.Size(73, 13)
@@ -97,7 +97,7 @@ Partial Class Discount
         '
         'cmdApplyDiscount
         '
-        Me.cmdApplyDiscount.Location = New System.Drawing.Point(235, 185)
+        Me.cmdApplyDiscount.Location = New System.Drawing.Point(148, 194)
         Me.cmdApplyDiscount.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cmdApplyDiscount.Name = "cmdApplyDiscount"
         Me.cmdApplyDiscount.Size = New System.Drawing.Size(193, 42)
@@ -109,7 +109,7 @@ Partial Class Discount
         '
         Me.lblTitleDiscount.AutoSize = True
         Me.lblTitleDiscount.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitleDiscount.Location = New System.Drawing.Point(151, 18)
+        Me.lblTitleDiscount.Location = New System.Drawing.Point(142, 21)
         Me.lblTitleDiscount.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblTitleDiscount.Name = "lblTitleDiscount"
         Me.lblTitleDiscount.Size = New System.Drawing.Size(239, 31)
@@ -121,7 +121,7 @@ Partial Class Discount
         Me.cmdExit.BackColor = System.Drawing.Color.IndianRed
         Me.cmdExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdExit.Location = New System.Drawing.Point(11, 11)
-        Me.cmdExit.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmdExit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cmdExit.Name = "cmdExit"
         Me.cmdExit.Size = New System.Drawing.Size(127, 60)
         Me.cmdExit.TabIndex = 41

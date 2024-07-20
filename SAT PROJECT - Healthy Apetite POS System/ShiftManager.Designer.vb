@@ -48,7 +48,7 @@ Partial Class ShiftManager
         Me.TabControl1.Controls.Add(Me.tabBeginShift)
         Me.TabControl1.Controls.Add(Me.tabEndShift)
         Me.TabControl1.Font = New System.Drawing.Font("Arial", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TabControl1.Location = New System.Drawing.Point(8, 71)
+        Me.TabControl1.Location = New System.Drawing.Point(11, 75)
         Me.TabControl1.Margin = New System.Windows.Forms.Padding(2)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
@@ -145,7 +145,7 @@ Partial Class ShiftManager
         Me.lblLiveTime.AutoSize = True
         Me.lblLiveTime.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblLiveTime.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLiveTime.Location = New System.Drawing.Point(139, 28)
+        Me.lblLiveTime.Location = New System.Drawing.Point(142, 32)
         Me.lblLiveTime.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblLiveTime.Name = "lblLiveTime"
         Me.lblLiveTime.Size = New System.Drawing.Size(163, 39)
@@ -161,7 +161,7 @@ Partial Class ShiftManager
         Me.lblLiveDate.AutoSize = True
         Me.lblLiveDate.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblLiveDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLiveDate.Location = New System.Drawing.Point(306, 28)
+        Me.lblLiveDate.Location = New System.Drawing.Point(309, 32)
         Me.lblLiveDate.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblLiveDate.Name = "lblLiveDate"
         Me.lblLiveDate.Size = New System.Drawing.Size(210, 39)
@@ -172,7 +172,7 @@ Partial Class ShiftManager
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(302, 7)
+        Me.Label1.Location = New System.Drawing.Point(305, 11)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(44, 20)
@@ -183,7 +183,7 @@ Partial Class ShiftManager
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(139, 7)
+        Me.Label2.Location = New System.Drawing.Point(142, 11)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(43, 20)
@@ -194,7 +194,7 @@ Partial Class ShiftManager
         '
         Me.Button1.BackColor = System.Drawing.Color.IndianRed
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(8, 7)
+        Me.Button1.Location = New System.Drawing.Point(11, 11)
         Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(127, 60)

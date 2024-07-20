@@ -74,6 +74,7 @@ Partial Class Payment
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.cmdCompletePayment = New System.Windows.Forms.Button()
         Me.pnlMain = New System.Windows.Forms.Panel()
+        Me.txtAmountPaid = New System.Windows.Forms.MaskedTextBox()
         Me.cmdCompletePmt = New System.Windows.Forms.Button()
         Me.lblTitleCashPayment = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -83,7 +84,6 @@ Partial Class Payment
         Me.lblAmountOwed = New System.Windows.Forms.Label()
         Me.txtDifference = New System.Windows.Forms.TextBox()
         Me.txtAmountOwed = New System.Windows.Forms.TextBox()
-        Me.txtAmountPaid = New System.Windows.Forms.MaskedTextBox()
         CType(Me.cmd5d, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmd20c, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmd10c, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -719,7 +719,7 @@ Partial Class Payment
         Me.Panel3.Controls.Add(Me.cmd1d)
         Me.Panel3.Location = New System.Drawing.Point(509, 6)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(270, 445)
+        Me.Panel3.Size = New System.Drawing.Size(262, 445)
         Me.Panel3.TabIndex = 71
         '
         'cmdCompletePayment
@@ -749,6 +749,17 @@ Partial Class Payment
         Me.pnlMain.Name = "pnlMain"
         Me.pnlMain.Size = New System.Drawing.Size(236, 445)
         Me.pnlMain.TabIndex = 70
+        '
+        'txtAmountPaid
+        '
+        Me.txtAmountPaid.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!)
+        Me.txtAmountPaid.Location = New System.Drawing.Point(13, 212)
+        Me.txtAmountPaid.Mask = "999.00"
+        Me.txtAmountPaid.Name = "txtAmountPaid"
+        Me.txtAmountPaid.PromptChar = Global.Microsoft.VisualBasic.ChrW(48)
+        Me.txtAmountPaid.Size = New System.Drawing.Size(207, 32)
+        Me.txtAmountPaid.TabIndex = 68
+        Me.txtAmountPaid.ValidatingType = GetType(Integer)
         '
         'cmdCompletePmt
         '
@@ -844,22 +855,11 @@ Partial Class Payment
         Me.txtAmountOwed.Size = New System.Drawing.Size(207, 32)
         Me.txtAmountOwed.TabIndex = 34
         '
-        'txtAmountPaid
-        '
-        Me.txtAmountPaid.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!)
-        Me.txtAmountPaid.Location = New System.Drawing.Point(13, 212)
-        Me.txtAmountPaid.Mask = "999.00"
-        Me.txtAmountPaid.Name = "txtAmountPaid"
-        Me.txtAmountPaid.PromptChar = Global.Microsoft.VisualBasic.ChrW(48)
-        Me.txtAmountPaid.Size = New System.Drawing.Size(207, 32)
-        Me.txtAmountPaid.TabIndex = 68
-        Me.txtAmountPaid.ValidatingType = GetType(Integer)
-        '
         'Payment
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(783, 455)
+        Me.ClientSize = New System.Drawing.Size(776, 455)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.pnlMain)
         Me.Controls.Add(Me.Panel2)
