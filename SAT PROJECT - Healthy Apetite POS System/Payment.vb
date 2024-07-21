@@ -3,7 +3,7 @@
 #Region "Defining Variables"
     'DEFINING SOME VARIABLES:
 
-    'denominations:         {5,10,20,50, 1, 2, 5,10,20,50,100}
+    'denominations:            {5,10,20,50, 1, 2, 5,10,20,50,100}
     Dim CashNum As Integer() = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}    '11 values (11-1)
     '                          [   CENTS   ][      DOLLARS      ]
 
@@ -143,6 +143,10 @@
     Private Sub cmd100d_Click(sender As Object, e As EventArgs) Handles cmd100d.Click
         CashNum(10) += 1
         txt100d.Text = CashNum(10)
+    End Sub
+
+    Private Sub pnlMain_Paint(sender As Object, e As PaintEventArgs) Handles pnlMain.Paint
+
     End Sub
 
 #End Region

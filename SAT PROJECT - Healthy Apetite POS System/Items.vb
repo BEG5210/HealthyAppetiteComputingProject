@@ -6,7 +6,7 @@
     'colour
     'name
     'price
-    'and more
+    'and more (Probably)
     '
     'after the csv containing this info is read, it will be saved here.
     'once the user is ready to exit, then the csv is saved, using the updated data

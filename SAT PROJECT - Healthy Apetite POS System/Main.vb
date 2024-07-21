@@ -25,10 +25,6 @@
         ShiftManager.Show()
     End Sub
 
-    Private Sub txtCart_TextChanged(sender As Object, e As EventArgs) Handles txtCart.TextChanged
-
-    End Sub
-
 #Region "------ IMPORTANT INFO -----------------------------------------"
     '
     '******************* ITEM BUTTON NAME FORMATTING ***************
