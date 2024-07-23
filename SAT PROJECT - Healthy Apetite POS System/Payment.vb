@@ -3,7 +3,7 @@
 #Region "Defining Variables"
     'DEFINING SOME VARIABLES:
 
-    'denominations:            {5,10,20,50, 1, 2, 5,10,20,50,100}
+    'denominations:         {5,10,20,50, 1, 2, 5,10,20,50,100}
     Dim CashNum As Integer() = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}    '11 values (11-1)
     '                          [   CENTS   ][      DOLLARS      ]
 
@@ -75,13 +75,14 @@
         'essentially, let the transaction complete if the transaction is in
         'the favor of both parties or the company
 
-        'TODO: Make it Work
-        Dim i As Integer = Val(Difference)
 
-        If i = 0 Or i >= 0 Then
-            cmdCompletePayment.Visible = True
-        ElseIf i <= 0 Then
-            cmdCompletePayment.Visible = False
+        ' Check if Difference is less than or equal to zero
+        If Difference <= 0 Then
+            ' Difference is zero or negative, show the cmdCompletePayment button
+            cmdCompletePmt.Visible = True
+        Else
+            ' Difference is positive, hide the cmdCompletePayment button
+            cmdCompletePmt.Visible = False
         End If
 
         txtDifference.Text = Difference.ToString("F2")
@@ -145,7 +146,11 @@
         txt100d.Text = CashNum(10)
     End Sub
 
-    Private Sub pnlMain_Paint(sender As Object, e As PaintEventArgs) Handles pnlMain.Paint
+    Private Sub cmdCompletePmt_Click(sender As Object, e As EventArgs) Handles cmdCompletePmt.Click
+
+    End Sub
+
+    Private Sub txtAmountPaid_MaskInputRejected(sender As Object, e As MaskInputRejectedEventArgs) Handles txtAmountPaid.MaskInputRejected
 
     End Sub
 

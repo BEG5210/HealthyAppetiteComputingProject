@@ -710,6 +710,7 @@ Partial Class Payment
         '
         'txtAmountPaid
         '
+        Me.txtAmountPaid.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludePromptAndLiterals
         Me.txtAmountPaid.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!)
         Me.txtAmountPaid.Location = New System.Drawing.Point(20, 326)
         Me.txtAmountPaid.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
@@ -718,6 +719,7 @@ Partial Class Payment
         Me.txtAmountPaid.PromptChar = Global.Microsoft.VisualBasic.ChrW(48)
         Me.txtAmountPaid.Size = New System.Drawing.Size(308, 44)
         Me.txtAmountPaid.TabIndex = 68
+        Me.txtAmountPaid.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludePromptAndLiterals
         Me.txtAmountPaid.ValidatingType = GetType(Integer)
         '
         'cmdCompletePmt
