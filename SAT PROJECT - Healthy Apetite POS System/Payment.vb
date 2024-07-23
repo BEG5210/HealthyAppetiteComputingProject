@@ -66,7 +66,7 @@
 
         'Declaring Values:
         Dim AmtOwed As Decimal = Val(txtAmountOwed.Text)
-        Dim AmtPaid As Decimal = Val(txtAmountPaid.TextMaskFormat)
+        Dim AmtPaid As Decimal = Val(txtAmountPaid.Text)
         Dim Difference As Decimal
 
         Difference = AmtOwed - AmtPaid
