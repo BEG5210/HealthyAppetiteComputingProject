@@ -12,7 +12,7 @@
     '                             [   CENTS   ][      DOLLARS      ]
 
     'denominations:              {5,10,20,50, 1, 2, 5,10,20,50,100}
-    Dim CashTotal As Integer() = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0} '11 values (11-1)
+    Dim CashTotal As Decimal() = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}  '11 values (11-1)
     '                            [   CENTS   ][      DOLLARS      ]
 
     'CashChange - Number of each denomination of currency to be given as change
@@ -48,7 +48,7 @@
 
     'Hiding Payment Window - Values reset
     Private Sub cmdExit_Click(sender As Object, e As EventArgs) Handles cmdExit.Click
-        Me.Hide()
+        Me.Close()
     End Sub
 #End Region
 
@@ -104,6 +104,8 @@
         txt5c.Text = CashNum(0)
 
         CashTotal(0) = Val(CashNum(0)) * 0.05
+
+        CalculateTotalFromCashGiven()
     End Sub
 
     Private Sub cmd10c_Click(sender As Object, e As EventArgs) Handles cmd10c.Click
@@ -111,6 +113,8 @@
         txt10c.Text = CashNum(1)
 
         CashTotal(1) = Val(CashNum(1)) * 0.1
+
+        CalculateTotalFromCashGiven()
     End Sub
 
     Private Sub cmd20c_Click(sender As Object, e As EventArgs) Handles cmd20c.Click
@@ -118,6 +122,8 @@
         txt20c.Text = CashNum(2)
 
         CashTotal(2) = Val(CashNum(2)) * 0.2
+
+        CalculateTotalFromCashGiven()
     End Sub
 
     Private Sub cmd50c_Click(sender As Object, e As EventArgs) Handles cmd50c.Click
@@ -125,6 +131,8 @@
         txt50c.Text = CashNum(3)
 
         CashTotal(3) = Val(CashNum(3)) * 0.5
+
+        CalculateTotalFromCashGiven()
     End Sub
 
     Private Sub cmd1d_Click(sender As Object, e As EventArgs) Handles cmd1d.Click
@@ -132,6 +140,8 @@
         txt1d.Text = CashNum(4)
 
         CashTotal(4) = CashNum(4)
+
+        CalculateTotalFromCashGiven()
     End Sub
 
     Private Sub cmd2d_Click(sender As Object, e As EventArgs) Handles cmd2d.Click
@@ -139,6 +149,8 @@
         txt2d.Text = CashNum(5)
 
         CashTotal(5) = Val(CashNum(5)) * 2
+
+        CalculateTotalFromCashGiven()
     End Sub
 
     Private Sub cmd5d_Click(sender As Object, e As EventArgs) Handles cmd5d.Click
@@ -146,6 +158,8 @@
         txt5d.Text = CashNum(6)
 
         CashTotal(6) = Val(CashNum(6)) * 5
+
+        CalculateTotalFromCashGiven()
     End Sub
 
     Private Sub cmd10d_Click(sender As Object, e As EventArgs) Handles cmd10d.Click
@@ -153,6 +167,8 @@
         txt10d.Text = CashNum(7)
 
         CashTotal(7) = Val(CashNum(7)) * 10
+
+        CalculateTotalFromCashGiven()
     End Sub
 
     Private Sub cmd20d_Click(sender As Object, e As EventArgs) Handles cmd20d.Click
@@ -160,6 +176,8 @@
         txt20d.Text = CashNum(8)
 
         CashTotal(8) = Val(CashNum(8)) * 20
+
+        CalculateTotalFromCashGiven()
     End Sub
 
     Private Sub cmd50d_Click(sender As Object, e As EventArgs) Handles cmd50d.Click
@@ -167,13 +185,17 @@
         txt50d.Text = CashNum(9)
 
         CashTotal(9) = Val(CashNum(9)) * 50
+
+        CalculateTotalFromCashGiven()
     End Sub
 
     Private Sub cmd100d_Click(sender As Object, e As EventArgs) Handles cmd100d.Click
         CashNum(10) += 1
         txt100d.Text = CashNum(10)
 
-        CashTotal(10) = Val(CashNum(10)) * 100
+        CashTotal(10) = Val(CashNum(10)) * 100 '
+
+        CalculateTotalFromCashGiven()
     End Sub
 
     Private Sub txtDifference_TextChanged(sender As Object, e As EventArgs) Handles txtDifference.TextChanged
@@ -184,7 +206,15 @@
 
     Sub CalculateTotalFromCashGiven()
 
-        'itterate through the cash index to calculate the total (maybe doit under each cmd click sub)
+        Dim TotalSum As Decimal
+        Dim index As Integer = 0
+
+        While index <= 10
+            TotalSum += CashTotal(index) / 100
+            index += 1
+        End While
+
+        txtAmountPaid.Text = TotalSum
 
     End Sub
 
@@ -229,6 +259,7 @@
 #End Region
 
 #Region "------ NOTES TO SELF ------------------------------------------"
+
 #End Region
 
 #Region "thing from SRS to refer to"
