@@ -11,8 +11,13 @@
     Dim CashChange As Integer() = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0} '11 values (11-1)
     '                             [   CENTS   ][      DOLLARS      ]
 
+    'denominations:              {5,10,20,50, 1, 2, 5,10,20,50,100}
+    Dim CashTotal As Integer() = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0} '11 values (11-1)
+    '                            [   CENTS   ][      DOLLARS      ]
+
     'CashChange - Number of each denomination of currency to be given as change
     'CashNum - Number of each denomination of currency pressed
+    'CashTotal - Total amount of cash in dollars that the customer has given
 #End Region
 
 #Region "Manual input Checkbox Check Code"
@@ -89,6 +94,9 @@
     End Sub
 #End Region
 
+    'TODO:
+    'When any of dis occours, make it so it itirates through the index
+    'and calculates the total. of each boio, and make it the ammount paid.
 #Region "Code for when Cash Buttons Pressed"
 
     Private Sub cmd5c_Click(sender As Object, e As EventArgs) Handles cmd5c.Click
@@ -146,11 +154,15 @@
         txt100d.Text = CashNum(10)
     End Sub
 
-    Private Sub cmdCompletePmt_Click(sender As Object, e As EventArgs) Handles cmdCompletePmt.Click
-
+    Private Sub txtDifference_TextChanged(sender As Object, e As EventArgs) Handles txtDifference.TextChanged
+        If Val(txtDifference.Text) <= 0 Then
+            'TODO: Calculate Change
+        End If
     End Sub
 
-    Private Sub txtAmountPaid_MaskInputRejected(sender As Object, e As MaskInputRejectedEventArgs) Handles txtAmountPaid.MaskInputRejected
+    Sub CalculateTotalFromCashGiven()
+
+        'itterate through the cash index to calculate the total (maybe doit under each cmd click sub)
 
     End Sub
 
