@@ -102,56 +102,78 @@
     Private Sub cmd5c_Click(sender As Object, e As EventArgs) Handles cmd5c.Click
         CashNum(0) += 1
         txt5c.Text = CashNum(0)
+
+        CashTotal(0) = Val(CashNum(0)) * 0.05
     End Sub
 
     Private Sub cmd10c_Click(sender As Object, e As EventArgs) Handles cmd10c.Click
         CashNum(1) += 1
         txt10c.Text = CashNum(1)
+
+        CashTotal(1) = Val(CashNum(1)) * 0.1
     End Sub
 
     Private Sub cmd20c_Click(sender As Object, e As EventArgs) Handles cmd20c.Click
         CashNum(2) += 1
         txt20c.Text = CashNum(2)
+
+        CashTotal(2) = Val(CashNum(2)) * 0.2
     End Sub
 
     Private Sub cmd50c_Click(sender As Object, e As EventArgs) Handles cmd50c.Click
         CashNum(3) += 1
         txt50c.Text = CashNum(3)
+
+        CashTotal(3) = Val(CashNum(3)) * 0.5
     End Sub
 
     Private Sub cmd1d_Click(sender As Object, e As EventArgs) Handles cmd1d.Click
         CashNum(4) += 1
         txt1d.Text = CashNum(4)
+
+        CashTotal(4) = CashNum(4)
     End Sub
 
     Private Sub cmd2d_Click(sender As Object, e As EventArgs) Handles cmd2d.Click
         CashNum(5) += 1
-        txt2d.Text = CashNum(6)
+        txt2d.Text = CashNum(5)
+
+        CashTotal(5) = Val(CashNum(5)) * 2
     End Sub
 
     Private Sub cmd5d_Click(sender As Object, e As EventArgs) Handles cmd5d.Click
         CashNum(6) += 1
         txt5d.Text = CashNum(6)
+
+        CashTotal(6) = Val(CashNum(6)) * 5
     End Sub
 
     Private Sub cmd10d_Click(sender As Object, e As EventArgs) Handles cmd10d.Click
         CashNum(7) += 1
         txt10d.Text = CashNum(7)
+
+        CashTotal(7) = Val(CashNum(7)) * 10
     End Sub
 
     Private Sub cmd20d_Click(sender As Object, e As EventArgs) Handles cmd20d.Click
         CashNum(8) += 1
         txt20d.Text = CashNum(8)
+
+        CashTotal(8) = Val(CashNum(8)) * 20
     End Sub
 
     Private Sub cmd50d_Click(sender As Object, e As EventArgs) Handles cmd50d.Click
         CashNum(9) += 1
         txt50d.Text = CashNum(9)
+
+        CashTotal(9) = Val(CashNum(9)) * 50
     End Sub
 
     Private Sub cmd100d_Click(sender As Object, e As EventArgs) Handles cmd100d.Click
         CashNum(10) += 1
         txt100d.Text = CashNum(10)
+
+        CashTotal(10) = Val(CashNum(10)) * 100
     End Sub
 
     Private Sub txtDifference_TextChanged(sender As Object, e As EventArgs) Handles txtDifference.TextChanged
