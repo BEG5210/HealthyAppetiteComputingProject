@@ -1,4 +1,7 @@
-﻿Public Class Main
+﻿Imports System.IO
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+
+Public Class Main
     Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'When this loads, make the buttons read the files and using that:
         'Establish the name
@@ -7,7 +10,19 @@
         'Establish the items stock count
         'Establish the items price
 
+        ReadItemCSV()
+
         'I'll probably use an object for this, and update my Design Solution.
+    End Sub
+
+    Private Sub ReadItemCSV()
+
+        Dim FilePath As String
+        Dim FileName As String
+
+        FileName = "items.csv"
+        FilePath = "C:\Computing\" + FileName
+
     End Sub
 
     Private Sub cmdCash_Click(sender As Object, e As EventArgs) Handles cmdCash.Click

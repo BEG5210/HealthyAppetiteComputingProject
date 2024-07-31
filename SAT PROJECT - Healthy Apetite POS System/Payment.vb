@@ -210,8 +210,8 @@
         Dim index As Integer = 0
 
         While index <= 10
-            TotalSum += CashTotal(index) / 100
-            index += 1
+            TotalSum += CashTotal(index) / 100 'devide by 100 to make it actually word with formatting of the textbox. Absalutely Dumb, yet genius.
+            index += 1                         'iterates the index to the next position in the array
         End While
 
         txtAmountPaid.Text = TotalSum

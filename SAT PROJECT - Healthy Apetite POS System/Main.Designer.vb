@@ -69,6 +69,8 @@ Partial Class Main
         Me.grpCart = New System.Windows.Forms.GroupBox()
         Me.grpFunctions = New System.Windows.Forms.GroupBox()
         Me.grpItems = New System.Windows.Forms.GroupBox()
+        Me.OpenFileDialog = New System.Windows.Forms.OpenFileDialog()
+        Me.SaveFileDialog = New System.Windows.Forms.SaveFileDialog()
         Me.pnlProducts.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -543,6 +545,10 @@ Partial Class Main
         Me.grpItems.TabStop = False
         Me.grpItems.Text = "ITEMS"
         '
+        'OpenFileDialog
+        '
+        Me.OpenFileDialog.FileName = "OpenFileDialog1"
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -611,4 +617,6 @@ Partial Class Main
     Friend WithEvents grpCart As GroupBox
     Friend WithEvents grpFunctions As GroupBox
     Friend WithEvents grpItems As GroupBox
+    Friend WithEvents OpenFileDialog As OpenFileDialog
+    Friend WithEvents SaveFileDialog As SaveFileDialog
 End Class

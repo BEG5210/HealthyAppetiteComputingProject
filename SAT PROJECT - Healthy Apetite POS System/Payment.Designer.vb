@@ -714,7 +714,7 @@ Partial Class Payment
         Me.txtAmountPaid.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!)
         Me.txtAmountPaid.Location = New System.Drawing.Point(20, 326)
         Me.txtAmountPaid.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.txtAmountPaid.Mask = "999.00"
+        Me.txtAmountPaid.Mask = "000.00"
         Me.txtAmountPaid.Name = "txtAmountPaid"
         Me.txtAmountPaid.PromptChar = Global.Microsoft.VisualBasic.ChrW(48)
         Me.txtAmountPaid.Size = New System.Drawing.Size(308, 44)
