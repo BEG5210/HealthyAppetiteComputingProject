@@ -1,7 +1,11 @@
 ﻿Imports System.IO
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+Imports System.Xml
 
 Public Class Main
+
+    Dim output As String
+    Dim filepath As String
     Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'When this loads, make the buttons read the files and using that:
         'Establish the name
@@ -17,11 +21,32 @@ Public Class Main
 
     Private Sub ReadItemCSV()
 
-        Dim FilePath As String
+        'defining variables
         Dim FileName As String
+        Dim FileNum As Integer = FreeFile()
 
-        FileName = "items.csv"
-        FilePath = "C:\Computing\" + FileName
+        FileName = "test.csv"
+        filepath = "C:/Computing/" + FileName
+
+        FileOpen(FileNum, filepath, OpenMode.Input)
+
+        Try
+            'reads each line of the file 
+            Do Until EOF(FileNum)
+                'TODO: Modify so it saves each thing to the object instead by first
+                'saving each row as a index in a string
+                'going through each index of that string, and defining variables for Items object
+                'then after that display the items
+                output = LineInput(FileNum)
+                txtTest.Text += output + vbCrLf
+            Loop
+
+            FileClose(FileNum)
+
+        Catch ex As Exception
+            FileClose(FileNum)
+            MsgBox("Error Reading Items CSV File.")
+        End Try
 
     End Sub
 
