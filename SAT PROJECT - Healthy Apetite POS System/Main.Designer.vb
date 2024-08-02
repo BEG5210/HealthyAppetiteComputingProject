@@ -71,6 +71,7 @@ Partial Class Main
         Me.grpItems = New System.Windows.Forms.GroupBox()
         Me.OpenFileDialog = New System.Windows.Forms.OpenFileDialog()
         Me.SaveFileDialog = New System.Windows.Forms.SaveFileDialog()
+        Me.txtTest = New System.Windows.Forms.TextBox()
         Me.pnlProducts.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -81,6 +82,7 @@ Partial Class Main
         '
         'pnlProducts
         '
+        Me.pnlProducts.Controls.Add(Me.txtTest)
         Me.pnlProducts.Controls.Add(Me.cmd4_8)
         Me.pnlProducts.Controls.Add(Me.cmd4_7)
         Me.pnlProducts.Controls.Add(Me.cmd4_6)
@@ -549,6 +551,14 @@ Partial Class Main
         '
         Me.OpenFileDialog.FileName = "OpenFileDialog1"
         '
+        'txtTest
+        '
+        Me.txtTest.Location = New System.Drawing.Point(29, 357)
+        Me.txtTest.Multiline = True
+        Me.txtTest.Name = "txtTest"
+        Me.txtTest.Size = New System.Drawing.Size(385, 221)
+        Me.txtTest.TabIndex = 1
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -560,6 +570,7 @@ Partial Class Main
         Me.Name = "Main"
         Me.Text = "Main Screen"
         Me.pnlProducts.ResumeLayout(False)
+        Me.pnlProducts.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
@@ -619,4 +630,5 @@ Partial Class Main
     Friend WithEvents grpItems As GroupBox
     Friend WithEvents OpenFileDialog As OpenFileDialog
     Friend WithEvents SaveFileDialog As SaveFileDialog
+    Friend WithEvents txtTest As TextBox
 End Class
