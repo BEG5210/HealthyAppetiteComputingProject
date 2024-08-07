@@ -6,6 +6,7 @@ Public Class Main
 
     Dim output As String
     Dim filepath As String
+    Dim items(31) As String
     Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'When this loads, make the buttons read the files and using that:
         'Establish the name
@@ -20,25 +21,29 @@ Public Class Main
     End Sub
 
     Private Sub ReadItemCSV()
-
         'defining variables
         Dim FileName As String
         Dim FileNum As Integer = FreeFile()
+        Dim i As Integer = 0
 
+        'identify file directory
         FileName = "test.csv"
         filepath = "C:/Computing/" + FileName
 
         FileOpen(FileNum, filepath, OpenMode.Input)
 
         Try
-            'reads each line of the file 
+            'reads each line of the file, and saves each row to a different index in an array
             Do Until EOF(FileNum)
-                'TODO: Modify so it saves each thing to the object instead by first
-                'saving each row as a index in a string
-                'going through each index of that string, and defining variables for Items object
-                'then after that display the items
                 output = LineInput(FileNum)
-                txtTest.Text += output + vbCrLf
+
+                items(i) = output
+
+
+                txtTest.Text += output + vbCrLf 'Representation of Data for testing
+
+                i += 1                          'Iterate index by 1
+
             Loop
 
             FileClose(FileNum)
@@ -47,6 +52,8 @@ Public Class Main
             FileClose(FileNum)
             MsgBox("Error Reading Items CSV File.")
         End Try
+
+        i = 0
 
     End Sub
 

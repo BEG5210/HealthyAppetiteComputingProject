@@ -73,6 +73,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataTransfer.vb" />
     <Compile Include="Discount.Designer.vb">
       <DependentUpon>Discount.vb</DependentUpon>
     </Compile>
