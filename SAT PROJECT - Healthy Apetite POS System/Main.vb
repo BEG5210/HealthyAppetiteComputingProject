@@ -7,6 +7,7 @@ Public Class Main
     Dim output As String
     Dim filepath As String
     Dim items(31) As String
+
     Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'When this loads, make the buttons read the files and using that:
         'Establish the name
@@ -47,7 +48,7 @@ Public Class Main
                 ' Check if the line has the correct number of fields
                 If fields.Length = 5 Then
                     nums.Add(CInt(fields(0)))
-                    names.Add(fields(1) & " " & fields(2))
+                    names.Add(fields(1) & " " & fields(2)) 'This line doesent work
                     colours.Add(fields(2))
                     prices.Add(CDec(fields(3)))
                     stocks.Add(CInt(fields(4)))
@@ -58,6 +59,7 @@ Public Class Main
 
                 ' Iterate index by 1
                 i += 1
+
             Loop
 
             FileClose(FileNum)
