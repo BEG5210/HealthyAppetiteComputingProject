@@ -185,9 +185,13 @@ Public Class Main
         Thing = Val(CartPlacePrice(CartPLace) + prices(0))
         CartPlacePrice(CartPLace) = Thing
 
+        'Hacky solution to rounding decimal places
+        Dim totalprice As Decimal = CartPlacePrice(CartPLace)
+        totalprice = totalprice.ToString("F2")
+
         'Make the cart go cart moment idk im tired.
         txtCart.Text = CStr(CosCartPlace) + " - " + names(Index) + " x " + CStr(ItemCartQuantity(Index)) + vbCrLf _
-            + "          " + CStr(ItemCartQuantity(Index)) + " x " + CStr(CartPlacePrice(CartPLace))
+            + "          " + CStr(ItemCartQuantity(Index)) + " x " + CStr(totalprice)
     End Sub
 
     Private Sub txtCart_TextChanged(sender As Object, e As EventArgs) Handles txtCart.TextChanged
