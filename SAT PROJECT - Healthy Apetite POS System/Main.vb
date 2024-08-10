@@ -148,9 +148,9 @@ Public Class Main
     End Sub
 
     'Testing:
-    Private Sub cmd1_1_Click(sender As Object, e As EventArgs) Handles cmd1_1.Click
-        MsgBox(strVella)
-    End Sub
+    'Private Sub cmd1_1_Click(sender As Object, e As EventArgs) Handles cmd1_1.Click
+    '   MsgBox(strVella)
+    'End Sub
 
 #Region "------ IMPORTANT INFO -----------------------------------------"
     '
@@ -175,7 +175,7 @@ Public Class Main
     '
 #End Region
 
-#Region "--------- CREDITS ---------"
+#Region "------ CREDITS ------------------------------------------------------"
     '
     'Portions of "ReadItemCSV()" were written by chatgtp, specifically the portions wwhere data was saved to lists
     '
