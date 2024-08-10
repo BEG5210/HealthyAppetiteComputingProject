@@ -137,8 +137,20 @@ Public Class Main
         txtTest.Text += "Price: {" & String.Join(", ", prices) & "}" & vbCrLf
         txtTest.Text += "Stock: {" & String.Join(", ", stocks) & "}" & vbCrLf
 
-        ' Reset the index
+        'Define variables for button loading
+        Dim x As Integer = 0
+        Dim Btns As Control() = {cmd1_1, cmd2_1, cmd3_1, cmd4_1, cmd1_2, cmd2_2, cmd3_2, cmd4_2, cmd1_3, cmd2_3, cmd3_3, cmd4_3, cmd1_4, cmd2_4, cmd3_4, cmd4_4, cmd1_5, cmd2_5, cmd3_5, cmd4_5, cmd1_6, cmd2_6, cmd3_6, cmd4_6, cmd1_7, cmd2_7, cmd3_7, cmd4_7, cmd1_8, cmd2_8, cmd3_8, cmd4_8}
+
+        'load the buttons
+        Do While x < i
+            Btns(x).Visible = True
+            Btns(x).Text = names(x)
+            x += 1
+        Loop
+
+        ' Reset the index(s)
         i = 0
+        x = 0
 
     End Sub
 
