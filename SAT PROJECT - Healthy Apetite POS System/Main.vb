@@ -21,6 +21,12 @@ Public Class Main
     Dim filepath As String = "C:/Computing/" & FileName
     Dim FileNum As Integer = FreeFile()
 
+    'Define index for adding cart items
+    Dim Index As Integer = 0
+
+    Dim CartPlacePrice(31) As Decimal
+    Dim Thing As Decimal
+
     Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         MakeButtonsInvisible()
@@ -151,7 +157,7 @@ Public Class Main
             x += 1
         Loop
 
-        ' Reset the index(s)
+        'Reset the index(s)
         i = 0
         x = 0
 
@@ -170,6 +176,22 @@ Public Class Main
     Private Sub cmdBeginEndShift_Click(sender As Object, e As EventArgs) Handles cmdBeginEndShift.Click
         'Show the Shift Maneger
         ShiftManager.Show()
+    End Sub
+
+    Private Sub cmd1_1_Click(sender As Object, e As EventArgs) Handles cmd1_1.Click
+        'Set index pos to relevant place
+        Index = 0
+        ItemCartQuantity(Index) += 1
+        Thing = Val(CartPlacePrice(CartPLace) + prices(0))
+        CartPlacePrice(CartPLace) = Thing
+
+        'Make the cart go cart moment idk im tired.
+        txtCart.Text = CStr(CosCartPlace) + " - " + names(Index) + " x " + CStr(ItemCartQuantity(Index)) + vbCrLf _
+            + "          " + CStr(ItemCartQuantity(Index)) + " x " + CStr(CartPlacePrice(CartPLace))
+    End Sub
+
+    Private Sub txtCart_TextChanged(sender As Object, e As EventArgs) Handles txtCart.TextChanged
+
     End Sub
 
     'Testing:
