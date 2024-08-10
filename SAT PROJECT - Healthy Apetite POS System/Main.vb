@@ -4,9 +4,22 @@ Imports System.Xml
 
 Public Class Main
 
-    Dim output As String
-    Dim filepath As String
-    Dim items(31) As String
+    ' Redundant Variables
+    ' Dim output As String
+    ' Dim filepath As String
+    ' Dim items(31) As String
+
+    ' Define arrays to store the parsed values
+    Dim nums() As Integer
+    Dim names() As String
+    Dim colours() As String
+    Dim prices() As Decimal
+    Dim stocks() As Integer
+
+    ' Define file variables
+    Dim FileName As String = "test.csv"
+    Dim filepath As String = "C:/Computing/" & FileName
+    Dim FileNum As Integer = FreeFile()
 
     Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -71,17 +84,7 @@ Public Class Main
 
     Private Sub ReadItemCSV()
 
-        ' Define arrays to store the parsed values
-        Dim nums() As Integer
-        Dim names() As String
-        Dim colours() As String
-        Dim prices() As Decimal
-        Dim stocks() As Integer
-
-        ' Define file variables
-        Dim FileName As String = "test.csv"
-        Dim filepath As String = "C:/Computing/" & FileName
-        Dim FileNum As Integer = FreeFile()
+        'Define Variable for Parsing Index
         Dim i As Integer = 0
 
         ' Initialize arrays to a reasonable size (if the number of lines in the CSV is known, use that size)
