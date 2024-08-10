@@ -9,6 +9,9 @@ Public Class Main
     Dim items(31) As String
 
     Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        MakeButtonsInvisible()
+
         'When this loads, make the buttons read the files and using that:
         'Establish the name
         'Establish the colour
@@ -19,6 +22,51 @@ Public Class Main
         ReadItemCSV()
 
         'I'll probably use an object for this, and update my Design Solution.
+    End Sub
+
+    Private Sub MakeButtonsInvisible() ' Sets buttons to be invisible. this is done in code, instead of in design, so when viewing layout it is easier to see the buttons when they arent hidden.
+
+        ' Manually set each button's visibility to False
+        cmd1_1.Visible = False
+        cmd2_1.Visible = False
+        cmd3_1.Visible = False
+        cmd4_1.Visible = False
+
+        cmd1_2.Visible = False
+        cmd2_2.Visible = False
+        cmd3_2.Visible = False
+        cmd4_2.Visible = False
+
+        cmd1_3.Visible = False
+        cmd2_3.Visible = False
+        cmd3_3.Visible = False
+        cmd4_3.Visible = False
+
+        cmd1_4.Visible = False
+        cmd2_4.Visible = False
+        cmd3_4.Visible = False
+        cmd4_4.Visible = False
+
+        cmd1_5.Visible = False
+        cmd2_5.Visible = False
+        cmd3_5.Visible = False
+        cmd4_5.Visible = False
+
+        cmd1_6.Visible = False
+        cmd2_6.Visible = False
+        cmd3_6.Visible = False
+        cmd4_6.Visible = False
+
+        cmd1_7.Visible = False
+        cmd2_7.Visible = False
+        cmd3_7.Visible = False
+        cmd4_7.Visible = False
+
+        cmd1_8.Visible = False
+        cmd2_8.Visible = False
+        cmd3_8.Visible = False
+        cmd4_8.Visible = False
+
     End Sub
 
     Private Sub ReadItemCSV()
@@ -79,6 +127,9 @@ Public Class Main
         ' Reset the index
         i = 0
 
+        'Define the Items
+
+
     End Sub
 
     Private Sub cmdCash_Click(sender As Object, e As EventArgs) Handles cmdCash.Click
@@ -128,6 +179,7 @@ Public Class Main
     '
     'Portions of "ReadItemCSV()" were written by chatgtp, specifically the portions wwhere data was saved to lists
     '
+    'MakeButtonsInvisible() entirely written by CHATGTP: https://chatgpt.com/share/a6386c9e-2131-46e9-ab51-bb63ec5edfa9
 #End Region
 
 End Class

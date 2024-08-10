@@ -55,6 +55,7 @@ Partial Class Main
         Me.cmd1_3 = New System.Windows.Forms.Button()
         Me.cmd1_2 = New System.Windows.Forms.Button()
         Me.cmd1_1 = New System.Windows.Forms.Button()
+        Me.txtTest = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblTotalCost = New System.Windows.Forms.Label()
         Me.lblLabelTotalCost = New System.Windows.Forms.Label()
@@ -71,7 +72,6 @@ Partial Class Main
         Me.grpItems = New System.Windows.Forms.GroupBox()
         Me.OpenFileDialog = New System.Windows.Forms.OpenFileDialog()
         Me.SaveFileDialog = New System.Windows.Forms.SaveFileDialog()
-        Me.txtTest = New System.Windows.Forms.TextBox()
         Me.pnlProducts.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -82,7 +82,6 @@ Partial Class Main
         '
         'pnlProducts
         '
-        Me.pnlProducts.Controls.Add(Me.txtTest)
         Me.pnlProducts.Controls.Add(Me.cmd4_8)
         Me.pnlProducts.Controls.Add(Me.cmd4_7)
         Me.pnlProducts.Controls.Add(Me.cmd4_6)
@@ -408,6 +407,14 @@ Partial Class Main
         Me.cmd1_1.Text = "Button1"
         Me.cmd1_1.UseVisualStyleBackColor = True
         '
+        'txtTest
+        '
+        Me.txtTest.Location = New System.Drawing.Point(561, 471)
+        Me.txtTest.Multiline = True
+        Me.txtTest.Name = "txtTest"
+        Me.txtTest.Size = New System.Drawing.Size(381, 175)
+        Me.txtTest.TabIndex = 1
+        '
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.lblTotalCost)
@@ -551,26 +558,18 @@ Partial Class Main
         '
         Me.OpenFileDialog.FileName = "OpenFileDialog1"
         '
-        'txtTest
-        '
-        Me.txtTest.Location = New System.Drawing.Point(29, 357)
-        Me.txtTest.Multiline = True
-        Me.txtTest.Name = "txtTest"
-        Me.txtTest.Size = New System.Drawing.Size(385, 221)
-        Me.txtTest.TabIndex = 1
-        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1142, 702)
+        Me.Controls.Add(Me.txtTest)
         Me.Controls.Add(Me.grpItems)
         Me.Controls.Add(Me.grpFunctions)
         Me.Controls.Add(Me.grpCart)
         Me.Name = "Main"
         Me.Text = "Main Screen"
         Me.pnlProducts.ResumeLayout(False)
-        Me.pnlProducts.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
@@ -578,6 +577,7 @@ Partial Class Main
         Me.grpFunctions.ResumeLayout(False)
         Me.grpItems.ResumeLayout(False)
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
