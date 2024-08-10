@@ -190,8 +190,16 @@ Public Class Main
         totalprice = totalprice.ToString("F2")
 
         'Make the cart go cart moment idk im tired.
-        txtCart.Text = CStr(CosCartPlace) + " - " + names(Index) + " x " + CStr(ItemCartQuantity(Index)) + vbCrLf _
+        CartList = CStr(CosCartPlace) + " - " + names(Index) + " x " + CStr(ItemCartQuantity(Index)) + vbCrLf _
             + "          " + CStr(ItemCartQuantity(Index)) + " x " + CStr(totalprice)
+
+        RefreshCart()
+
+    End Sub
+
+    Private Sub RefreshCart()
+        txtCart.Text = ""
+        txtCart.Text = CartList
     End Sub
 
     Private Sub txtCart_TextChanged(sender As Object, e As EventArgs) Handles txtCart.TextChanged
