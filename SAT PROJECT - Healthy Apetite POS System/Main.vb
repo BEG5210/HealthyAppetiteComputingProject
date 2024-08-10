@@ -72,17 +72,24 @@ Public Class Main
     Private Sub ReadItemCSV()
 
         ' Define arrays to store the parsed values
-        Dim nums As New List(Of Integer)()
-        Dim names As New List(Of String)()
-        Dim colours As New List(Of String)()
-        Dim prices As New List(Of Decimal)()
-        Dim stocks As New List(Of Integer)()
+        Dim nums() As Integer
+        Dim names() As String
+        Dim colours() As String
+        Dim prices() As Decimal
+        Dim stocks() As Integer
 
         ' Define file variables
         Dim FileName As String = "test.csv"
         Dim filepath As String = "C:/Computing/" & FileName
         Dim FileNum As Integer = FreeFile()
         Dim i As Integer = 0
+
+        ' Initialize arrays to a reasonable size (if the number of lines in the CSV is known, use that size)
+        ReDim nums(0)
+        ReDim names(0)
+        ReDim colours(0)
+        ReDim prices(0)
+        ReDim stocks(0)
 
         ' Open the file
         FileOpen(FileNum, filepath, OpenMode.Input)
@@ -95,40 +102,43 @@ Public Class Main
 
                 ' Check if the line has the correct number of fields
                 If fields.Length = 5 Then
-                    nums.Add(CInt(fields(0)))
-                    names.Add(fields(1) & " " & fields(2)) 'This line doesent work
-                    colours.Add(fields(2))
-                    prices.Add(CDec(fields(3)))
-                    stocks.Add(CInt(fields(4)))
+                    ' Resize the arrays to accommodate the new element
+                    ReDim Preserve nums(i)
+                    ReDim Preserve names(i)
+                    ReDim Preserve colours(i)
+                    ReDim Preserve prices(i)
+                    ReDim Preserve stocks(i)
+
+                    nums(i) = CInt(fields(0))
+                    names(i) = fields(1)
+                    colours(i) = fields(2)
+                    prices(i) = CDec(fields(3))
+                    stocks(i) = CInt(fields(4))
+
+                    ' Iterate index by 1
+                    i += 1
                 End If
 
                 ' Representation of data for testing
                 txtTest.Text += output & vbCrLf
-
-                ' Iterate index by 1
-                i += 1
-
             Loop
 
             FileClose(FileNum)
 
         Catch ex As Exception
             FileClose(FileNum)
-            MsgBox("Error Reading Items CSV File.")
+            MsgBox("Error Reading Items CSV File." + vbCrLf + "File may be open, or does not exist")
         End Try
 
         ' Print the results for testing
-        txtTest.Text += "Num: {" & String.Join(", ", nums.ToArray()) & "}" & vbCrLf
-        txtTest.Text += "Name: {" & String.Join(", ", names.ToArray()) & "}" & vbCrLf
-        txtTest.Text += "Colour: {" & String.Join(", ", colours.ToArray()) & "}" & vbCrLf
-        txtTest.Text += "Price: {" & String.Join(", ", prices.ToArray()) & "}" & vbCrLf
-        txtTest.Text += "Stock: {" & String.Join(", ", stocks.ToArray()) & "}" & vbCrLf
+        txtTest.Text += "Num: {" & String.Join(", ", nums) & "}" & vbCrLf
+        txtTest.Text += "Name: {" & String.Join(", ", names) & "}" & vbCrLf
+        txtTest.Text += "Colour: {" & String.Join(", ", colours) & "}" & vbCrLf
+        txtTest.Text += "Price: {" & String.Join(", ", prices) & "}" & vbCrLf
+        txtTest.Text += "Stock: {" & String.Join(", ", stocks) & "}" & vbCrLf
 
         ' Reset the index
         i = 0
-
-        'Define the Items
-
 
     End Sub
 
@@ -178,6 +188,7 @@ Public Class Main
 #Region "------ CREDITS ------------------------------------------------------"
     '
     'Portions of "ReadItemCSV()" were written by chatgtp, specifically the portions wwhere data was saved to lists
+    'https://chatgpt.com/share/3bf6eebb-ae51-47af-9ac6-a31174ea0ca2
     '
     'MakeButtonsInvisible() entirely written by CHATGTP: https://chatgpt.com/share/a6386c9e-2131-46e9-ab51-bb63ec5edfa9
 #End Region
