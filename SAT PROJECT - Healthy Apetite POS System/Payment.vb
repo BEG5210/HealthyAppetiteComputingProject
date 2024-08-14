@@ -200,7 +200,7 @@
 
     Private Sub txtDifference_TextChanged(sender As Object, e As EventArgs) Handles txtDifference.TextChanged
         If Val(txtDifference.Text) <= 0 Then
-            'TODO: Calculate Change
+
         End If
     End Sub
 

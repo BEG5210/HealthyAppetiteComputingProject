@@ -148,7 +148,15 @@ Public Class Main
 
         'Define variables for button loading
         Dim x As Integer = 0
-        Dim Btns As Control() = {cmd1_1, cmd2_1, cmd3_1, cmd4_1, cmd1_2, cmd2_2, cmd3_2, cmd4_2, cmd1_3, cmd2_3, cmd3_3, cmd4_3, cmd1_4, cmd2_4, cmd3_4, cmd4_4, cmd1_5, cmd2_5, cmd3_5, cmd4_5, cmd1_6, cmd2_6, cmd3_6, cmd4_6, cmd1_7, cmd2_7, cmd3_7, cmd4_7, cmd1_8, cmd2_8, cmd3_8, cmd4_8}
+        Dim Btns As Control() =
+            {cmd1_1, cmd2_1, cmd3_1, cmd4_1,        'There are 32 buttons here
+             cmd1_2, cmd2_2, cmd3_2, cmd4_2,        'The array is 31
+             cmd1_3, cmd2_3, cmd3_3, cmd4_3,
+             cmd1_4, cmd2_4, cmd3_4, cmd4_4,
+             cmd1_5, cmd2_5, cmd3_5, cmd4_5,
+             cmd1_6, cmd2_6, cmd3_6, cmd4_6,
+             cmd1_7, cmd2_7, cmd3_7, cmd4_7,
+             cmd1_8, cmd2_8, cmd3_8, cmd4_8}
 
         'load the buttons
         Do While x < i
@@ -240,6 +248,8 @@ Public Class Main
     'https://chatgpt.com/share/3bf6eebb-ae51-47af-9ac6-a31174ea0ca2
     '
     'MakeButtonsInvisible() entirely written by CHATGTP: https://chatgpt.com/share/a6386c9e-2131-46e9-ab51-bb63ec5edfa9
+    '
+    'Item Click: https://chatgpt.com/share/28188c23-bdb4-43aa-89e7-a2bce8dbaed2
 #End Region
 
 End Class
