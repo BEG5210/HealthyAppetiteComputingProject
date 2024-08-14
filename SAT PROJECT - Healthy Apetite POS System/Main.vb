@@ -175,6 +175,10 @@ Public Class Main
         'Resets cart arrays
     End Sub
 
+    Private Sub CalculateTotalCost()
+        'Calculates Total Cost
+    End Sub
+
     Private Sub cmdCash_Click(sender As Object, e As EventArgs) Handles cmdCash.Click
         MsgBox("This feature is not yet completed")
 
