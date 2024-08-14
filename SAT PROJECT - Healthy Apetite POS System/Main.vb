@@ -177,6 +177,8 @@ Public Class Main
 
     Private Sub CalculateTotalCost()
         'Calculates Total Cost
+
+        'Itterate through cart item total cost and add them together for total
     End Sub
 
     Private Sub cmdCash_Click(sender As Object, e As EventArgs) Handles cmdCash.Click
