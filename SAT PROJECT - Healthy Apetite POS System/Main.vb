@@ -174,16 +174,19 @@ Public Class Main
     Private Sub cmdCash_Click(sender As Object, e As EventArgs) Handles cmdCash.Click
         'Show the payment window
         Payment.Show()
+        MsgBox("This feature is not yet completed")
     End Sub
 
     Private Sub cmdDiscount_Click(sender As Object, e As EventArgs) Handles cmdDiscount.Click
         'Show the discount window
         Discount.Show()
+        MsgBox("This feature is not yet completed")
     End Sub
 
     Private Sub cmdBeginEndShift_Click(sender As Object, e As EventArgs) Handles cmdBeginEndShift.Click
         'Show the Shift Maneger
         ShiftManager.Show()
+        MsgBox("This feature is not yet completed")
     End Sub
 
     Private Sub cmd1_1_Click(sender As Object, e As EventArgs) Handles cmd1_1.Click
@@ -212,6 +215,18 @@ Public Class Main
 
     Private Sub txtCart_TextChanged(sender As Object, e As EventArgs) Handles txtCart.TextChanged
 
+    End Sub
+
+    Private Sub cmdCard_Click(sender As Object, e As EventArgs) Handles cmdCard.Click
+        MsgBox("This feature is not yet completed")
+    End Sub
+
+    Private Sub cmdClearOrder_Click(sender As Object, e As EventArgs) Handles cmdClearOrder.Click
+        MsgBox("This feature is not yet completed")
+    End Sub
+
+    Private Sub cmdEditItems_Click(sender As Object, e As EventArgs) Handles cmdEditItems.Click
+        MsgBox("This feature is not yet completed")
     End Sub
 
     'Testing:
