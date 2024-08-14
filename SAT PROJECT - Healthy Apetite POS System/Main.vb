@@ -171,6 +171,10 @@ Public Class Main
 
     End Sub
 
+    Private Sub ResertCartArrays()
+        'Resets cart arrays
+    End Sub
+
     Private Sub cmdCash_Click(sender As Object, e As EventArgs) Handles cmdCash.Click
         MsgBox("This feature is not yet completed")
 
