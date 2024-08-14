@@ -172,21 +172,24 @@ Public Class Main
     End Sub
 
     Private Sub cmdCash_Click(sender As Object, e As EventArgs) Handles cmdCash.Click
+        MsgBox("This feature is not yet completed")
+
         'Show the payment window
         Payment.Show()
-        MsgBox("This feature is not yet completed")
     End Sub
 
     Private Sub cmdDiscount_Click(sender As Object, e As EventArgs) Handles cmdDiscount.Click
+        MsgBox("This feature is not yet completed")
+
         'Show the discount window
         Discount.Show()
-        MsgBox("This feature is not yet completed")
     End Sub
 
     Private Sub cmdBeginEndShift_Click(sender As Object, e As EventArgs) Handles cmdBeginEndShift.Click
+        MsgBox("This feature is not yet completed")
+
         'Show the Shift Maneger
         ShiftManager.Show()
-        MsgBox("This feature is not yet completed")
     End Sub
 
     Private Sub cmd1_1_Click(sender As Object, e As EventArgs) Handles cmd1_1.Click
