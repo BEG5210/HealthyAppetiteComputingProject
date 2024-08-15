@@ -242,6 +242,10 @@ Public Class Main
         MsgBox("This feature is not yet completed")
     End Sub
 
+    Private Sub cmdExit_Click(sender As Object, e As EventArgs) Handles cmdExit.Click
+        Me.Close()
+    End Sub
+
     'Testing:
     'Private Sub cmd1_1_Click(sender As Object, e As EventArgs) Handles cmd1_1.Click
     '   MsgBox(strVella)

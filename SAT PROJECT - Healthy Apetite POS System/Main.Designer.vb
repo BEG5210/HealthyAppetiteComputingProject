@@ -72,6 +72,7 @@ Partial Class Main
         Me.grpItems = New System.Windows.Forms.GroupBox()
         Me.OpenFileDialog = New System.Windows.Forms.OpenFileDialog()
         Me.SaveFileDialog = New System.Windows.Forms.SaveFileDialog()
+        Me.cmdExit = New System.Windows.Forms.Button()
         Me.pnlProducts.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -409,10 +410,10 @@ Partial Class Main
         '
         'txtTest
         '
-        Me.txtTest.Location = New System.Drawing.Point(561, 471)
+        Me.txtTest.Location = New System.Drawing.Point(1134, 121)
         Me.txtTest.Multiline = True
         Me.txtTest.Name = "txtTest"
-        Me.txtTest.Size = New System.Drawing.Size(381, 175)
+        Me.txtTest.Size = New System.Drawing.Size(190, 568)
         Me.txtTest.TabIndex = 1
         '
         'Panel1
@@ -558,11 +559,23 @@ Partial Class Main
         '
         Me.OpenFileDialog.FileName = "OpenFileDialog1"
         '
+        'cmdExit
+        '
+        Me.cmdExit.BackColor = System.Drawing.Color.IndianRed
+        Me.cmdExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdExit.Location = New System.Drawing.Point(1134, 23)
+        Me.cmdExit.Name = "cmdExit"
+        Me.cmdExit.Size = New System.Drawing.Size(190, 92)
+        Me.cmdExit.TabIndex = 57
+        Me.cmdExit.Text = "EXIT" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.cmdExit.UseVisualStyleBackColor = False
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1142, 702)
+        Me.ClientSize = New System.Drawing.Size(1342, 702)
+        Me.Controls.Add(Me.cmdExit)
         Me.Controls.Add(Me.txtTest)
         Me.Controls.Add(Me.grpItems)
         Me.Controls.Add(Me.grpFunctions)
@@ -631,4 +644,5 @@ Partial Class Main
     Friend WithEvents OpenFileDialog As OpenFileDialog
     Friend WithEvents SaveFileDialog As SaveFileDialog
     Friend WithEvents txtTest As TextBox
+    Friend WithEvents cmdExit As Button
 End Class
