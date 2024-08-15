@@ -209,6 +209,8 @@ Public Class Main
         Thing = Val(CartPlacePrice(CartPLace) + prices(0))
         CartPlacePrice(CartPLace) = Thing
 
+        'The following here is written by chatgtp: https://chatgpt.com/share/4583ee59-3a70-4413-ae58-63ed4c961aaa
+        'This is a code scrap that will be implemented in the not-so-distant future.
         ' Iterate through the array
         '  For i As String = names(Index)
         ' Check if the current element is equal to the value
