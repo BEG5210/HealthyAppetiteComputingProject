@@ -214,7 +214,7 @@ Public Class Main
         totalprice = totalprice.ToString("F2")
 
         'Make the cart go cart moment idk im tired.
-        CartList = CStr(CosCartPlace) + " - " + names(Index) + " x " + CStr(ItemCartQuantity(Index)) + vbCrLf _
+        CartList = CStr(CosmeticCartPlace) + " - " + names(Index) + " x " + CStr(ItemCartQuantity(Index)) + vbCrLf _
             + "          " + CStr(ItemCartQuantity(Index)) + " x " + CStr(totalprice)
 
         RefreshCart()

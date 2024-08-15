@@ -410,10 +410,10 @@ Partial Class Main
         '
         'txtTest
         '
-        Me.txtTest.Location = New System.Drawing.Point(1134, 121)
+        Me.txtTest.Location = New System.Drawing.Point(1134, 192)
         Me.txtTest.Multiline = True
         Me.txtTest.Name = "txtTest"
-        Me.txtTest.Size = New System.Drawing.Size(190, 568)
+        Me.txtTest.Size = New System.Drawing.Size(190, 497)
         Me.txtTest.TabIndex = 1
         '
         'Panel1
