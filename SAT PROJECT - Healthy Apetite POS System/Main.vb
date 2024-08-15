@@ -209,6 +209,14 @@ Public Class Main
         Thing = Val(CartPlacePrice(CartPLace) + prices(0))
         CartPlacePrice(CartPLace) = Thing
 
+        ' Iterate through the array
+        '  For i As String = names(Index)
+        ' Check if the current element is equal to the value
+        ' If numbers(i) = valueToCheck Then
+        'Console.WriteLine("Match found at index " & i & " with value " & numbers(i))
+        'End If
+        'Next
+
         'Hacky solution to rounding decimal places
         Dim totalprice As Decimal = CartPlacePrice(CartPLace)
         totalprice = totalprice.ToString("F2")
