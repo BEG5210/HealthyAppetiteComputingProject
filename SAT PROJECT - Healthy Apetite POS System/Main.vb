@@ -221,6 +221,25 @@ Public Class Main
 
     End Sub
 
+    Private Sub cmd2_1_Click(sender As Object, e As EventArgs) Handles cmd2_1.Click
+        'Set index pos to relevant place
+        Index = 1
+        ItemCartQuantity(Index) += 1
+        Thing = Val(CartPlacePrice(CartPLace) + prices(0))
+        CartPlacePrice(CartPLace) = Thing
+
+        'Hacky solution to rounding decimal places
+        Dim totalprice As Decimal = CartPlacePrice(CartPLace)
+        totalprice = totalprice.ToString("F2")
+
+        'Make the cart go cart moment idk im tired.
+        CartList = CStr(CosmeticCartPlace) + " - " + names(Index) + " x " + CStr(ItemCartQuantity(Index)) + vbCrLf _
+            + "          " + CStr(ItemCartQuantity(Index)) + " x " + CStr(totalprice)
+
+        RefreshCart()
+
+    End Sub
+
     Private Sub RefreshCart()
         txtCart.Text = ""
         txtCart.Text = CartList
