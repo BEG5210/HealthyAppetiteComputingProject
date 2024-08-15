@@ -209,25 +209,39 @@ Public Class Main
         Thing = Val(CartPlacePrice(CartPLace) + prices(0))
         CartPlacePrice(CartPLace) = Thing
 
-        'The following here is written by chatgtp: https://chatgpt.com/share/4583ee59-3a70-4413-ae58-63ed4c961aaa
-        'This is a code scrap that will be implemented in the not-so-distant future.
-        ' Iterate through the array
-        '  For i As String = names(Index)
-        ' Check if the current element is equal to the value
-        ' If numbers(i) = valueToCheck Then
-        'Console.WriteLine("Match found at index " & i & " with value " & numbers(i))
-        'End If
-        'Next
 
-        'Hacky solution to rounding decimal places
-        Dim totalprice As Decimal = CartPlacePrice(CartPLace)
-        totalprice = totalprice.ToString("F2")
+        If CartItemInList(Index) = False Then
+            CartItemInList(Index) = True
 
-        'Make the cart go cart moment idk im tired.
-        CartList = CStr(CosmeticCartPlace) + " - " + names(Index) + " x " + CStr(ItemCartQuantity(Index)) + vbCrLf _
+            'Hacky solution to rounding decimal places
+            Dim totalprice As Decimal = CartPlacePrice(CartPLace)
+            totalprice = totalprice.ToString("F2")
+
+            'Make the cart go cart moment idk im tired.
+            CartList = CStr(CosmeticCartPlace) + " - " + names(Index) + " x " + CStr(ItemCartQuantity(Index)) + vbCrLf _
             + "          " + CStr(ItemCartQuantity(Index)) + " x " + CStr(totalprice)
 
-        RefreshCart()
+            CartWriteArrayText(CartPLace) = CartList
+
+            RefreshCart()
+
+        Else
+            CartItemInList(Index) = True
+
+            'Hacky solution to rounding decimal places
+            Dim totalprice As Decimal = CartPlacePrice(CartPLace)
+            totalprice = totalprice.ToString("F2")
+
+            'Make the cart go cart moment idk im tired.
+            CartList = CStr(CosmeticCartPlace) + " - " + names(Index) + " x " + CStr(ItemCartQuantity(Index)) + vbCrLf _
+            + "          " + CStr(ItemCartQuantity(Index)) + " x " + CStr(totalprice)
+
+            CartWriteArrayText(CartPLace) = CartList
+
+            RefreshCart()
+        End If
+
+
 
     End Sub
 

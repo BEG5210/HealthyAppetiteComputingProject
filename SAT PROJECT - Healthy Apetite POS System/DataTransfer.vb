@@ -11,6 +11,18 @@
 
     Public CartItemInList(31) As Boolean 'All should be equal to false initialy. set to true once in list
     Public CartWriteArrayText(31) As String 'The text for each item in array. saved here, and iterated through to display on thing
-    Public CartWriteArrayIndex As Integer 'The index of cart write array
+    'Public CartWriteArrayIndex As Integer 'The index of cart write array
+
+    Dim LowestPosition As Integer = 0   'saves the loves position
+    Dim CartArray(31) As String         'position is defined by what button it is. the number in it is the position in cart
+
+    'When an item is pressded, check teh cart array in index, and see if there is a value
+    'if it isnt zero, then that is the index for the the item proprty arrays
+
+    'Do the things For the values
+    'Get lowestPosition, and if its not found in cart array, then that items position becomes the lowest position
+    'lowest position increases by one
+    'if the same item is pressed, 
+
 
 End Module
