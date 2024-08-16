@@ -26,6 +26,6 @@
 
 
     'Temp
-    Dim TotalPayment As Decimal = 0
+    Dim TempTotalPayment As Decimal = 0
 
 End Module
