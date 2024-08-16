@@ -1,5 +1,7 @@
 ﻿Public Class Payment
 
+    Dim TotalPayment As Decimal = TempTotalPayment 'Total payment set to temporay total payment on main screen. done so other things can function while cart system is worked on.
+
 #Region "Defining Variables"
     'DEFINING SOME VARIABLES:
 
@@ -44,6 +46,7 @@
 #Region "Misc Code"
     Private Sub Payment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CheckForCheckBoxes()
+        txtAmountOwed.Text = TotalPayment.ToString("F2")
     End Sub
 
     'Hiding Payment Window - Values reset

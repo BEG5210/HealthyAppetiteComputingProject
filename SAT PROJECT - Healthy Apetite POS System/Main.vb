@@ -294,7 +294,7 @@ Public Class Main
     End Sub
 
     Private Sub txtTotalPaymentTempInput_TextChanged(sender As Object, e As EventArgs) Handles txtTotalPaymentTempInput.TextChanged
-        Dim i As Decimal = TotalPayment
+        Dim i As Decimal = Val(TempTotalPayment)
     End Sub
 
     'Testing:
