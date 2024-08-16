@@ -73,6 +73,8 @@ Partial Class Main
         Me.OpenFileDialog = New System.Windows.Forms.OpenFileDialog()
         Me.SaveFileDialog = New System.Windows.Forms.SaveFileDialog()
         Me.cmdExit = New System.Windows.Forms.Button()
+        Me.txtTotalPaymentTempInput = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.pnlProducts.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -570,11 +572,29 @@ Partial Class Main
         Me.cmdExit.Text = "EXIT" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.cmdExit.UseVisualStyleBackColor = False
         '
+        'txtTotalPaymentTempInput
+        '
+        Me.txtTotalPaymentTempInput.Location = New System.Drawing.Point(1134, 153)
+        Me.txtTotalPaymentTempInput.Name = "txtTotalPaymentTempInput"
+        Me.txtTotalPaymentTempInput.Size = New System.Drawing.Size(178, 26)
+        Me.txtTotalPaymentTempInput.TabIndex = 58
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(1146, 130)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(167, 20)
+        Me.Label1.TabIndex = 59
+        Me.Label1.Text = "Total Payment (TEMP)"
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1342, 702)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.txtTotalPaymentTempInput)
         Me.Controls.Add(Me.cmdExit)
         Me.Controls.Add(Me.txtTest)
         Me.Controls.Add(Me.grpItems)
@@ -645,4 +665,6 @@ Partial Class Main
     Friend WithEvents SaveFileDialog As SaveFileDialog
     Friend WithEvents txtTest As TextBox
     Friend WithEvents cmdExit As Button
+    Friend WithEvents txtTotalPaymentTempInput As TextBox
+    Friend WithEvents Label1 As Label
 End Class

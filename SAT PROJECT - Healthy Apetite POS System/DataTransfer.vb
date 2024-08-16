@@ -25,4 +25,7 @@
     'if the same item is pressed, 
 
 
+    'Temp
+    Dim TotalPayment As Decimal = 0
+
 End Module
