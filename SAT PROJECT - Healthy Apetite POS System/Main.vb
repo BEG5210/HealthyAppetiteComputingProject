@@ -232,7 +232,7 @@ Public Class Main
 
     Private Sub RefreshCart()
         txtCart.Text = ""
-        txtCart.Text = CartList
+        'txtCart.Text = CartList
     End Sub
 
     Private Sub txtCart_TextChanged(sender As Object, e As EventArgs) Handles txtCart.TextChanged
@@ -260,7 +260,7 @@ Public Class Main
     End Sub
 
     Private Sub txtTotalPaymentTempInput_TextChanged(sender As Object, e As EventArgs) Handles txtTotalPaymentTempInput.TextChanged
-        Dim i As Decimal = Val(TempTotalPayment)
+        'Dim i As Decimal = Val(TempTotalPayment)
     End Sub
 
     'Testing:

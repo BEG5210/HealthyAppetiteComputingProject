@@ -1,6 +1,6 @@
 ﻿Public Class Payment
 
-    Dim TotalPayment As Decimal = TempTotalPayment 'Total payment set to temporay total payment on main screen. done so other things can function while cart system is worked on.
+    ' Dim TotalPayment As Decimal = TempTotalPayment 'Total payment set to temporay total payment on main screen. done so other things can function while cart system is worked on.
 
 #Region "Defining Variables"
     'DEFINING SOME VARIABLES:
