@@ -209,23 +209,28 @@ Public Class Main
 
 
     Private Sub cmd2_1_Click(sender As Object, e As EventArgs) Handles cmd2_1.Click
-        Index = 1
 
-        CartName(CartIndex) = names(Index)
-        CartPrice(CartIndex) = prices(Index)
+        Try
 
-        'DisplayToCart:
-        Dim CosmeticPos As Integer = CartIndex + 1
+            Index = 1
 
-        txtCart.Text += CStr(CosmeticPos) + " - " + CartName(CartIndex) + vbCrLf _
-            + "               $" + CartPrice(CartIndex).ToString("C") + vbCrLf
+            CartName(CartIndex) = names(Index)
+            CartPrice(CartIndex) = prices(Index)
 
-        CartTotalPrice += CartPrice(CartIndex) 'Add to total Price
-        lblTotalCost.Text = CartTotalPrice.ToString("C") 'Display Total Price
+            'DisplayToCart:
+            Dim CosmeticPos As Integer = CartIndex + 1
 
-        CartIndex += 1 'Iterate the cart index by one to prime the next item
+            txtCart.Text += CStr(CosmeticPos) + " - " + CartName(CartIndex) + vbCrLf _
+                + "               $" + CartPrice(CartIndex).ToString("C") + vbCrLf
 
+            CartTotalPrice += CartPrice(CartIndex) 'Add to total Price
+            lblTotalCost.Text = CartTotalPrice.ToString("C") 'Display Total Price
 
+            CartIndex += 1 'Iterate the cart index by one to prime the next item
+
+        Catch ex As Exception
+
+        End Try
 
     End Sub
 
