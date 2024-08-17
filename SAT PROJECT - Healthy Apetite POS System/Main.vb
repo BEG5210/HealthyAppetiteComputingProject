@@ -212,6 +212,19 @@ Public Class Main
         CartName(CartIndex) = names(Index)
         CartPrice(CartIndex) = prices(Index)
 
+        'DisplayToCart:
+        Dim CosmeticPos As Integer = CartIndex + 1
+
+        txtCart.Text += CStr(CosmeticPos) + " - " + CartName(CartIndex) + vbCrLf _
+            + "               $" + CartPrice(CartIndex).ToString("C") + vbCrLf
+
+        CartTotalPrice += CartPrice(CartIndex) 'Add to total Price
+        lblTotalCost.Text = CartTotalPrice.ToString("C") 'Display Total Price
+
+        CartIndex += 1 'Iterate the cart index by one to prime the next item
+
+
+
     End Sub
 
 
