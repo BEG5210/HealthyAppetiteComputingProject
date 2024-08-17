@@ -235,13 +235,13 @@ Public Class Main
     End Sub
     ' This method handles all button clicks on the form
     Private Sub B_Click(sender As Object, e As EventArgs) Handles cmd1_1.Click, cmd2_1.Click, cmd3_1.Click, cmd4_1.Click,
-                                                                      cmd1_2.Click, cmd2_2.Click, cmd3_2.Click, cmd4_2.Click,
-                                                                      cmd1_3.Click, cmd2_3.Click, cmd3_3.Click, cmd4_3.Click,
-                                                                      cmd1_4.Click, cmd2_4.Click, cmd3_4.Click, cmd4_4.Click,
-                                                                      cmd1_5.Click, cmd2_5.Click, cmd3_5.Click, cmd4_5.Click,
-                                                                      cmd1_6.Click, cmd2_6.Click, cmd3_6.Click, cmd4_6.Click,
-                                                                      cmd1_7.Click, cmd2_7.Click, cmd3_7.Click, cmd4_7.Click,
-                                                                      cmd1_8.Click, cmd2_8.Click, cmd3_8.Click, cmd4_8.Click
+                                                                  cmd1_2.Click, cmd2_2.Click, cmd3_2.Click, cmd4_2.Click,
+                                                                  cmd1_3.Click, cmd2_3.Click, cmd3_3.Click, cmd4_3.Click,
+                                                                  cmd1_4.Click, cmd2_4.Click, cmd3_4.Click, cmd4_4.Click,
+                                                                  cmd1_5.Click, cmd2_5.Click, cmd3_5.Click, cmd4_5.Click,
+                                                                  cmd1_6.Click, cmd2_6.Click, cmd3_6.Click, cmd4_6.Click,
+                                                                  cmd1_7.Click, cmd2_7.Click, cmd3_7.Click, cmd4_7.Click,
+                                                                  cmd1_8.Click, cmd2_8.Click, cmd3_8.Click, cmd4_8.Click
         ' Determine which button was pressed
         Dim clickedButton As Control = CType(sender, Control)
 
