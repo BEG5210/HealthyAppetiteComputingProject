@@ -45,7 +45,7 @@
 #Region "Misc Code"
     Private Sub Payment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CheckForCheckBoxes()
-        txtAmountOwed.Text = TotalPayment.ToString("F2")
+        'txtAmountOwed.Text = TotalPayment.ToString("F2")
     End Sub
 
     'Hiding Payment Window - Values reset
