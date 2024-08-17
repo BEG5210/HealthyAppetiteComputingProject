@@ -210,9 +210,13 @@ Public Class Main
 
     Private Sub cmd2_1_Click(sender As Object, e As EventArgs) Handles cmd2_1.Click
 
-        Try
+        Index = 1
+        AddToCart()
 
-            Index = 1
+    End Sub
+
+    Private Sub AddToCart()
+        Try
 
             CartName(CartIndex) = names(Index)
             CartPrice(CartIndex) = prices(Index)
@@ -233,10 +237,7 @@ Public Class Main
             MsgBox("Number of items in cart has reached its maximum." + vbCrLf + vbCrLf + "Clear the cart, or continue with current cart")
 
         End Try
-
     End Sub
-
-
 
 
     Private Sub RefreshCart()
