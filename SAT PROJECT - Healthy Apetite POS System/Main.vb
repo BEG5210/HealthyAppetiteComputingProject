@@ -174,65 +174,10 @@ Public Class Main
 
     End Sub
 
-    Private Sub ResertCartArrays()
-        'Resets cart arrays
-    End Sub
-
-    Private Sub CalculateTotalCost()
-        'Calculates Total Cost
-
-        'Itterate through cart item total cost and add them together for total
-    End Sub
-
-    Private Sub cmdCash_Click(sender As Object, e As EventArgs) Handles cmdCash.Click
-        MsgBox("This feature is not yet completed")
-
-        'Show the payment window
-        Payment.Show()
-    End Sub
-
-    Private Sub cmdDiscount_Click(sender As Object, e As EventArgs) Handles cmdDiscount.Click
-        MsgBox("This feature is not yet completed")
-
-        'Show the discount window
-        Discount.Show()
-    End Sub
-
-    Private Sub cmdBeginEndShift_Click(sender As Object, e As EventArgs) Handles cmdBeginEndShift.Click
-        MsgBox("This feature is not yet completed")
-
-        'Show the Shift Maneger
-        ShiftManager.Show()
-    End Sub
-
-    Private Sub RefreshCart()
-        txtCart.Text = ""
-        'txtCart.Text = CartList
-    End Sub
-
-    Private Sub txtCart_TextChanged(sender As Object, e As EventArgs) Handles txtCart.TextChanged
-
-    End Sub
-
-    Private Sub cmdCard_Click(sender As Object, e As EventArgs) Handles cmdCard.Click
-        MsgBox("This feature is not yet completed")
-    End Sub
-
-    Private Sub cmdClearOrder_Click(sender As Object, e As EventArgs) Handles cmdClearOrder.Click
-        MsgBox("This feature is not yet completed")
-    End Sub
-
-    Private Sub cmdEditItems_Click(sender As Object, e As EventArgs) Handles cmdEditItems.Click
-        MsgBox("This feature is not yet completed")
-    End Sub
-
     Private Sub cmdExit_Click(sender As Object, e As EventArgs) Handles cmdExit.Click
         Me.Close()
     End Sub
 
-    Private Sub txtTotalPaymentTempInput_TextChanged(sender As Object, e As EventArgs) Handles txtTotalPaymentTempInput.TextChanged
-        'Dim i As Decimal = Val(TempTotalPayment)
-    End Sub
     ' This method handles all button clicks on the form
     Private Sub B_Click(sender As Object, e As EventArgs) Handles cmd1_1.Click, cmd2_1.Click, cmd3_1.Click, cmd4_1.Click,
                                                                   cmd1_2.Click, cmd2_2.Click, cmd3_2.Click, cmd4_2.Click,
@@ -331,7 +276,7 @@ Public Class Main
             Dim CosmeticPos As Integer = CartIndex + 1
 
             txtCart.Text += CStr(CosmeticPos) + " - " + CartName(CartIndex) + vbCrLf _
-                + "               $" + CartPrice(CartIndex).ToString("C") + vbCrLf
+                          + "               $" + CartPrice(CartIndex).ToString("C") + vbCrLf
 
             CartTotalPrice += CartPrice(CartIndex) 'Add to total Price
             lblTotalCost.Text = CartTotalPrice.ToString("C") 'Display Total Price
@@ -344,6 +289,71 @@ Public Class Main
 
         End Try
     End Sub
+
+#Region "Incompleted Code"
+
+    Private Sub ResertCartArrays()
+        'Resets cart arrays
+    End Sub
+
+    Private Sub CalculateTotalCost()
+        'Calculates Total Cost
+
+        'Itterate through cart item total cost and add them together for total
+    End Sub
+
+    Private Sub RefreshCart()
+        txtCart.Text = ""
+        'txtCart.Text = CartList
+    End Sub
+
+    Private Sub txtCart_TextChanged(sender As Object, e As EventArgs) Handles txtCart.TextChanged
+
+    End Sub
+
+    Private Sub txtTotalPaymentTempInput_TextChanged(sender As Object, e As EventArgs) Handles txtTotalPaymentTempInput.TextChanged
+        'Dim i As Decimal = Val(TempTotalPayment)
+    End Sub
+
+#End Region
+
+#Region "Button Clicks for Functions"
+
+    Private Sub cmdCash_Click(sender As Object, e As EventArgs) Handles cmdCash.Click
+        MsgBox("This feature is not yet completed")
+
+        'Show the payment window
+        Payment.Show()
+    End Sub
+
+    Private Sub cmdDiscount_Click(sender As Object, e As EventArgs) Handles cmdDiscount.Click
+        MsgBox("This feature is not yet completed")
+
+        'Show the discount window
+        Discount.Show()
+    End Sub
+
+    Private Sub cmdBeginEndShift_Click(sender As Object, e As EventArgs) Handles cmdBeginEndShift.Click
+        MsgBox("This feature is not yet completed")
+
+        'Show the Shift Maneger
+        ShiftManager.Show()
+    End Sub
+
+    'The Following buttons have no windows ------------------------------------------------
+    Private Sub cmdCard_Click(sender As Object, e As EventArgs) Handles cmdCard.Click
+        MsgBox("This feature is not yet completed")
+    End Sub
+
+    Private Sub cmdClearOrder_Click(sender As Object, e As EventArgs) Handles cmdClearOrder.Click
+        MsgBox("This feature is not yet completed")
+    End Sub
+
+    Private Sub cmdEditItems_Click(sender As Object, e As EventArgs) Handles cmdEditItems.Click
+        MsgBox("This feature is not yet completed")
+    End Sub
+
+#End Region
 
     'Testing:
     'Private Sub cmd1_1_Click(sender As Object, e As EventArgs) Handles cmd1_1.Click
