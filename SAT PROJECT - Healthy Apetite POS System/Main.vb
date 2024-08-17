@@ -230,10 +230,6 @@ Public Class Main
         Me.Close()
     End Sub
 
-    Private Sub cmd3_1_Click(sender As Object, e As EventArgs) Handles cmd3_1.Click
-        Index = 2
-    End Sub
-
     Private Sub txtTotalPaymentTempInput_TextChanged(sender As Object, e As EventArgs) Handles txtTotalPaymentTempInput.TextChanged
         'Dim i As Decimal = Val(TempTotalPayment)
     End Sub
