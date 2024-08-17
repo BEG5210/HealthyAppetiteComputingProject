@@ -205,41 +205,6 @@ Public Class Main
         ShiftManager.Show()
     End Sub
 
-
-
-
-    Private Sub cmd2_1_Click(sender As Object, e As EventArgs) Handles cmd2_1.Click
-
-        Index = 1
-        AddToCart()
-
-    End Sub
-
-    Private Sub AddToCart()
-        Try
-
-            CartName(CartIndex) = names(Index)
-            CartPrice(CartIndex) = prices(Index)
-
-            'DisplayToCart:
-            Dim CosmeticPos As Integer = CartIndex + 1
-
-            txtCart.Text += CStr(CosmeticPos) + " - " + CartName(CartIndex) + vbCrLf _
-                + "               $" + CartPrice(CartIndex).ToString("C") + vbCrLf
-
-            CartTotalPrice += CartPrice(CartIndex) 'Add to total Price
-            lblTotalCost.Text = CartTotalPrice.ToString("C") 'Display Total Price
-
-            CartIndex += 1 'Iterate the cart index by one to prime the next item
-
-        Catch ex As Exception
-
-            MsgBox("Number of items in cart has reached its maximum." + vbCrLf + vbCrLf + "Clear the cart, or continue with current cart")
-
-        End Try
-    End Sub
-
-
     Private Sub RefreshCart()
         txtCart.Text = ""
         'txtCart.Text = CartList
@@ -271,6 +236,117 @@ Public Class Main
 
     Private Sub txtTotalPaymentTempInput_TextChanged(sender As Object, e As EventArgs) Handles txtTotalPaymentTempInput.TextChanged
         'Dim i As Decimal = Val(TempTotalPayment)
+    End Sub
+    ' This method handles all button clicks on the form
+    Private Sub B_Click(sender As Object, e As EventArgs) Handles cmd1_1.Click, cmd2_1.Click, cmd3_1.Click, cmd4_1.Click,
+                                                                      cmd1_2.Click, cmd2_2.Click, cmd3_2.Click, cmd4_2.Click,
+                                                                      cmd1_3.Click, cmd2_3.Click, cmd3_3.Click, cmd4_3.Click,
+                                                                      cmd1_4.Click, cmd2_4.Click, cmd3_4.Click, cmd4_4.Click,
+                                                                      cmd1_5.Click, cmd2_5.Click, cmd3_5.Click, cmd4_5.Click,
+                                                                      cmd1_6.Click, cmd2_6.Click, cmd3_6.Click, cmd4_6.Click,
+                                                                      cmd1_7.Click, cmd2_7.Click, cmd3_7.Click, cmd4_7.Click,
+                                                                      cmd1_8.Click, cmd2_8.Click, cmd3_8.Click, cmd4_8.Click
+        ' Determine which button was pressed
+        Dim clickedButton As Control = CType(sender, Control)
+
+        ' Set the integer variable depending on which button was clicked
+        Select Case clickedButton.Name
+            Case "cmd1_1"
+                Index = 0
+            Case "cmd2_1"
+                Index = 1
+            Case "cmd3_1"
+                Index = 2
+            Case "cmd4_1"
+                Index = 3
+            Case "cmd1_2"
+                Index = 4
+            Case "cmd2_2"
+                Index = 5
+            Case "cmd3_2"
+                Index = 6
+            Case "cmd4_2"
+                Index = 7
+            Case "cmd1_3"
+                Index = 8
+            Case "cmd2_3"
+                Index = 9
+            Case "cmd3_3"
+                Index = 10
+            Case "cmd4_3"
+                Index = 11
+            Case "cmd1_4"
+                Index = 12
+            Case "cmd2_4"
+                Index = 13
+            Case "cmd3_4"
+                Index = 14
+            Case "cmd4_4"
+                Index = 15
+            Case "cmd1_5"
+                Index = 16
+            Case "cmd2_5"
+                Index = 17
+            Case "cmd3_5"
+                Index = 18
+            Case "cmd4_5"
+                Index = 19
+            Case "cmd1_6"
+                Index = 20
+            Case "cmd2_6"
+                Index = 21
+            Case "cmd3_6"
+                Index = 22
+            Case "cmd4_6"
+                Index = 23
+            Case "cmd1_7"
+                Index = 24
+            Case "cmd2_7"
+                Index = 25
+            Case "cmd3_7"
+                Index = 26
+            Case "cmd4_7"
+                Index = 27
+            Case "cmd1_8"
+                Index = 28
+            Case "cmd2_8"
+                Index = 29
+            Case "cmd3_8"
+                Index = 30
+            Case "cmd4_8"
+                Index = 31
+            Case Else
+                Index = -1 ' Default value if an unknown button is pressed
+        End Select
+
+        ' Display the result (this can be removed or modified as needed)
+        MessageBox.Show("Index Value is: " & Index.ToString())
+
+        AddToCart()
+    End Sub
+
+    Private Sub AddToCart()
+        Try
+
+            CartName(CartIndex) = names(Index)
+            CartPrice(CartIndex) = prices(Index)
+
+            'DisplayToCart:
+            Dim CosmeticPos As Integer = CartIndex + 1
+
+            txtCart.Text += CStr(CosmeticPos) + " - " + CartName(CartIndex) + vbCrLf _
+                + "               $" + CartPrice(CartIndex).ToString("C") + vbCrLf
+
+            CartTotalPrice += CartPrice(CartIndex) 'Add to total Price
+            lblTotalCost.Text = CartTotalPrice.ToString("C") 'Display Total Price
+
+            CartIndex += 1 'Iterate the cart index by one to prime the next item
+
+        Catch ex As Exception
+
+            MsgBox("Number of items in cart has reached its maximum." + vbCrLf + vbCrLf + "Clear the cart, or continue with current cart")
+
+        End Try
     End Sub
 
     'Testing:
@@ -309,6 +385,8 @@ Public Class Main
     'MakeButtonsInvisible() entirely written by CHATGTP: https://chatgpt.com/share/a6386c9e-2131-46e9-ab51-bb63ec5edfa9
     '
     'Item Click: https://chatgpt.com/share/28188c23-bdb4-43aa-89e7-a2bce8dbaed2
+    '
+    'Case for buttons: https://chatgpt.com/share/795f0edc-9b25-4774-b64d-9f3619cb6d03
 #End Region
 
 End Class

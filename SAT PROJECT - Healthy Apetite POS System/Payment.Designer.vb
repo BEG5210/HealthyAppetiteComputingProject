@@ -479,6 +479,7 @@ Partial Class Payment
         'cmdExit
         '
         Me.cmdExit.BackColor = System.Drawing.Color.IndianRed
+        Me.cmdExit.Cursor = System.Windows.Forms.Cursors.Default
         Me.cmdExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdExit.Location = New System.Drawing.Point(6, 3)
         Me.cmdExit.Name = "cmdExit"
