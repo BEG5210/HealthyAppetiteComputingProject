@@ -42,6 +42,8 @@ Public Class Main
         ReadItemCSV()
 
         'I'll probably use an object for this, and update my Design Solution.
+
+        txtCart.Text = "" 'Resets the cart for application
     End Sub
 
     Private Sub MakeButtonsInvisible() ' Sets buttons to be invisible. this is done in code, instead of in design, so when viewing layout it is easier to see the buttons when they arent hidden.
