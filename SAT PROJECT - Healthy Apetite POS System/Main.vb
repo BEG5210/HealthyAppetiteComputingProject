@@ -230,6 +230,8 @@ Public Class Main
 
         Catch ex As Exception
 
+            MsgBox("Number of items in cart has reached its maximum." + vbCrLf + vbCrLf + "Clear the cart, or continue with current cart")
+
         End Try
 
     End Sub
