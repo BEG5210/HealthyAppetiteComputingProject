@@ -74,7 +74,7 @@ Partial Class Payment
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.cmdCompletePayment = New System.Windows.Forms.Button()
         Me.pnlMain = New System.Windows.Forms.Panel()
-        Me.txtAmountPaid = New System.Windows.Forms.MaskedTextBox()
+        Me.txtMskAmountPaid = New System.Windows.Forms.MaskedTextBox()
         Me.cmdCompletePmt = New System.Windows.Forms.Button()
         Me.lblTitleCashPayment = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -84,6 +84,7 @@ Partial Class Payment
         Me.lblAmountOwed = New System.Windows.Forms.Label()
         Me.txtDifference = New System.Windows.Forms.TextBox()
         Me.txtAmountOwed = New System.Windows.Forms.TextBox()
+        Me.txtAmountPaid = New System.Windows.Forms.TextBox()
         CType(Me.cmd5d, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmd20c, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmd10c, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -694,6 +695,7 @@ Partial Class Payment
         'pnlMain
         '
         Me.pnlMain.Controls.Add(Me.txtAmountPaid)
+        Me.pnlMain.Controls.Add(Me.txtMskAmountPaid)
         Me.pnlMain.Controls.Add(Me.cmdCompletePmt)
         Me.pnlMain.Controls.Add(Me.lblTitleCashPayment)
         Me.pnlMain.Controls.Add(Me.Panel1)
@@ -709,19 +711,19 @@ Partial Class Payment
         Me.pnlMain.Size = New System.Drawing.Size(354, 685)
         Me.pnlMain.TabIndex = 70
         '
-        'txtAmountPaid
+        'txtMskAmountPaid
         '
-        Me.txtAmountPaid.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludePromptAndLiterals
-        Me.txtAmountPaid.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!)
-        Me.txtAmountPaid.Location = New System.Drawing.Point(20, 326)
-        Me.txtAmountPaid.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.txtAmountPaid.Mask = "000.00"
-        Me.txtAmountPaid.Name = "txtAmountPaid"
-        Me.txtAmountPaid.PromptChar = Global.Microsoft.VisualBasic.ChrW(48)
-        Me.txtAmountPaid.Size = New System.Drawing.Size(308, 44)
-        Me.txtAmountPaid.TabIndex = 68
-        Me.txtAmountPaid.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludePromptAndLiterals
-        Me.txtAmountPaid.ValidatingType = GetType(Integer)
+        Me.txtMskAmountPaid.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludePromptAndLiterals
+        Me.txtMskAmountPaid.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!)
+        Me.txtMskAmountPaid.Location = New System.Drawing.Point(19, 327)
+        Me.txtMskAmountPaid.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.txtMskAmountPaid.Mask = "000.00"
+        Me.txtMskAmountPaid.Name = "txtMskAmountPaid"
+        Me.txtMskAmountPaid.PromptChar = Global.Microsoft.VisualBasic.ChrW(48)
+        Me.txtMskAmountPaid.Size = New System.Drawing.Size(308, 44)
+        Me.txtMskAmountPaid.TabIndex = 68
+        Me.txtMskAmountPaid.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludePromptAndLiterals
+        Me.txtMskAmountPaid.ValidatingType = GetType(Integer)
         '
         'cmdCompletePmt
         '
@@ -807,6 +809,15 @@ Partial Class Payment
         Me.txtAmountOwed.Name = "txtAmountOwed"
         Me.txtAmountOwed.Size = New System.Drawing.Size(308, 44)
         Me.txtAmountOwed.TabIndex = 34
+        '
+        'txtAmountPaid
+        '
+        Me.txtAmountPaid.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAmountPaid.Location = New System.Drawing.Point(19, 379)
+        Me.txtAmountPaid.Name = "txtAmountPaid"
+        Me.txtAmountPaid.ReadOnly = True
+        Me.txtAmountPaid.Size = New System.Drawing.Size(308, 44)
+        Me.txtAmountPaid.TabIndex = 69
         '
         'Payment
         '
@@ -915,5 +926,6 @@ Partial Class Payment
     Friend WithEvents lblAmountOwed As Label
     Friend WithEvents txtDifference As TextBox
     Friend WithEvents txtAmountOwed As TextBox
-    Friend WithEvents txtAmountPaid As MaskedTextBox
+    Friend WithEvents txtMskAmountPaid As MaskedTextBox
+    Friend WithEvents txtAmountPaid As TextBox
 End Class

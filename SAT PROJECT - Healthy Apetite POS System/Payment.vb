@@ -2,7 +2,6 @@
 
     ' Dim TotalPayment As Decimal = TempTotalPayment 'Total payment set to temporay total payment on main screen. done so other things can function while cart system is worked on.
 
-#Region "Defining Variables"
     'DEFINING SOME VARIABLES:
     'denominations:            {5,10,20,50, 1, 2, 5,10,20,50,100}
     Dim CashNum As Integer() = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}    '11 values (11-1)
@@ -19,20 +18,21 @@
     'CashChange - Number of each denomination of currency to be given as change
     'CashNum - Number of each denomination of currency pressed
     'CashTotal - Total amount of cash in dollars that the customer has given
-#End Region
 
-#Region "Manual input Checkbox Check Code"
+    Dim ImportedTotal As Decimal
+
+
     Sub CheckForCheckBoxes()
 
         'Check if Manual input is checked
         If chkManual.Checked = False Then
             'User cannot edit Text Boxes
             txtAmountOwed.ReadOnly = True
-            txtAmountPaid.ReadOnly = True
+            txtMskAmountPaid.ReadOnly = True
         ElseIf chkManual.Checked = True Then
             'User can edit Text Boxes
             txtAmountOwed.ReadOnly = False
-            txtAmountPaid.ReadOnly = False
+            txtMskAmountPaid.ReadOnly = False
         End If
 
     End Sub
@@ -40,40 +40,42 @@
     Private Sub chkManual_CheckedChanged(sender As Object, e As EventArgs) Handles chkManual.CheckedChanged
         CheckForCheckBoxes()
     End Sub
-#End Region
 
-#Region "Misc Code"
+
+
+
     Private Sub Payment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CheckForCheckBoxes()
         'txtAmountOwed.Text = TotalPayment.ToString("F2")
+        ImportedTotal = CartTotalPrice
+        txtAmountOwed.Text = ImportedTotal.ToString("C")
     End Sub
 
     'Hiding Payment Window - Values reset
     Private Sub cmdExit_Click(sender As Object, e As EventArgs) Handles cmdExit.Click
         Me.Close()
     End Sub
-#End Region
 
-#Region "Calculate Difference wwhen textboxes change"
+
+
+
 
     'When the textboxes for ammount paid / changed, well... change, then calculate difference
     Private Sub txtAmountOwed_TextChanged(sender As Object, e As EventArgs) Handles txtAmountOwed.TextChanged
         CalculateDifference()
     End Sub
 
-    Private Sub txtAmountPaid_TextChanged(sender As Object, e As EventArgs) Handles txtAmountPaid.TextChanged
+    Private Sub txtAmountPaid_TextChanged(sender As Object, e As EventArgs) Handles txtMskAmountPaid.TextChanged
         CalculateDifference()
     End Sub
 
-#End Region
-
-#Region "Calculate Difference Function"
+    'Function for Calculate the difference in cost 
     Private Sub CalculateDifference()
         'How to implement a way to check for letters and spit out an error?
 
         'Declaring Values:
         Dim AmtOwed As Decimal = Val(txtAmountOwed.Text)
-        Dim AmtPaid As Decimal = Val(txtAmountPaid.Text)
+        Dim AmtPaid As Decimal = Val(txtMskAmountPaid.Text)
         Dim Difference As Decimal
 
         Difference = AmtOwed - AmtPaid
@@ -94,7 +96,6 @@
 
         txtDifference.Text = Difference.ToString("F2")
     End Sub
-#End Region
 
     'TODO:
     'When any of dis occours, make it so it itirates through the index
@@ -216,7 +217,7 @@
             index += 1                         'iterates the index to the next position in the array
         End While
 
-        txtAmountPaid.Text = TotalSum
+        txtMskAmountPaid.Text = TotalSum
 
     End Sub
 
