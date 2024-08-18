@@ -34,6 +34,7 @@ Partial Class Discount
         Me.cmbxItemSelect = New System.Windows.Forms.ComboBox()
         Me.chkSpecificItemToggle = New System.Windows.Forms.CheckBox()
         Me.lblDiscountInstruction = New System.Windows.Forms.Label()
+        Me.lblInstructions = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'radExactDiscount
@@ -153,11 +154,22 @@ Partial Class Discount
         Me.lblDiscountInstruction.TabIndex = 46
         Me.lblDiscountInstruction.Text = "Select item from" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Drop Down box" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "to be discounted" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
+        'lblInstructions
+        '
+        Me.lblInstructions.AutoSize = True
+        Me.lblInstructions.Location = New System.Drawing.Point(20, 333)
+        Me.lblInstructions.Name = "lblInstructions"
+        Me.lblInstructions.Size = New System.Drawing.Size(172, 100)
+        Me.lblInstructions.TabIndex = 47
+        Me.lblInstructions.Text = "If One is selected, then" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "the other will update" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "automatically, as to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "show the e" &
+    "quivilent as" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "if the other was ticked."
+        '
         'Discount
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 449)
+        Me.ClientSize = New System.Drawing.Size(724, 449)
+        Me.Controls.Add(Me.lblInstructions)
         Me.Controls.Add(Me.lblDiscountInstruction)
         Me.Controls.Add(Me.chkSpecificItemToggle)
         Me.Controls.Add(Me.cmbxItemSelect)
@@ -189,4 +201,5 @@ Partial Class Discount
     Friend WithEvents cmbxItemSelect As ComboBox
     Friend WithEvents chkSpecificItemToggle As CheckBox
     Friend WithEvents lblDiscountInstruction As Label
+    Friend WithEvents lblInstructions As Label
 End Class
