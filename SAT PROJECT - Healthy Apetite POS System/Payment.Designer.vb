@@ -74,6 +74,7 @@ Partial Class Payment
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.cmdCompletePayment = New System.Windows.Forms.Button()
         Me.pnlMain = New System.Windows.Forms.Panel()
+        Me.txtAmountPaid = New System.Windows.Forms.TextBox()
         Me.txtMskAmountPaid = New System.Windows.Forms.MaskedTextBox()
         Me.cmdCompletePmt = New System.Windows.Forms.Button()
         Me.lblTitleCashPayment = New System.Windows.Forms.Label()
@@ -84,7 +85,6 @@ Partial Class Payment
         Me.lblAmountOwed = New System.Windows.Forms.Label()
         Me.txtDifference = New System.Windows.Forms.TextBox()
         Me.txtAmountOwed = New System.Windows.Forms.TextBox()
-        Me.txtAmountPaid = New System.Windows.Forms.TextBox()
         CType(Me.cmd5d, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmd20c, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmd10c, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -711,6 +711,15 @@ Partial Class Payment
         Me.pnlMain.Size = New System.Drawing.Size(354, 685)
         Me.pnlMain.TabIndex = 70
         '
+        'txtAmountPaid
+        '
+        Me.txtAmountPaid.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAmountPaid.Location = New System.Drawing.Point(19, 379)
+        Me.txtAmountPaid.Name = "txtAmountPaid"
+        Me.txtAmountPaid.ReadOnly = True
+        Me.txtAmountPaid.Size = New System.Drawing.Size(308, 44)
+        Me.txtAmountPaid.TabIndex = 69
+        '
         'txtMskAmountPaid
         '
         Me.txtMskAmountPaid.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludePromptAndLiterals
@@ -809,15 +818,6 @@ Partial Class Payment
         Me.txtAmountOwed.Name = "txtAmountOwed"
         Me.txtAmountOwed.Size = New System.Drawing.Size(308, 44)
         Me.txtAmountOwed.TabIndex = 34
-        '
-        'txtAmountPaid
-        '
-        Me.txtAmountPaid.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAmountPaid.Location = New System.Drawing.Point(19, 379)
-        Me.txtAmountPaid.Name = "txtAmountPaid"
-        Me.txtAmountPaid.ReadOnly = True
-        Me.txtAmountPaid.Size = New System.Drawing.Size(308, 44)
-        Me.txtAmountPaid.TabIndex = 69
         '
         'Payment
         '

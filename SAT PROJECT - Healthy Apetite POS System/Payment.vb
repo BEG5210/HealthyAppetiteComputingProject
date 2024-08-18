@@ -29,10 +29,18 @@
             'User cannot edit Text Boxes
             txtAmountOwed.ReadOnly = True
             txtMskAmountPaid.ReadOnly = True
+
+            'Set Visibility of text boxes acordingly
+            txtAmountPaid.Visible = True
+            txtMskAmountPaid.Visible = False
         ElseIf chkManual.Checked = True Then
             'User can edit Text Boxes
             txtAmountOwed.ReadOnly = False
             txtMskAmountPaid.ReadOnly = False
+
+            'Set Visibility of text boxes acordingly
+            txtAmountPaid.Visible = False
+            txtMskAmountPaid.Visible = True
         End If
 
     End Sub
@@ -65,8 +73,9 @@
         CalculateDifference()
     End Sub
 
-    Private Sub txtAmountPaid_TextChanged(sender As Object, e As EventArgs) Handles txtMskAmountPaid.TextChanged
+    Private Sub txtMskAmountPaid_TextChanged(sender As Object, e As EventArgs) Handles txtMskAmountPaid.TextChanged
         CalculateDifference()
+        txtAmountPaid.Text = txtMskAmountPaid.Text
     End Sub
 
     'Function for Calculate the difference in cost 
