@@ -714,7 +714,7 @@ Partial Class Payment
         'txtAmountPaid
         '
         Me.txtAmountPaid.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAmountPaid.Location = New System.Drawing.Point(19, 379)
+        Me.txtAmountPaid.Location = New System.Drawing.Point(19, 327)
         Me.txtAmountPaid.Name = "txtAmountPaid"
         Me.txtAmountPaid.ReadOnly = True
         Me.txtAmountPaid.Size = New System.Drawing.Size(308, 44)
