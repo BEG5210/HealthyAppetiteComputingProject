@@ -8,6 +8,7 @@
 
         'Show dropdown box, and allow user to select an item in the cart do be discounted
         If chkSpecificItemToggle.Checked = True Then
+
             lblDiscountInstruction.Visible = True
             cmbxItemSelect.Visible = True
         ElseIf chkSpecificItemToggle.Checked = False Then
