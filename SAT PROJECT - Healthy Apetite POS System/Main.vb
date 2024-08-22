@@ -105,8 +105,14 @@ Public Class Main
         ReDim prices(0)
         ReDim stocks(0)
 
-        ' Open the file
-        FileOpen(FileNum, filepath, OpenMode.Input)
+        Try
+            ' Open the file
+            FileOpen(FileNum, filepath, OpenMode.Input)
+        Catch ex As Exception
+            MsgBox("Error Opening File." + vbCrLf + vbCrLf + "The file may be open in another software. Please Restart Solution")
+            Me.Close()
+        End Try
+
 
         Try
             ' Read each line of the file
