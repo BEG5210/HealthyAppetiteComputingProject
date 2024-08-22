@@ -274,8 +274,9 @@
         'Close the file after writing
         FileClose(FileNum)
 
-        ResetCart()
 
+        ResetCart()
+        PurchaseCompleted = True
         Me.Close()
 
     End Sub

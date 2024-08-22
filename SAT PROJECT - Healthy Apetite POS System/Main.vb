@@ -324,6 +324,9 @@ Public Class Main
     Private Sub cmdCash_Click(sender As Object, e As EventArgs) Handles cmdCash.Click
         MsgBox("This feature is not yet completed")
 
+        CartSave = txtCart.Text
+        txtCart.Text = ""
+
         CurrentCartText = txtCart.Text
 
         'Show the payment window
@@ -355,6 +358,14 @@ Public Class Main
 
     Private Sub cmdEditItems_Click(sender As Object, e As EventArgs) Handles cmdEditItems.Click
         MsgBox("This feature is not yet completed")
+    End Sub
+
+    Public Sub ClearBox()
+        If PurchaseCompleted = True Then
+            txtCart.Text = ""
+        Else
+            txtCart.Text = CartSave
+        End If
     End Sub
 
 #End Region
