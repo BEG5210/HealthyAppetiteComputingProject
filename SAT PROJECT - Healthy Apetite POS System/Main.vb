@@ -370,11 +370,6 @@ Public Class Main
 
 #End Region
 
-    'Testing:
-    'Private Sub cmd1_1_Click(sender As Object, e As EventArgs) Handles cmd1_1.Click
-    '   MsgBox(strVella)
-    'End Sub
-
 #Region "------ IMPORTANT INFO -----------------------------------------"
     '
     '******************* ITEM BUTTON NAME FORMATTING ***************
