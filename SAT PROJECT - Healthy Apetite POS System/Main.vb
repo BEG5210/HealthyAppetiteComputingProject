@@ -292,32 +292,9 @@ Public Class Main
         End Try
     End Sub
 
-#Region "Incompleted Code"
 
-    Private Sub ResertCartArrays()
-        'Resets cart arrays
-    End Sub
 
-    Private Sub CalculateTotalCost()
-        'Calculates Total Cost
 
-        'Itterate through cart item total cost and add them together for total
-    End Sub
-
-    Private Sub RefreshCart()
-        txtCart.Text = ""
-        'txtCart.Text = CartList
-    End Sub
-
-    Private Sub txtCart_TextChanged(sender As Object, e As EventArgs) Handles txtCart.TextChanged
-
-    End Sub
-
-    Private Sub txtTotalPaymentTempInput_TextChanged(sender As Object, e As EventArgs) Handles txtTotalPaymentTempInput.TextChanged
-        'Dim i As Decimal = Val(TempTotalPayment)
-    End Sub
-
-#End Region
 
 #Region "Button Clicks for Functions"
 
