@@ -22,6 +22,13 @@
     Dim ImportedTotal As Decimal
 
 
+
+
+
+    Private Sub chkManual_CheckedChanged(sender As Object, e As EventArgs) Handles chkManual.CheckedChanged
+        CheckForCheckBoxes()
+    End Sub
+
     Sub CheckForCheckBoxes()
 
         'Check if Manual input is checked
@@ -45,9 +52,7 @@
 
     End Sub
 
-    Private Sub chkManual_CheckedChanged(sender As Object, e As EventArgs) Handles chkManual.CheckedChanged
-        CheckForCheckBoxes()
-    End Sub
+
 
 
 
@@ -92,7 +97,6 @@
         'essentially, let the transaction complete if the transaction is in
         'the favor of both parties or the company
 
-
         ' Check if Difference is less than or equal to zero
         If Difference <= 0 Then
             ' Difference is zero or negative, show the cmdCompletePayment button
@@ -105,9 +109,10 @@
         txtDifference.Text = Difference.ToString("F2")
     End Sub
 
-    'TODO:
-    'When any of dis occours, make it so it itirates through the index
-    'and calculates the total. of each boio, and make it the ammount paid.
+
+
+
+
 #Region "Code for when Cash Buttons Pressed"
 
     Private Sub cmd5c_Click(sender As Object, e As EventArgs) Handles cmd5c.Click
@@ -209,12 +214,7 @@
         CalculateTotalFromCashGiven()
     End Sub
 
-    Private Sub txtDifference_TextChanged(sender As Object, e As EventArgs) Handles txtDifference.TextChanged
-        If Val(txtDifference.Text) <= 0 Then
-
-        End If
-    End Sub
-
+#End Region
     Sub CalculateTotalFromCashGiven()
 
         Dim TotalSum As Decimal
@@ -228,6 +228,10 @@
         txtMskAmountPaid.Text = TotalSum
 
     End Sub
+
+
+
+
 
     Private Sub cmdCompletePmt_Click(sender As Object, e As EventArgs) Handles cmdCompletePmt.Click
         'Output should be the following
@@ -291,7 +295,15 @@
 
     End Sub
 
-#End Region
+
+
+
+
+
+
+
+
+
 
     '----- CODE ENDS HERE -----------------------------------------
 

@@ -87,6 +87,7 @@ Partial Class Payment
         Me.txtAmountOwed = New System.Windows.Forms.TextBox()
         Me.SaveFileDialog = New System.Windows.Forms.SaveFileDialog()
         Me.OpenFileDialog = New System.Windows.Forms.OpenFileDialog()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.cmd5d, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmd20c, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmd10c, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -624,6 +625,7 @@ Partial Class Payment
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(251, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Controls.Add(Me.lbl100dCh)
         Me.Panel2.Controls.Add(Me.lbl50dCh)
         Me.Panel2.Controls.Add(Me.lbl20dCh)
@@ -825,6 +827,16 @@ Partial Class Payment
         '
         Me.OpenFileDialog.FileName = "OpenFileDialog1"
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(196, 447)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(206, 80)
+        Me.Label2.TabIndex = 67
+        Me.Label2.Text = "Exact Change Calculation is" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "not yet completed." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "This will be included in" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "a futu" &
+    "re update."
+        '
         'Payment
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -936,4 +948,5 @@ Partial Class Payment
     Friend WithEvents txtAmountPaid As TextBox
     Friend WithEvents SaveFileDialog As SaveFileDialog
     Friend WithEvents OpenFileDialog As OpenFileDialog
+    Friend WithEvents Label2 As Label
 End Class
