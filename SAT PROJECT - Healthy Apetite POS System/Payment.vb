@@ -258,7 +258,7 @@
 
         'PreDefined File Properties
         FilePath = "C:/HealthyAppetite/"
-        FileName = "Receipt.txt"
+        FileName = "receipt.txt"
 
         'Open the file for reading
         FileOpen(FileNum, FilePath & FileName, OpenMode.Input)
