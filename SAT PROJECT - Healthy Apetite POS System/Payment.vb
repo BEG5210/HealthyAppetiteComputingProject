@@ -273,6 +273,21 @@
 
         'Close the file after writing
         FileClose(FileNum)
+
+        ResetCart()
+
+        Me.Close()
+
+    End Sub
+
+    Private Sub ResetCart()
+
+        CartIndex = 0
+        CartName = {"", "", "", "", "", "", "", "", "", "", ""}
+        CartPrice = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+        CartTotalPrice = 0
+        CosmeticCartText = ""
+
     End Sub
 
 #End Region
