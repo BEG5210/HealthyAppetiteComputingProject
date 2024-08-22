@@ -12,11 +12,11 @@ Public Class Discount
             lblDiscountInstruction.Visible = True
             lblOveralPaymentNotifyerLabel.Visible = False
             cmbxItemSelect.Visible = True
+            MsgBox("This function is not yet implimented. Checking this box at this current time makes no difference to program")
         ElseIf chkSpecificItemToggle.Checked = False Then
             lblDiscountInstruction.Visible = False
             lblOveralPaymentNotifyerLabel.Visible = True
             cmbxItemSelect.Visible = False
-            MsgBox("This function is not yet implimented. Checking this box at this current time makes no difference to program")
         End If
 
     End Sub
@@ -45,6 +45,12 @@ Public Class Discount
         End If
 
         Me.Close()
+    End Sub
+
+    Private Sub Discount_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Default checks done in code so the program executes the subs for when they change
+        chkSpecificItemToggle.Checked = False
+        radExactDiscount.Checked = True
     End Sub
 
 
