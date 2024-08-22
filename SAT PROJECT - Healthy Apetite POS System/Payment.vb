@@ -271,8 +271,18 @@
         'Close the file
         FileClose(FileNum)
 
+
+
         'Create Receipt Output
+
+        'If the current cart is empty, then add a notification within the receipt.
+        If CurrentCartText = "" Then
+            CurrentCartText = "Nothing Was Added to cart. Manual Input Payment was made of: " & txtAmountOwed.Text
+        End If
+
         ReceiptOutput = PreviousReceiptContents & vbCrLf & vbCrLf & CurrentDate & vbCrLf & CurrentCartText & vbCrLf & ChangeAmnt
+
+
 
         'Open the file for writing (this will overwrite the existing contents)
         FileOpen(FileNum, FilePath & FileName, OpenMode.Output)
