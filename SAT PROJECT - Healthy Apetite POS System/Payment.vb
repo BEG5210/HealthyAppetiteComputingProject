@@ -275,7 +275,7 @@
         FileClose(FileNum)
 
 
-        Main.txtCart.Text = ""
+        Main.txtCart.Text = "" 'Credit for this line: https://stackoverflow.com/questions/16048094/changing-text-box-content-on-a-vb-net-form-from-a-class
         ResetCart()
         Me.Close()
 
@@ -333,6 +333,11 @@
 
 #Region "------ NOTES TO SELF ------------------------------------------"
 
+#End Region
+
+#Region "------ CREDITS ------------------------------------------------"
+    'Saveing File Code Chatgtp: https://chatgpt.com/share/a650c3c7-cd53-48c6-a7bb-ef7a3d80d99e
+    'Editation of cart text box from this form: https://stackoverflow.com/questions/16048094/changing-text-box-content-on-a-vb-net-form-from-a-class
 #End Region
 
 #Region "thing from SRS to refer to"
