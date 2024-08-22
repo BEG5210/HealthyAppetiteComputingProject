@@ -30,6 +30,8 @@ Public Class Main
 
     Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        MsgBox("Please ensure that the item csv is saved to:  " + filepath + vbCrLf + vbCrLf + "Please ensure the csv file is not open. please close the file if it is open.")
+
         MakeButtonsInvisible()
 
         'When this loads, make the buttons read the files and using that:

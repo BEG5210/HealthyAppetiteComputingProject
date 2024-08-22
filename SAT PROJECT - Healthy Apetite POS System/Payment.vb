@@ -243,6 +243,15 @@
 
         'Define Previous Receipt Contents
         Dim PreviousReceiptContents As String
+        Dim FilePath As String
+        Dim FileNum As Integer
+        Dim FileName As String
+
+        'PreDefined File Properties
+        FilePath = 
+
+        FileOpen(FileNum, FileName, OpenMode.Output)
+        PreviousReceiptContents = LineInput(FileNum)
 
 
         'Create Receipt Output
