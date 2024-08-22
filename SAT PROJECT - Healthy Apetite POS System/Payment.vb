@@ -276,7 +276,7 @@
 
 
         ResetCart()
-        PurchaseCompleted = True
+        Main.txtCart.Text = ""
         Me.Close()
 
     End Sub

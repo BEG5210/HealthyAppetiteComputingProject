@@ -324,10 +324,9 @@ Public Class Main
     Private Sub cmdCash_Click(sender As Object, e As EventArgs) Handles cmdCash.Click
         MsgBox("This feature is not yet completed")
 
+        CurrentCartText = txtCart.Text
         CartSave = txtCart.Text
         txtCart.Text = ""
-
-        CurrentCartText = txtCart.Text
 
         'Show the payment window
         Payment.Show()
