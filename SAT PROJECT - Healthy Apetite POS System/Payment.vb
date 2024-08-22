@@ -244,13 +244,14 @@
         'Define Previous Receipt Contents
         Dim PreviousReceiptContents As String
         Dim FilePath As String
-        Dim FileNum As Integer
+        Dim FileNum As Integer = FreeFile()
         Dim FileName As String
 
         'PreDefined File Properties
-        FilePath = 
+        FilePath = "C:/Computing"
+        FileName = "Receipt.txt"
 
-        FileOpen(FileNum, FileName, OpenMode.Output)
+        FileOpen(FileNum, FileName, OpenMode.Input)
         PreviousReceiptContents = LineInput(FileNum)
 
 

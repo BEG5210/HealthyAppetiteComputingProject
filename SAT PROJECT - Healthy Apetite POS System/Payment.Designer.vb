@@ -85,6 +85,8 @@ Partial Class Payment
         Me.lblAmountOwed = New System.Windows.Forms.Label()
         Me.txtDifference = New System.Windows.Forms.TextBox()
         Me.txtAmountOwed = New System.Windows.Forms.TextBox()
+        Me.SaveFileDialog = New System.Windows.Forms.SaveFileDialog()
+        Me.OpenFileDialog = New System.Windows.Forms.OpenFileDialog()
         CType(Me.cmd5d, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmd20c, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmd10c, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -819,6 +821,10 @@ Partial Class Payment
         Me.txtAmountOwed.Size = New System.Drawing.Size(308, 44)
         Me.txtAmountOwed.TabIndex = 34
         '
+        'OpenFileDialog
+        '
+        Me.OpenFileDialog.FileName = "OpenFileDialog1"
+        '
         'Payment
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -928,4 +934,6 @@ Partial Class Payment
     Friend WithEvents txtAmountOwed As TextBox
     Friend WithEvents txtMskAmountPaid As MaskedTextBox
     Friend WithEvents txtAmountPaid As TextBox
+    Friend WithEvents SaveFileDialog As SaveFileDialog
+    Friend WithEvents OpenFileDialog As OpenFileDialog
 End Class
