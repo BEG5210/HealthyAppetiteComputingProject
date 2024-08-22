@@ -257,7 +257,7 @@
         Dim FileName As String
 
         'PreDefined File Properties
-        FilePath = "C:/Computing/"
+        FilePath = "C:/HealthyAppetite/"
         FileName = "Receipt.txt"
 
         'Open the file for reading

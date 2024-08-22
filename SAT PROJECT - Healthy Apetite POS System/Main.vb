@@ -12,8 +12,8 @@ Public Class Main
     Dim stocks() As Integer
 
     ' Define file variables
-    Dim FileName As String = "test.csv"
-    Dim filepath As String = "C:/Computing/" & FileName
+    Dim FileName As String = "items.csv"
+    Dim filepath As String = "C:/HealthyAppetite/" & FileName
     Dim FileNum As Integer = FreeFile()
 
     'Define index for adding cart items
