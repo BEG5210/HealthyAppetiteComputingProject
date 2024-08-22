@@ -298,6 +298,8 @@
 
 
         Main.txtCart.Text = "" 'Credit for this line: https://stackoverflow.com/questions/16048094/changing-text-box-content-on-a-vb-net-form-from-a-class
+        Main.lblDiscountApplied.Text = "$0.00"
+        Main.lblTotalCost.Text = "$0.00"
         ResetCart()
         Me.Close()
 
@@ -310,6 +312,7 @@
         CartPrice = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
         CartTotalPrice = 0
         CosmeticCartText = ""
+        DiscountAmt = 0
 
     End Sub
 
