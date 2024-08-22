@@ -5,12 +5,6 @@ Imports System.Xml
 
 Public Class Main
 
-    ' Redundant Variables
-    ' Dim output As String
-    ' Dim filepath As String
-    ' Dim items(31) As String
-
-    ' Define arrays to store the parsed values
     Dim nums() As Integer
     Dim names() As String
     Dim colours() As String
@@ -42,8 +36,6 @@ Public Class Main
         'Establish the items price
 
         ReadItemCSV()
-
-        'I'll probably use an object for this, and update my Design Solution.
 
         txtCart.Text = "" 'Resets the cart for application
     End Sub
