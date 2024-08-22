@@ -239,7 +239,7 @@
 
         'Define Current Date
         Dim CurrentDate As String
-        CurrentDate = Today
+        CurrentDate = Today.ToString("yyyy-MM-dd HH:mm:ss")
 
         'Define Previous Receipt Contents
         Dim PreviousReceiptContents As String
@@ -248,16 +248,31 @@
         Dim FileName As String
 
         'PreDefined File Properties
-        FilePath = "C:/Computing"
+        FilePath = "C:/Computing/"
         FileName = "Receipt.txt"
 
-        FileOpen(FileNum, FileName, OpenMode.Input)
-        PreviousReceiptContents = LineInput(FileNum)
+        'Open the file for reading
+        FileOpen(FileNum, FilePath & FileName, OpenMode.Input)
 
+        'Read the file contents
+        Do While Not EOF(FileNum)
+            PreviousReceiptContents &= LineInput(FileNum) & vbCrLf
+        Loop
+
+        'Close the file
+        FileClose(FileNum)
 
         'Create Receipt Output
-        ReceiptOutput = PreviousReceiptContents + vbCrLf + vbCrLf + CurrentDate + vbCrLf + CurrentCartText + vbCrLf + ChangeAmnt
+        ReceiptOutput = PreviousReceiptContents & vbCrLf & vbCrLf & CurrentDate & vbCrLf & CurrentCartText & vbCrLf & ChangeAmnt
 
+        'Open the file for writing (this will overwrite the existing contents)
+        FileOpen(FileNum, FilePath & FileName, OpenMode.Output)
+
+        'Write the updated ReceiptOutput to the file
+        Print(FileNum, ReceiptOutput)
+
+        'Close the file after writing
+        FileClose(FileNum)
     End Sub
 
 #End Region
