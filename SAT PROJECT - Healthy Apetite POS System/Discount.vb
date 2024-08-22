@@ -9,13 +9,17 @@
         'Show dropdown box, and allow user to select an item in the cart do be discounted
         If chkSpecificItemToggle.Checked = True Then
             lblDiscountInstruction.Visible = True
+            lblOveralPaymentNotifyerLabel.Visible = False
             cmbxItemSelect.Visible = True
         ElseIf chkSpecificItemToggle.Checked = False Then
             lblDiscountInstruction.Visible = False
+            lblOveralPaymentNotifyerLabel.Visible = True
             cmbxItemSelect.Visible = False
         End If
 
     End Sub
+
+
 
 
 

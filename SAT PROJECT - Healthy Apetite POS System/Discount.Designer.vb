@@ -35,6 +35,7 @@ Partial Class Discount
         Me.chkSpecificItemToggle = New System.Windows.Forms.CheckBox()
         Me.lblDiscountInstruction = New System.Windows.Forms.Label()
         Me.lblInstructions = New System.Windows.Forms.Label()
+        Me.lblOveralPaymentNotifyerLabel = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'radExactDiscount
@@ -164,11 +165,23 @@ Partial Class Discount
         Me.lblInstructions.Text = "If One is selected, then" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "the other will update" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "automatically, as to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "show the e" &
     "quivilent as" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "if the other was ticked."
         '
+        'lblOveralPaymentNotifyerLabel
+        '
+        Me.lblOveralPaymentNotifyerLabel.AutoSize = True
+        Me.lblOveralPaymentNotifyerLabel.Location = New System.Drawing.Point(285, 263)
+        Me.lblOveralPaymentNotifyerLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblOveralPaymentNotifyerLabel.Name = "lblOveralPaymentNotifyerLabel"
+        Me.lblOveralPaymentNotifyerLabel.Size = New System.Drawing.Size(154, 60)
+        Me.lblOveralPaymentNotifyerLabel.TabIndex = 48
+        Me.lblOveralPaymentNotifyerLabel.Text = "Discount is now" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "applied to the" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "overall total payment"
+        Me.lblOveralPaymentNotifyerLabel.Visible = False
+        '
         'Discount
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(724, 449)
+        Me.Controls.Add(Me.lblOveralPaymentNotifyerLabel)
         Me.Controls.Add(Me.lblInstructions)
         Me.Controls.Add(Me.lblDiscountInstruction)
         Me.Controls.Add(Me.chkSpecificItemToggle)
@@ -202,4 +215,5 @@ Partial Class Discount
     Friend WithEvents chkSpecificItemToggle As CheckBox
     Friend WithEvents lblDiscountInstruction As Label
     Friend WithEvents lblInstructions As Label
+    Friend WithEvents lblOveralPaymentNotifyerLabel As Label
 End Class
