@@ -263,6 +263,7 @@ Public Class Main
 
         ' Display the result (this can be removed or modified as needed)
         MessageBox.Show("Index Value is: " & Index.ToString())
+        '******* NOTE: CODE ABOVE IS FOR DEUGGING. TO BE COMMENTED OUT FOR BUILD. NO FUNCTIONALITY
 
         AddToCart()
     End Sub
