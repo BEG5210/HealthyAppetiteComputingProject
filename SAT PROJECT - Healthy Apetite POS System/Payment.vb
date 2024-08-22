@@ -58,6 +58,11 @@
 
 
     Private Sub Payment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'If the amount owed text is 0 (essentially, the customer has not selected any items) set manual mode to on.
+        If txtAmountOwed.Text = "0.00" Then
+            chkManual.Checked = True
+        End If
+
         CheckForCheckBoxes()
         ImportedTotal = CartTotalPrice
         txtAmountOwed.Text = ImportedTotal.ToString("F2")
