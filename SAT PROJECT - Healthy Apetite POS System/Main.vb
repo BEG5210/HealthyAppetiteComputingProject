@@ -351,6 +351,8 @@ Public Class Main
 
     Private Sub cmdClearOrder_Click(sender As Object, e As EventArgs) Handles cmdClearOrder.Click
         MsgBox("This feature is not yet completed")
+        Payment.ResetCart()
+        txtCart.Text = ""
     End Sub
 
     Private Sub cmdEditItems_Click(sender As Object, e As EventArgs) Handles cmdEditItems.Click

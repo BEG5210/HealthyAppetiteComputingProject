@@ -300,7 +300,7 @@
 
     End Sub
 
-    Private Sub ResetCart()
+    Public Sub ResetCart()
 
         CartIndex = 0
         CartName = {"", "", "", "", "", "", "", "", "", "", ""}
