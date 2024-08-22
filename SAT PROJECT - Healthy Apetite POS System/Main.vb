@@ -325,8 +325,6 @@ Public Class Main
         MsgBox("This feature is not yet completed")
 
         CurrentCartText = txtCart.Text
-        CartSave = txtCart.Text
-        txtCart.Text = ""
 
         'Show the payment window
         Payment.Show()
@@ -357,14 +355,6 @@ Public Class Main
 
     Private Sub cmdEditItems_Click(sender As Object, e As EventArgs) Handles cmdEditItems.Click
         MsgBox("This feature is not yet completed")
-    End Sub
-
-    Public Sub ClearBox()
-        If PurchaseCompleted = True Then
-            txtCart.Text = ""
-        Else
-            txtCart.Text = CartSave
-        End If
     End Sub
 
 #End Region

@@ -10,7 +10,4 @@
     Public CurrentCartText As String 'This stores the cart once payment is ready. this is to be printed onto a receipt.
     Public ReceiptOutput As String 'This is what stores the text that will be added to the receipt.
 
-    Public PurchaseCompleted As Boolean 'When completing payment, the main form checks this status. depending on its status, clear the text box or dont.
-    Public CartSave As String 'Saves the cart text incase payment is not made.
-
 End Module

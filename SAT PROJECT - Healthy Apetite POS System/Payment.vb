@@ -275,8 +275,8 @@
         FileClose(FileNum)
 
 
-        ResetCart()
         Main.txtCart.Text = ""
+        ResetCart()
         Me.Close()
 
     End Sub
