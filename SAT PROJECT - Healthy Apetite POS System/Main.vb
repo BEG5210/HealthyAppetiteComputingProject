@@ -353,6 +353,7 @@ Public Class Main
         MsgBox("This feature is not yet completed")
         Payment.ResetCart()
         txtCart.Text = ""
+        lblTotalCost.Text = "$0.00"
     End Sub
 
     Private Sub cmdEditItems_Click(sender As Object, e As EventArgs) Handles cmdEditItems.Click

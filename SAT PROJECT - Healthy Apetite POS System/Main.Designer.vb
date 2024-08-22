@@ -435,9 +435,9 @@ Partial Class Main
         Me.lblTotalCost.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTotalCost.Location = New System.Drawing.Point(136, 352)
         Me.lblTotalCost.Name = "lblTotalCost"
-        Me.lblTotalCost.Size = New System.Drawing.Size(360, 39)
+        Me.lblTotalCost.Size = New System.Drawing.Size(100, 39)
         Me.lblTotalCost.TabIndex = 3
-        Me.lblTotalCost.Text = "* TOTAL COST HERE *"
+        Me.lblTotalCost.Text = "$0.00"
         '
         'lblLabelTotalCost
         '
