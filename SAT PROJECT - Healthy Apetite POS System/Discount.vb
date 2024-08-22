@@ -35,6 +35,7 @@
     Private Sub cmdApplyDiscount_Click(sender As Object, e As EventArgs) Handles cmdApplyDiscount.Click
         If radExactDiscount.Checked = True Then
             DiscountAmt = Val(txtOffFinalPrice.Text)
+            Main.lblDiscountApplied.Text = DiscountAmt.ToString("C")
         ElseIf radPercentageDiscount.Checked = True Then
             MsgBox("Percentage Discounts are not implimented yet. please apply a Exact Discount Instead!")
         Else

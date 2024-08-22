@@ -301,6 +301,8 @@ Public Class Main
     Private Sub cmdCash_Click(sender As Object, e As EventArgs) Handles cmdCash.Click
         MsgBox("This feature is not yet completed")
 
+        CartTotalPrice = CartTotalPrice - DiscountAmt
+
         CurrentCartText = txtCart.Text
 
         'Show the payment window
@@ -342,6 +344,10 @@ Public Class Main
     End Sub
     Private Sub cmdEditItems_Click(sender As Object, e As EventArgs) Handles cmdEditItems.Click
         MsgBox("This feature is not yet completed")
+    End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
     End Sub
 #End Region
 
