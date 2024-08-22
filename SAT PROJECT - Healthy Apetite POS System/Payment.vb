@@ -5,15 +5,15 @@
     'DEFINING SOME VARIABLES:
     'denominations:            {5,10,20,50, 1, 2, 5,10,20,50,100}
     Dim CashNum As Integer() = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}    '11 values (11-1)
-    '                          [   CENTS   ][      DOLLARS      ]
+    '                          [   CENTS  ] [     DOLLARS      ]
     '---------------------------------------------------------------------------------
     'denominations:               {5,10,20,50, 1, 2, 5,10,20,50,100}
     Dim CashChange As Integer() = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0} '11 values (11-1)
-    '                             [   CENTS   ][      DOLLARS      ]
+    '                             [   CENTS  ] [     DOLLARS      ]
     '---------------------------------------------------------------------------------
     'denominations:              {5,10,20,50, 1, 2, 5,10,20,50,100}
     Dim CashTotal As Decimal() = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}  '11 values (11-1)
-    '                            [   CENTS   ][      DOLLARS      ]
+    '                            [   CENTS  ] [     DOLLARS      ]
 
     'CashChange - Number of each denomination of currency to be given as change
     'CashNum - Number of each denomination of currency pressed
@@ -54,9 +54,8 @@
 
     Private Sub Payment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CheckForCheckBoxes()
-        'txtAmountOwed.Text = TotalPayment.ToString("F2")
         ImportedTotal = CartTotalPrice
-        txtAmountOwed.Text = ImportedTotal.ToString("C")
+        txtAmountOwed.Text = ImportedTotal.ToString("F2")
     End Sub
 
     'Hiding Payment Window - Values reset
@@ -227,6 +226,27 @@
         End While
 
         txtMskAmountPaid.Text = TotalSum
+
+    End Sub
+
+    Private Sub cmdCompletePmt_Click(sender As Object, e As EventArgs) Handles cmdCompletePmt.Click
+        'Output should be the following
+        'The Text allready in Receipt + Vbcrlf + Vbcrlf + The Date and Time + Vbcrlf + The text on cart + vbcrlf + Change Given
+
+        'Create Change Variable
+        Dim ChangeAmnt As String
+        ChangeAmnt = txtDifference.Text
+
+        'Define Current Date
+        Dim CurrentDate As String
+        CurrentDate = Today
+
+        'Define Previous Receipt Contents
+        Dim PreviousReceiptContents As String
+
+
+        'Create Receipt Output
+        ReceiptOutput = PreviousReceiptContents + vbCrLf + vbCrLf + CurrentDate + vbCrLf + CurrentCartText + vbCrLf + ChangeAmnt
 
     End Sub
 
