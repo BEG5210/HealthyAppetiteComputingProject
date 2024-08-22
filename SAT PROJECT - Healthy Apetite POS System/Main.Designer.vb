@@ -57,6 +57,8 @@ Partial Class Main
         Me.cmd1_1 = New System.Windows.Forms.Button()
         Me.txtTest = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lblDiscountApplied = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.lblTotalCost = New System.Windows.Forms.Label()
         Me.lblLabelTotalCost = New System.Windows.Forms.Label()
         Me.txtCart = New System.Windows.Forms.TextBox()
@@ -75,8 +77,6 @@ Partial Class Main
         Me.cmdExit = New System.Windows.Forms.Button()
         Me.txtTotalPaymentTempInput = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.lblDiscountApplied = New System.Windows.Forms.Label()
         Me.pnlProducts.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -139,7 +139,7 @@ Partial Class Main
         Me.cmd4_7.Name = "cmd4_7"
         Me.cmd4_7.Size = New System.Drawing.Size(130, 75)
         Me.cmd4_7.TabIndex = 30
-        Me.cmd4_7.Text = "Button18"
+        Me.cmd4_7.Text = "FILE STORAGE LOCATIONS"
         Me.cmd4_7.UseVisualStyleBackColor = True
         '
         'cmd4_6
@@ -432,6 +432,27 @@ Partial Class Main
         Me.Panel1.Size = New System.Drawing.Size(532, 397)
         Me.Panel1.TabIndex = 1
         '
+        'lblDiscountApplied
+        '
+        Me.lblDiscountApplied.AutoSize = True
+        Me.lblDiscountApplied.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblDiscountApplied.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDiscountApplied.Location = New System.Drawing.Point(393, 352)
+        Me.lblDiscountApplied.Name = "lblDiscountApplied"
+        Me.lblDiscountApplied.Size = New System.Drawing.Size(100, 39)
+        Me.lblDiscountApplied.TabIndex = 5
+        Me.lblDiscountApplied.Text = "$0.00"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(278, 347)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(109, 50)
+        Me.Label2.TabIndex = 4
+        Me.Label2.Text = "Discount to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "be Applied"
+        '
         'lblTotalCost
         '
         Me.lblTotalCost.AutoSize = True
@@ -592,31 +613,11 @@ Partial Class Main
         Me.Label1.TabIndex = 59
         Me.Label1.Text = "Total Payment (TEMP)"
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(278, 347)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(109, 50)
-        Me.Label2.TabIndex = 4
-        Me.Label2.Text = "Discount to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "be Applied"
-        '
-        'lblDiscountApplied
-        '
-        Me.lblDiscountApplied.AutoSize = True
-        Me.lblDiscountApplied.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lblDiscountApplied.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDiscountApplied.Location = New System.Drawing.Point(393, 352)
-        Me.lblDiscountApplied.Name = "lblDiscountApplied"
-        Me.lblDiscountApplied.Size = New System.Drawing.Size(100, 39)
-        Me.lblDiscountApplied.TabIndex = 5
-        Me.lblDiscountApplied.Text = "$0.00"
-        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1342, 702)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtTotalPaymentTempInput)
