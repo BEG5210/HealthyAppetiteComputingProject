@@ -330,6 +330,19 @@ Public Class Main
         Payment.Show()
     End Sub
 
+    Private Sub cmdClearOrder_Click(sender As Object, e As EventArgs) Handles cmdClearOrder.Click
+        Payment.ResetCart()
+        txtCart.Text = ""
+        lblTotalCost.Text = "$0.00"
+    End Sub
+
+
+    'Following incompleted Buttons include:
+    'Discount
+    'BeginEndShift
+    'CardPayment
+    'EditingItems
+#Region "Incompleted Items Buttons"
     Private Sub cmdDiscount_Click(sender As Object, e As EventArgs) Handles cmdDiscount.Click
         MsgBox("This feature is not yet completed")
 
@@ -344,21 +357,16 @@ Public Class Main
         ShiftManager.Show()
     End Sub
 
+
+
     'The Following buttons have no windows ------------------------------------------------
     Private Sub cmdCard_Click(sender As Object, e As EventArgs) Handles cmdCard.Click
         MsgBox("This feature is not yet completed")
     End Sub
-
-    Private Sub cmdClearOrder_Click(sender As Object, e As EventArgs) Handles cmdClearOrder.Click
-        MsgBox("This feature is not yet completed")
-        Payment.ResetCart()
-        txtCart.Text = ""
-        lblTotalCost.Text = "$0.00"
-    End Sub
-
     Private Sub cmdEditItems_Click(sender As Object, e As EventArgs) Handles cmdEditItems.Click
         MsgBox("This feature is not yet completed")
     End Sub
+#End Region
 
 #End Region
 
