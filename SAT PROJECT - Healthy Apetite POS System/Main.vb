@@ -39,8 +39,6 @@ Public Class Main
 
         txtCart.Text = "" 'Resets the cart for application
 
-
-        OpenFileDialog.ShowDialog()
     End Sub
 
     Private Sub MakeButtonsInvisible() ' Sets buttons to be invisible. this is done in code, instead of in design, so when viewing layout it is easier to see the buttons when they arent hidden.
