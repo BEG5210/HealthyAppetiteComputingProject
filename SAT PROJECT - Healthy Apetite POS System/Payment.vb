@@ -280,7 +280,10 @@
             CurrentCartText = "Nothing Was Added to cart. Manual Input Payment was made of: " & txtAmountOwed.Text
         End If
 
-        ReceiptOutput = PreviousReceiptContents & vbCrLf & vbCrLf & CurrentDate & vbCrLf & CurrentCartText & vbCrLf & ChangeAmnt
+        Dim Discount As String
+        Discount = "Amount Discounted from final charge  :" + DiscountAmt.ToString("F2")
+
+        ReceiptOutput = PreviousReceiptContents & vbCrLf & vbCrLf & CurrentDate & vbCrLf & CurrentCartText & vbCrLf & Discount & vbCrLf & ChangeAmnt
 
 
 
