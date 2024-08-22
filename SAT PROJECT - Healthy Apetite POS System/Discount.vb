@@ -19,7 +19,28 @@
 
     End Sub
 
+    Private Sub Checks(sender As Object, e As EventArgs) Handles radPercentageDiscount.CheckedChanged, radExactDiscount.CheckedChanged
+        ' Determine which radio button was checked and perform the appropriate action
+        If radPercentageDiscount.Checked Then
+            txtOffFinalPrice.Enabled = False
+            txtPercentOff.Enabled = True
 
+        ElseIf radExactDiscount.Checked Then
+            txtOffFinalPrice.Enabled = True
+            txtPercentOff.Enabled = False
+
+        End If
+    End Sub
+
+    Private Sub cmdApplyDiscount_Click(sender As Object, e As EventArgs) Handles cmdApplyDiscount.Click
+        If radExactDiscount.Checked = True Then
+
+        ElseIf radPercentageDiscount.Checked = True Then
+
+        Else
+            MsgBox("Please Choose what kind of discount you would like to do")
+        End If
+    End Sub
 
 
 
